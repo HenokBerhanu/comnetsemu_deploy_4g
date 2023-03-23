@@ -1,0 +1,24 @@
+Open5GS daemon v2.4.4
+
+02/23 12:00:41.989: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+02/23 12:00:41.989: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+02/23 12:00:42.072: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/23 12:00:42.072: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+02/23 12:00:42.072: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+02/23 12:00:42.072: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+02/23 13:21:27.710: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+02/23 13:21:27.710: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+02/23 13:21:27.845: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/23 13:21:27.845: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+02/23 13:21:27.845: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+02/23 13:21:27.845: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+02/23 13:36:53.232: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+02/23 13:36:53.232: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+02/23 13:36:53.318: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/23 13:36:53.319: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+02/23 13:36:53.319: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+02/23 13:36:53.319: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)

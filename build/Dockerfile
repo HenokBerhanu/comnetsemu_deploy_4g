@@ -25,8 +25,8 @@ RUN apt-get -qy update && \
 WORKDIR /srsran
 
 # Pinned git commit used for this example (release 21.10)
-ARG COMMIT=5275f33360f1b3f1ee8d1c4d9ae951ac7c4ecd4e
-
+# ARG COMMIT=5275f33360f1b3f1ee8d1c4d9ae951ac7c4ecd4e
+ARG COMMIT=00c972ac4962edf7ffd462188ddb89ceb6444a58
 # Download and build
 RUN curl -LO https://github.com/srsran/srsRAN/archive/${COMMIT}.zip && \
     unzip ${COMMIT}.zip && \

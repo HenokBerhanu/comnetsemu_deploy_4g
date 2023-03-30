@@ -261,12 +261,36 @@ logger:
 #  mme:
 #    relative_capacity: 100
 #
+# mme:
+#     freeDiameter: /open5gs/install/etc/freeDiameter/mme.conf
+#     s1ap:
+#       - addr: 10.80.95.1
+#     gtpc:
+#       - addr: 10.80.95.1
+#     gummei:
+#       plmn_id:
+#         mcc: 901
+#         mnc: 70
+#       mme_gid: 2
+#       mme_code: 1
+#     tai:
+#       plmn_id:
+#         mcc: 901
+#         mnc: 70
+#       tac: 7
+#     security:
+#         integrity_order : [ EIA2, EIA1, EIA0 ]
+#         ciphering_order : [ EEA0, EEA1, EEA2 ]
+#     network_name:
+#         full: Open5GS
+#     mme_name: open5gs-mme0
+
 mme:
     freeDiameter: /open5gs/install/etc/freeDiameter/mme.conf
     s1ap:
-      - addr: 10.80.95.1
+      - addr: 127.0.0.2
     gtpc:
-      - addr: 10.80.95.1
+      - addr: 127.0.0.2
     gummei:
       plmn_id:
         mcc: 901
@@ -284,6 +308,7 @@ mme:
     network_name:
         full: Open5GS
     mme_name: open5gs-mme0
+
 
 #
 # <GTP-C Client>
@@ -390,10 +415,16 @@ sgwc:
 #      - addr: 127.0.0.4
 #      - addr: 127.0.0.5
 #        apn: volte
+# smf:
+#     gtpc:
+#       - addr:
+#         - 127.0.0.4
+
 smf:
     gtpc:
       - addr:
         - 127.0.0.4
+        - ::1
 
 #
 #  o Disable use of IPv4 addresses (only IPv6)

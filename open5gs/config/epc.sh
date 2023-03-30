@@ -10,6 +10,7 @@ sleep 10 && cd webui && npm run dev &
 
 ./install/bin/open5gs-hssd &
 ./install/bin/open5gs-pcrfd &
+
 sleep 5
 ./install/bin/open5gs-smfd &
 ./install/bin/open5gs-mmed &

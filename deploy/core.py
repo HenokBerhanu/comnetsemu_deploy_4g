@@ -18,13 +18,13 @@ from mininet import log
 from mininet.log import info, setLogLevel
 from mininet.node import Controller, OVSBridge
 from mininet.topo import Topo
-from util import dict_union, get_root_dir
+#from util import dict_union, get_root_dir
 
-IPS: Dict[str, str] = {
-    "epc": "10.80.95.0",
-    "enb": "10.80.95.1",
-    "ue": "10.80.97.0",
-}
+# IPS: Dict[str, str] = {
+#     "epc": "10.80.95.0",
+#     "enb": "10.80.95.1",
+#     "ue": "10.80.97.0",
+# }
 
 if __name__ == "__main__":
 
@@ -40,8 +40,8 @@ if __name__ == "__main__":
     
     net = Containernet(controller=Controller, ipBase="10.0.0.0/8", link=TCLink, waitConnected=True)
 
-    cmds: Dict[DockerHost, str] = {}
-    hardcoded_ips: List[Dict[str, str]] = []
+    # cmds: Dict[DockerHost, str] = {}
+    # hardcoded_ips: List[Dict[str, str]] = []
 
     info("*** Adding Host for open5gs EPC\n")
     epc = net.addDockerHost(
@@ -84,11 +84,11 @@ if __name__ == "__main__":
         dimage="srsran",
         ip="10.80.95.1/24",
         # dcmd="",
-        dcmd="bash /config/srsran/enb.sh",
+        dcmd="bash /etc/srsran/enb.sh",
         docker_args={
             "volumes": {
                 prj_folder + "/srsran/config": {
-                    "bind": "/config/srsran",
+                    "bind": "/etc/srsran",
                     "mode": "rw",
                 },
                 prj_folder + "/srslogs": {
@@ -116,11 +116,11 @@ if __name__ == "__main__":
         dimage="srsran",
         ip="10.80.97.0/24",
         # dcmd="",
-        dcmd="bash /config/srsran/ue.sh",
+        dcmd="bash /etc/srsran/ue.sh",
         docker_args={
             "volumes": {
                 prj_folder + "/srsran/config": {
-                    "bind": "/config/srsran",
+                    "bind": "/etc/srsran",
                     "mode": "rw",
                 },
                 prj_folder + "/srslogs": {

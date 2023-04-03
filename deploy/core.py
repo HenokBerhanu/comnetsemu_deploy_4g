@@ -21,8 +21,9 @@ from mininet.topo import Topo
 from util import dict_union, get_root_dir
 
 IPS: Dict[str, str] = {
-    "enb": "10.80.95.11",
-    "ue": "10.80.97.12",
+    "epc": "10.80.95.0",
+    "enb": "10.80.95.1",
+    "ue": "10.80.97.0",
 }
 
 if __name__ == "__main__":
@@ -31,7 +32,7 @@ if __name__ == "__main__":
 
     setLogLevel("info")
     
-    prj_folder_srs = "/home/vagrant/comnetsemu_deploy_4g"
+    #prj_folder_srs = "/home/vagrant/comnetsemu_deploy_4g"
     prj_folder="/home/vagrant/comnetsemu_deploy_4g"
     mongodb_folder="/home/vagrant/mongodbdata"
 
@@ -81,18 +82,18 @@ if __name__ == "__main__":
         "srsenb",
         #ip=IPS["enb"],
         dimage="srsran",
-        ip="10.80.95.11",
+        ip="10.80.95.1/24",
         # dcmd="",
-        #dcmd="bash /home/vagrant/comnetsemu_deploy_4g/srsran/config/enb.sh",
+        dcmd="bash /config/srsran/enb.sh",
         docker_args={
             "volumes": {
-                prj_folder_srs + "/srsran/config": {
-                    "bind": "/etc/srsran",
-                    "mode": "ro",
+                prj_folder + "/srsran/config": {
+                    "bind": "/config/srsran",
+                    "mode": "rw",
                 },
-                prj_folder_srs + "/srslogs": {
+                prj_folder + "/srslogs": {
                     "bind": "/tmp/srsran_logs",
-                    #"mode": "rw",
+                    "mode": "rw",
                 },
                 "/etc/timezone": {
                     "bind": "/etc/timezone",
@@ -107,6 +108,39 @@ if __name__ == "__main__":
             "sysctls": {"net.ipv4.ip_forward": 1},
         },
     )
+
+    info("*** Adding Host for SRSRAN UE\n")
+    ue = net.addDockerHost(
+        "srsue",
+        #ip=IPS["enb"],
+        dimage="srsran",
+        ip="10.80.97.0/24",
+        # dcmd="",
+        dcmd="bash /config/srsran/ue.sh",
+        docker_args={
+            "volumes": {
+                prj_folder + "/srsran/config": {
+                    "bind": "/config/srsran",
+                    "mode": "rw",
+                },
+                prj_folder + "/srslogs": {
+                    "bind": "/tmp/srsran_logs",
+                    "mode": "rw",
+                },
+                "/etc/timezone": {
+                    "bind": "/etc/timezone",
+                    "mode": "ro",
+                },
+                "/etc/localtime": {
+                    "bind": "/etc/localtime",
+                    "mode": "ro",
+                },
+            },
+            "cap_add": ["SYS_NICE", "NET_ADMIN"],
+            "devices": "/dev/net/tun:/dev/net/tun:rwm"
+        },
+    )
+
 
 #def run() -> None:
 
@@ -145,28 +179,28 @@ if __name__ == "__main__":
     # )
     # cmds[enb] = " ".join(_enb_cmd)
 
-    # TODO: configure authentication/user from user_db.csv
-    _ue_cmd = [
-        "srsue",
-        "--rf.device_name=zmq",
-        f"--rf.device_args='id=ue,fail_on_disconnect=true,tx_port=tcp://*:2001,rx_port=tcp://{IPS['enb']}:2000,base_srate=23.04e6'",
-        "--log.all_level=info",
-        "--log.filename=/tmp/srsran_logs/ue.log",
-        ">",
-        "/proc/1/fd/1",
-        "2>&1",
-        "&",
-    ]
-    ue = net.addDockerHost(
-        "srsue",
-        ip=IPS["ue"],
-        dimage="srsran",
-        docker_args=dict_union(
-            #default_args,
-            {"devices": ["/dev/net/tun"], "cap_add": ["SYS_NICE", "NET_ADMIN"]},
-        ),
-    )
-    cmds[ue] = " ".join(_ue_cmd)
+    # TO DO: configure authentication/user from user_db.csv
+    # _ue_cmd = [
+    #     "srsue",
+    #     #"--rf.device_name=zmq",
+    #     f"--rf.device_args='id=ue,fail_on_disconnect=true,tx_port=tcp://*:2001,rx_port=tcp://{IPS['enb']}:2000,base_srate=23.04e6'",
+    #     #"--log.all_level=info",
+    #     #"--log.filename=/tmp/srsran_logs/ue.log",
+    #     #">",
+    #     #"/proc/1/fd/1",
+    #     #"2>&1",
+    #     #"&",
+    #]
+    # ue = net.addDockerHost(
+    #     "srsue",
+    #     ip=IPS["ue"],
+    #     dimage="srsran",
+    #     docker_args=dict_union(
+    #         #default_args,
+    #         {"devices": ["/dev/net/tun"], "cap_add": ["SYS_NICE", "NET_ADMIN"]},
+    #     ),
+    # )
+    # cmds[ue] = " ".join(_ue_cmd)
     # for host in cmds:
     #     log.debug(f"::: Running cmd in container ({host.name}): {cmds[host]}\n")
     #     host.cmd(cmds[host])

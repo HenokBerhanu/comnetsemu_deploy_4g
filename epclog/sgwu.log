@@ -21,3 +21,11 @@ Open5GS daemon v2.4.4
 02/23 13:37:03.791: [gtp] INFO: gtp_server() [127.0.0.6]:2152 (../lib/gtp/path.c:30)
 02/23 13:37:03.791: [app] INFO: SGW-U initialize...done (../src/sgwu/app.c:31)
 02/23 14:21:53.046: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+03/31 09:33:56.012: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwu.yaml' (../lib/app/ogs-init.c:129)
+03/31 09:33:56.012: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwu.log' (../lib/app/ogs-init.c:132)
+03/31 09:33:56.039: [sock] ERROR: socket bind(2) [127.0.0.6]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+03/31 09:33:56.039: [sock] ERROR: udp_server() [127.0.0.6]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+03/31 09:33:56.040: [app] ERROR: Failed to intialize SGW-U (../src/sgwu/app.c:28)
+03/31 09:33:56.040: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)

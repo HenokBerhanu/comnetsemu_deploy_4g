@@ -1,4 +1,7 @@
-FROM ubuntu:focal as base
+FROM ubuntu:focal
+
+#ENV DEBIAN_FRONTEND=noninteractive
+ENV LD_LIBRARY_PATH=/srsRAN_4G/install/lib/x86_64-linux-gnu
 
 # Install dependencies
 RUN apt-get -qy update && \
@@ -29,7 +32,7 @@ RUN apt-get -qy update && \
         unzip && \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /srsran
+#WORKDIR /srsran
 
 # Pinned git commit used for this example (release 21.10)
 # ARG COMMIT=5275f33360f1b3f1ee8d1c4d9ae951ac7c4ecd4e
@@ -39,18 +42,32 @@ WORKDIR /srsran
 #     unzip ${COMMIT}.zip && \
 #     rm ${COMMIT}.zip
 # RUN apt-get install git
-RUN git clone https://github.com/srsran/srsRAN_4G.git
-# WORKDIR /srsran/srsRAN-${COMMIT}/build
-WORKDIR /srsran/srsRAN_4G/build
+#WORKDIR /srsRAN_4G/build
+RUN git clone https://github.com/srsran/srsRAN_4G && cd srsRAN_4G && \
+    mkdir build && \
+    cd build && \
+    cmake -DENABLE_ZEROMQ=ON -DENABLE_UHD=OFF -DENABLE_BLADERF=OFF -DENABLE_SOAPYSDR=OFF .. && \
+    make && \
+    make install && \
+    ./srsran_install_configs.sh user
 
-RUN cmake -DENABLE_ZEROMQ=ON -DENABLE_UHD=OFF -DENABLE_BLADERF=OFF -DENABLE_SOAPYSDR=OFF .. && \
-    make -j$(nproc --ignore=2) && \
-    make install
+# RUN cmake -DENABLE_ZEROMQ=ON -DENABLE_UHD=OFF -DENABLE_BLADERF=OFF -DENABLE_SOAPYSDR=OFF .. && \
+#     make -j$(nproc --ignore=2) && \
+#     make install
 
+#WORKDIR /srsRAN_4G/build
+
+#RUN ./SRSRAN_install_configs.sh user
 # Update dynamic linker
-RUN ldconfig
+#RUN ldconfig
 
-WORKDIR /srsran
+RUN update-ca-certificates
+
+#COPY --from=builder /srsRAN_4G/install/bin /srsRAN_4G/install/bin
+# COPY  /srsRAN_4G/install/etc /srsRAN_4G/install/etc
+# COPY  /srsRAN_4G/install/lib /srsRAN_4G/install/lib
+
+WORKDIR /srsRAN_4G
 
 # Copy all .example files and remove that suffix
 # RUN cp srsRAN-${COMMIT}/*/*.example ./ && \
@@ -58,4 +75,4 @@ WORKDIR /srsran
 
 # Run commands with line buffered standard output
 # (-> get log messages in real time)
-ENTRYPOINT [ "stdbuf", "-oL" ]
+#ENTRYPOINT [ "stdbuf", "-oL" ]

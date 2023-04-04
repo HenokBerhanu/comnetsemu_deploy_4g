@@ -294,3 +294,99 @@ Open5GS daemon v2.4.4
 04/03 15:53:43.884: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
 04/03 15:53:43.885: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
 04/03 15:53:43.885: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+04/03 21:21:55.533: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/03 21:21:55.533: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/03 21:21:55.669: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+04/03 21:21:55.669: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+04/03 21:21:55.669: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+04/03 21:21:55.674: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+04/03 21:26:16.791: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/03 21:26:16.791: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/03 21:26:16.860: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+04/03 21:26:16.860: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+04/03 21:26:16.860: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+04/03 21:26:16.861: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+04/03 21:30:43.545: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/03 21:30:43.545: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/03 21:30:43.610: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+04/03 21:30:43.610: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+04/03 21:30:43.610: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+04/03 21:30:43.611: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+04/03 21:37:32.409: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/03 21:37:32.409: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/03 21:37:32.485: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+04/03 21:37:32.485: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+04/03 21:37:32.486: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+04/03 21:37:32.487: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+04/04 07:25:02.484: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/04 07:25:02.484: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/04 07:25:02.611: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+04/04 07:25:02.612: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+04/04 07:25:02.612: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+04/04 07:25:02.618: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+04/04 07:31:43.615: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/04 07:31:43.615: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/04 07:31:43.678: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+04/04 07:31:43.678: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+04/04 07:31:43.679: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+04/04 07:31:43.680: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+04/04 07:34:49.332: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/04 07:34:49.332: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/04 07:34:49.419: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+04/04 07:34:49.420: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:58)
+04/04 07:34:49.420: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:54)
+04/04 07:34:49.420: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.4.4
+
+04/04 07:43:30.157: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/04 07:43:30.157: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/04 07:43:30.258: [sock] ERROR: socket bind(2) [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+04/04 07:43:30.258: [sock] ERROR: udp_server() [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+04/04 07:43:30.258: [sctp] ERROR: Failed to intialize MME (../src/mme/app-init.c:30)
+04/04 07:43:30.258: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+04/04 07:49:36.373: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/04 07:49:36.373: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/04 07:49:36.460: [sock] ERROR: socket bind(2) [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+04/04 07:49:36.460: [sock] ERROR: udp_server() [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+04/04 07:49:36.460: [sctp] ERROR: Failed to intialize MME (../src/mme/app-init.c:30)
+04/04 07:49:36.460: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+04/04 07:54:54.269: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/04 07:54:54.269: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/04 07:54:54.340: [sock] ERROR: socket bind(2) [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+04/04 07:54:54.340: [sock] ERROR: udp_server() [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+04/04 07:54:54.340: [sctp] ERROR: Failed to intialize MME (../src/mme/app-init.c:30)
+04/04 07:54:54.340: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+04/04 08:01:19.428: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/04 08:01:19.428: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/04 08:01:19.515: [sock] ERROR: socket bind(2) [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+04/04 08:01:19.515: [sock] ERROR: udp_server() [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+04/04 08:01:19.515: [sctp] ERROR: Failed to intialize MME (../src/mme/app-init.c:30)
+04/04 08:01:19.516: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+04/04 08:12:46.980: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:129)
+04/04 08:12:46.980: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:132)
+04/04 08:12:47.048: [sock] ERROR: socket bind(2) [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+04/04 08:12:47.048: [sock] ERROR: udp_server() [10.80.95.1]:2123 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+04/04 08:12:47.048: [sctp] ERROR: Failed to intialize MME (../src/mme/app-init.c:30)
+04/04 08:12:47.048: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)

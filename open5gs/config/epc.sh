@@ -14,7 +14,7 @@ sleep 10 && cd webui && npm run dev &
 sleep 5
 ./install/bin/open5gs-smfd &
 ./install/bin/open5gs-mmed &
-./install/bin/open5gs-sgwcd
+./install/bin/open5gs-sgwcd &
 
 sleep 15
 ./install/bin/open5gs-sgwud &

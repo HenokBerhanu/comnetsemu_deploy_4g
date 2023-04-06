@@ -292,3 +292,345 @@ Open5GS daemon v2.4.4
 04/04 08:12:41.976: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
 04/04 08:12:41.977: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
 04/04 08:12:41.977: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 14:50:48.043: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 14:50:48.043: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 14:50:48.044: [dbi] WARNING: Failed to connect to server [mongodb://192.168.56.101/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 14:50:48.044: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 14:53:32.360: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 14:53:32.360: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 14:53:32.363: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 14:53:32.363: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 15:45:37.549: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 15:45:37.549: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 15:45:37.552: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 15:45:37.553: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 15:48:08.346: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 15:48:08.346: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 15:48:08.347: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 15:48:08.347: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 15:59:17.154: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 15:59:17.155: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 15:59:17.157: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 15:59:17.157: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 16:02:22.461: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 16:02:22.461: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 16:02:22.464: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 16:02:22.464: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 16:03:12.430: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 16:03:12.430: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 16:03:12.431: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 16:03:12.431: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 16:04:48.663: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 16:04:48.663: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 16:04:48.668: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 16:04:48.668: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 16:08:13.987: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 16:08:13.987: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 16:08:13.990: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 16:08:13.990: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 18:45:08.956: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 18:45:08.956: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 18:45:08.960: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 18:45:08.960: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 19:03:32.565: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 19:03:32.565: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 19:03:32.571: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 19:03:32.571: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 19:09:53.342: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 19:09:53.342: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 19:09:53.346: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 19:09:53.346: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 19:20:40.135: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 19:20:40.135: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 19:20:40.137: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 19:20:40.137: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 19:28:08.538: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 19:28:08.538: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 19:28:08.540: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 19:28:08.540: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 20:01:31.375: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 20:01:31.375: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 20:01:31.378: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 20:01:31.378: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 20:04:46.740: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 20:04:46.740: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 20:04:46.741: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 20:04:46.741: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 20:08:29.077: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 20:08:29.077: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 20:08:29.079: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 20:08:29.079: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 20:12:52.187: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 20:12:52.187: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 20:12:52.190: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 20:12:52.192: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/04 20:15:39.420: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/04 20:15:39.420: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/04 20:15:39.438: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/04 20:15:39.438: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 07:19:10.660: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 07:19:10.660: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 07:19:10.668: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 07:19:10.668: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 07:26:21.465: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 07:26:21.465: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 07:26:21.469: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 07:26:21.475: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 07:32:26.954: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 07:32:26.954: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 07:32:26.955: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 07:32:26.955: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 07:34:10.357: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 07:34:10.357: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 07:34:10.359: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 07:34:10.360: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 07:38:01.892: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 07:38:01.892: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 07:38:01.893: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 07:38:01.893: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 07:39:19.223: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 07:39:19.223: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 07:39:19.227: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 07:39:19.227: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 07:40:43.961: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 07:40:43.961: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 07:40:43.965: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 07:40:43.965: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 07:43:36.820: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 07:43:36.820: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 07:43:36.821: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 07:43:36.826: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:17:12.616: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:17:12.616: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:17:12.619: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:17:12.620: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:19:15.380: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:19:15.380: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:19:15.384: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:19:15.386: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:29:39.130: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:29:39.130: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:29:39.133: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:29:39.133: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:32:15.457: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:32:15.457: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:32:15.458: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:32:15.458: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:36:36.366: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:36:36.366: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:36:36.369: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:36:36.369: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:37:46.762: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:37:46.762: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:37:46.766: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:37:46.766: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:38:46.634: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:38:46.634: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:38:46.636: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:38:46.636: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:39:43.396: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:39:43.396: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:39:43.400: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:39:43.400: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:46:14.120: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:46:14.120: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:46:14.123: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:46:14.123: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:54:33.756: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:54:33.756: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:54:33.757: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:54:33.757: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:56:21.863: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:56:21.864: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:56:21.865: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:56:21.866: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:58:04.768: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:58:04.768: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:58:04.770: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:58:04.770: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 08:59:09.547: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 08:59:09.547: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 08:59:09.551: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 08:59:09.551: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:25:48.229: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:25:48.229: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:25:48.233: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:25:48.234: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:28:12.084: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:28:12.084: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:28:12.085: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:28:12.085: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:32:09.246: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:32:09.247: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:32:09.256: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:32:09.256: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:36:39.225: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:36:39.225: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:36:39.226: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:36:39.226: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:38:17.326: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:38:17.326: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:38:17.327: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:38:17.327: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:46:30.947: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:46:30.947: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:46:30.948: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:46:30.948: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:47:15.667: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:47:15.667: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:47:15.670: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:47:15.670: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:49:06.573: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:49:06.573: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:49:06.575: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:49:06.575: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:51:01.404: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:51:01.405: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:51:01.406: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:51:01.406: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 09:54:50.610: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 09:54:50.610: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 09:54:50.620: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 09:54:50.620: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 11:38:35.710: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 11:38:35.710: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 11:38:35.714: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 11:38:35.714: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 11:48:23.699: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 11:48:23.699: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 11:48:23.700: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 11:48:23.700: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 11:52:11.287: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 11:52:11.287: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 11:52:11.290: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 11:52:11.291: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/05 11:56:47.499: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/05 11:56:47.499: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/05 11:56:47.500: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/05 11:56:47.500: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/06 11:51:53.875: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/06 11:51:53.876: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/06 11:51:53.881: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/06 11:51:53.881: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/06 13:53:18.410: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/06 13:53:18.410: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/06 13:53:18.412: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/06 13:53:18.412: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)
+Open5GS daemon v2.4.4
+
+04/06 16:30:11.812: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+04/06 16:30:11.812: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+04/06 16:30:11.821: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/06 16:30:11.821: [app] WARNING: Failed to intialize HSS (../src/hss/app-init.c:28)

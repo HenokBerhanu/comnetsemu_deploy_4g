@@ -57,7 +57,7 @@ def run() -> None:
     epc = net.addDockerHost(
         "srsepc",
         ip=IPS["epc"],
-        dimage="srsran",
+        dimage="srsran1",
         docker_args=dict_union(
             default_args,
             {"devices": ["/dev/net/tun"], "cap_add": ["SYS_NICE", "NET_ADMIN"]},
@@ -91,7 +91,7 @@ def run() -> None:
     enb = net.addDockerHost(
         "srsenb",
         ip=IPS["enb"],
-        dimage="srsran",
+        dimage="srsran1",
         docker_args=dict_union(
             default_args,
             {"cap_add": ["SYS_NICE"]},
@@ -115,7 +115,7 @@ def run() -> None:
     ue = net.addDockerHost(
         "srsue",
         ip=IPS["ue"],
-        dimage="srsran",
+        dimage="srsran1",
         docker_args=dict_union(
             default_args,
             {"devices": ["/dev/net/tun"], "cap_add": ["SYS_NICE", "NET_ADMIN"]},

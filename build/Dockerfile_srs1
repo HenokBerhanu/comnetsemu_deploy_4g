@@ -1,0 +1,54 @@
+FROM ubuntu:bionic
+
+# Install dependencies
+RUN apt-get -qy update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
+        cmake \
+        make \
+        gcc \
+        g++ \
+        pkg-config \
+        libzmq3-dev libczmq-dev \
+        libboost-program-options-dev \
+        libvolk1-dev \
+        libfftw3-dev \
+        libmbedtls-dev \
+        libsctp-dev \
+        libyaml-cpp-dev \
+        libgtest-dev \
+        libconfig++-dev \
+        curl \
+        net-tools \
+        telnet \
+        iperf \
+        iperf3\
+        iputils-ping \
+        iproute2 \
+        iptables \
+        git \
+        unzip && \
+    rm -rf /var/lib/apt/lists/*
+
+
+RUN git clone https://github.com/srsran/srsRAN_4G && cd srsRAN_4G && \
+    mkdir build && \
+    cd build && \
+    cmake -DENABLE_ZEROMQ=ON -DENABLE_UHD=OFF -DENABLE_BLADERF=OFF -DENABLE_SOAPYSDR=OFF .. && \
+    make && \
+    make install && \
+    ./srsran_install_configs.sh user
+
+
+
+RUN update-ca-certificates
+
+
+WORKDIR /srsRAN_4G
+
+# Copy all .example files and remove that suffix
+# RUN cp srsRAN-${COMMIT}/*/*.example ./ && \
+#     bash -c 'for file in *.example; do mv "$file" "${file%.example}"; done'
+
+# Run commands with line buffered standard output
+# (-> get log messages in real time)
+ENTRYPOINT [ "stdbuf", "-oL" ]

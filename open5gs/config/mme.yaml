@@ -288,9 +288,9 @@ logger:
 mme:
     freeDiameter: /open5gs/install/etc/freeDiameter/mme.conf
     s1ap:
-      - addr: 10.80.95.1 #127.0.0.2
+      - addr: 127.0.0.2
     gtpc:
-      - addr: 10.80.95.1 #127.0.0.2
+      - addr: 127.0.0.2
     gummei:
       plmn_id:
         mcc: 901
@@ -371,7 +371,7 @@ mme:
 #
 sgwc:
     gtpc:
-      - addr: 10.80.95.2 #127.0.0.3
+      - addr: 127.0.0.3
 
 #
 # smf:
@@ -423,7 +423,7 @@ sgwc:
 smf:
     gtpc:
       - addr:
-        - 10.80.95.3 #127.0.0.4
+        - 127.0.0.4
         - ::1
 
 #

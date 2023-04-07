@@ -1,0 +1,1006 @@
+2023-04-06T19:49:49.195925 [UE     ] [I] Using binary srsue with arguments: --rf.device_name=zmq --rf.device_args=id=ue,fail_on_disconnect=true,tx_port=tcp://*:2001,rx_port=tcp://10.80.95.11:2000,base_srate=23.04e6 --log.all_level=info --log.filename=/tmp/srsran_logs/ue.log 
+2023-04-06T19:49:49.228897 [UE     ] [I] Built in Release mode using 21.10.0.
+2023-04-06T19:49:49.272420 [RF     ] [I] Configuring physical DL channel 0 with band-pass filter (0.0, 0.0)
+2023-04-06T19:49:49.272421 [RF     ] [I] Configuring physical UL channel 0 with band-pass filter (0.0, 0.0)
+2023-04-06T19:49:49.331336 [MAC    ] [I] [    0] Resetting MAC
+2023-04-06T19:49:49.331341 [MAC    ] [I] [    0] Logical Channel Setup: LCID=0, LCG=0, priority=0, PBR=-1, BSD=50ms, bucket_size=0
+2023-04-06T19:49:49.331344 [MAC    ] [I] [    0] Logical Channel Setup: LCID=1, LCG=0, priority=1, PBR=-1, BSD=50ms, bucket_size=0
+2023-04-06T19:49:49.331355 [MAC    ] [I] [    0] Setting configuration
+2023-04-06T19:49:49.331356 [MAC    ] [I] [    0] BSR:   Configured timer reTX 2560 ms
+2023-04-06T19:49:49.354397 [RLC    ] [I] Added LTE radio bearer with LCID 0 in Transparent Mode
+2023-04-06T19:49:49.354414 [USIM   ] [I] Read Home PLMN Id=00101
+2023-04-06T19:49:49.358343 [RLC-NR ] [I] Added LTE radio bearer with LCID 0 in Transparent Mode
+2023-04-06T19:49:49.358351 [RRC    ] [I] using srand seed of 358351
+2023-04-06T19:50:16.951550 [STCK   ] [I] Triggering NAS switch on
+
+2023-04-06T19:50:16.952173 [NAS    ] [I] Switching on
+2023-04-06T19:50:16.952189 [NAS    ] [I] No PLMN selected. Starting PLMN Selection...
+2023-04-06T19:50:16.952191 [RRC    ] [I] Proc "PLMN Search" - Starting PLMN search
+2023-04-06T19:50:16.952192 [RRC    ] [I] Proc "Cell Search" - Starting...
+2023-04-06T19:50:16.952199 [RRC    ] [I] FSM "phy_controller" - transition detected - unknown_st -> searching_cell (cause: cell_search_cmd)
+2023-04-06T19:50:16.952199 [RRC    ] [I] FSM "phy_controller" - Initiating Cell search
+2023-04-06T19:50:16.952213 [PHY    ] [I] [    0] Cell Search: Start EARFCN index=0/1
+2023-04-06T19:50:16.952219 [PHY    ] [I] [    0] INTRA-LTE-0: Disabled neighbour cell search
+2023-04-06T19:50:16.952224 [NAS    ] [I] Proc "NAS PLMN Search" - Starting...
+2023-04-06T19:50:16.952255 [PHY    ] [I] [    0] Resetting PHY...
+2023-04-06T19:50:16.952255 [PHY    ] [I] [    0] PHY:   Set TA base: n_ta: 0, ta_usec: 0.0
+2023-04-06T19:50:16.952694 [PHY    ] [I] [    0] SYNC:  Setting Cell Search sampling rate
+2023-04-06T19:50:16.952695 [PHY    ] [I] [    0] Cell Search: changing frequency to EARFCN=3350
+2023-04-06T19:50:16.952697 [PHY    ] [I] [    0] SYNC:  Set DL EARFCN=3350, f_dl=2680.0 MHz, f_ul=2560.0 MHz
+2023-04-06T19:50:16.953959 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_rx=2680.0 MHz
+2023-04-06T19:50:16.953961 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_tx=2560.0 MHz
+2023-04-06T19:50:16.953968 [PHY    ] [I] [    0] Cell Search: Setting Cell search state
+2023-04-06T19:50:16.971175 [PHY    ] [I] [    0] SYNC:  Searching for cell...
+2023-04-06T19:50:17.590497 [PHY    ] [I] [    0] SYNC:  PSS/SSS detected: Mode=FDD, PCI=1, CFO=-0.2 KHz, CP=Normal  
+2023-04-06T19:50:17.656736 [PHY    ] [I] [    0] SYNC:  MIB Decoded: Mode=FDD, PCI=1, PRB=50, Ports=1, CFO=-0.2 KHz
+2023-04-06T19:50:17.656818 [RLC    ] [I] BCCH BCH message received.
+    0000: 60 0c 00
+2023-04-06T19:50:17.656824 [RRC    ] [I] BCCH-BCH - Rx MIB (3 B)
+2023-04-06T19:50:17.657021 [PHY    ] [I] [    0] Cell Search: Found cell with PCI=1 with 50 PRB
+2023-04-06T19:50:17.657022 [PHY    ] [I] [    0] Cell Search: No more frequencies in the current EARFCN set
+2023-04-06T19:50:17.657063 [MAC    ] [I] [    2] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:17.657064 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:17.657075 [RRC    ] [I] FSM "phy_controller" - PHY cell search completed. Found cell {pci=1, dl_earfcn=3350}
+2023-04-06T19:50:17.657082 [RRC    ] [I] FSM "phy_controller" - transition detected - searching_cell -> unknown_st (cause: cell_srch_res)
+2023-04-06T19:50:17.657083 [RRC    ] [I] Proc "Cell Search" - Cell found in this frequency. Setting new serving cell EARFCN=3350 PCI=1 ...
+2023-04-06T19:50:17.657089 [RRC    ] [I] Adding neighbour cell {cell_id: 0x0, pci: 1, dl_earfcn: 3350, rsrp=+nan, cfo=-205.0}, nof_neighbours=1
+2023-04-06T19:50:17.657093 [RRC    ] [I] Setting serving cell {cell_id: 0x0, pci: 1, dl_earfcn: 3350, rsrp=+nan, cfo=-205.0}, nof_neighbours=0
+2023-04-06T19:50:17.657098 [RRC    ] [I] FSM "phy_controller" - transition detected - unknown_st -> selecting_cell (cause: cell_sel_cmd)
+2023-04-06T19:50:17.657098 [RRC    ] [I] FSM "selecting_cell" - Starting for pci=1, earfcn=3350
+2023-04-06T19:50:17.657099 [PHY    ] [I] [    0] Cell Select: Going to IDLE
+2023-04-06T19:50:17.657429 [PHY    ] [I] [    0] Resetting PHY...
+2023-04-06T19:50:17.657430 [PHY    ] [I] [    0] PHY:   Set TA base: n_ta: 0, ta_usec: 0.0
+2023-04-06T19:50:17.659053 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:19.086139 [PHY    ] [I] [   58] SYNC:  Setting sampling rate 11.52 MHz
+2023-04-06T19:50:19.099516 [PHY    ] [I] [   60] SYNC:  Waiting for PSS while trying to decode MIB (0/100)
+2023-04-06T19:50:19.105343 [PHY    ] [I] [   61] SYNC:  Waiting for PSS while trying to decode MIB (1/100)
+2023-04-06T19:50:19.116300 [PHY    ] [I] [   62] SYNC:  Waiting for PSS while trying to decode MIB (2/100)
+2023-04-06T19:50:19.167825 [PHY    ] [I] [   71] SYNC:  DONE, SNR=25.3 dB, TTI=190, sfn_offset=3
+2023-04-06T19:50:19.167914 [PHY    ] [I] [   71] Cell Select: SFN synchronized. CAMPING...
+2023-04-06T19:50:19.168010 [MAC    ] [I] [   71] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:19.168012 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:19.168083 [RRC    ] [I] FSM "selecting_cell" - transition detected - wait_csel_res -> wait_in_sync (cause: cell_sel_res)
+2023-04-06T19:50:19.168086 [RRC    ] [I] FSM "selecting_cell" - transition detected - wait_in_sync -> in_sync_st (cause: in_sync_ev)
+2023-04-06T19:50:19.168089 [RRC    ] [I] FSM "selecting_cell" - Cell {pci=1, dl_earfcn=3350} successfully selected
+2023-04-06T19:50:19.168107 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:19.168109 [RRC    ] [I] Proc "Cell Search" - No valid measurement found for the serving cell. Wait for valid measurement...
+2023-04-06T19:50:19.168360 [MAC    ] [I] [   71] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:19.168361 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:19.168384 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:19.168385 [UE     ] [I] Interval less than 10ms, skipping measurement.
+2023-04-06T19:50:19.226881 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=29.02 dBm, cfo=-171.2 Hz
+2023-04-06T19:50:19.226885 [RRC    ] [I] Proc "Cell Search" - Cell has no SIB1. Obtaining SIB1...
+2023-04-06T19:50:19.226886 [RRC    ] [I] Proc "SI Acquire" - Starting SI Acquisition procedure for SIB1
+2023-04-06T19:50:19.226888 [MAC    ] [I] [  200] SCHED: Searching for DL dci for SI-RNTI window_st=225, window_len=1
+2023-04-06T19:50:19.226889 [RRC    ] [I] Proc "SI Acquire" - Instructed MAC to search for SIB1, win_start=225, win_len=1, period=20, sched_index=0
+2023-04-06T19:50:19.354574 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-51.4 Hz
+2023-04-06T19:50:19.382864 [PHY0   ] [I] [  225] PDCCH: cc=0, f=1A, cce= 0, L=2, riv=100, pid=0, mcs={2}, ndi={0}, tpc_pucch=0, snr=54.7 dB
+2023-04-06T19:50:19.382905 [PHY0   ] [I] [  225] PDSCH: cc=0, rnti=0xffff, nof_prb=3, nof_re=450, tbs={18}, mod={2}, rv={1}, crc={OK}, it=1.0, snr=54.7 dB
+2023-04-06T19:50:19.382908 [MAC    ] [I] [  225] DL 0 (TB 0):  newTX tbs=18, rv=1, ack=OK, ndi=0
+2023-04-06T19:50:19.382951 [RLC    ] [I] BCCH TXSCH message received.
+    0000: 40 40 04 03 00 07 00 19 b0 18 14 60 10 82 80 00
+    0010: 00 00
+2023-04-06T19:50:19.382954 [MAC    ] [I] [  225] SCHED: Searching for DL dci for SI-RNTI window_st=-1, window_len=-1
+2023-04-06T19:50:19.382964 [RRC    ] [I] BCCH-DLSCH - Rx systemInformationBlockType1 (18 B)
+2023-04-06T19:50:19.382964 [RRC    ] [I] Processing SIB1 (1/1)
+2023-04-06T19:50:19.382969 [RRC    ] [I] Proc "SI Acquire" - SIB1 acquired successfully
+2023-04-06T19:50:19.382970 [RRC    ] [I] SIB1 received, CellID=2817, si_window=20, sib2_period=16
+2023-04-06T19:50:19.388512 [RRC    ] [I] Proc "Cell Search" - Completed successfully
+2023-04-06T19:50:19.388514 [RRC    ] [I] Proc "PLMN Search" - completed PLMN search
+2023-04-06T19:50:19.388515 [RRC    ] [I] Proc "PLMN Search" - completed with success
+2023-04-06T19:50:19.388518 [NAS    ] [I] Proc "NAS PLMN Search" - Found PLMN:  Id=00101, TAC=7
+2023-04-06T19:50:19.388562 [NAS    ] [I] Selecting Home PLMN Id=00101
+2023-04-06T19:50:19.388565 [RRC    ] [I] PLMN Selected 00101
+2023-04-06T19:50:19.388566 [NAS    ] [I] Proc "NAS PLMN Search" - Completed with success
+2023-04-06T19:50:19.388568 [NAS    ] [I] Attach Request with cause mo-Data.
+2023-04-06T19:50:19.388571 [NAS    ] [I] Generating attach request
+2023-04-06T19:50:19.388573 [NAS    ] [I] Generating PDN Connectivity Request
+2023-04-06T19:50:19.388575 [NAS    ] [I] Requesting IMSI attach (IMSI=001010123456789)
+2023-04-06T19:50:19.388577 [RRC    ] [I] Proc "Connection Request" - Initiation of Connection establishment procedure
+2023-04-06T19:50:19.388579 [RRC    ] [I] Proc "Cell Selection" - Starting...
+2023-04-06T19:50:19.388580 [RRC    ] [I] Proc "Cell Selection" - Current neighbor cells: []
+2023-04-06T19:50:19.388580 [RRC    ] [I] Proc "Cell Selection" - Current PHY state: in-sync
+2023-04-06T19:50:19.388581 [RRC    ] [I] Proc "Cell Selection" - Cell selection criteria: not available
+2023-04-06T19:50:19.388587 [RRC    ] [I] Proc "Cell Selection" - Current serving cell: {cell_id: 0x19b01, pci: 1, dl_earfcn: 3350, rsrp=-11.3, cfo=-51.4}
+2023-04-06T19:50:19.388588 [RRC    ] [I] Proc "Cell Selection" - PHY is camping on serving cell, but SIBs need to be acquired
+2023-04-06T19:50:19.388589 [RRC    ] [I] Proc "Serving Cell Configuration" - Starting a Serving Cell Configuration Procedure
+2023-04-06T19:50:19.388589 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB1
+2023-04-06T19:50:19.388590 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has no SIB2. Obtaining SIB2
+2023-04-06T19:50:19.388590 [RRC    ] [I] Proc "SI Acquire" - Starting SI Acquisition procedure for SIB2
+2023-04-06T19:50:19.388592 [MAC    ] [I] [  226] SCHED: Searching for DL dci for SI-RNTI window_st=320, window_len=20
+2023-04-06T19:50:19.388593 [RRC    ] [I] Proc "SI Acquire" - Instructed MAC to search for SIB2, win_start=320, win_len=20, period=16, sched_index=0
+2023-04-06T19:50:19.486218 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-11.1 Hz
+2023-04-06T19:50:19.637246 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-2.1 Hz
+2023-04-06T19:50:19.762629 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.4 Hz
+2023-04-06T19:50:19.877740 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.1 Hz
+2023-04-06T19:50:19.954037 [MAC    ] [I] [  312] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:19.954039 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:19.954061 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:19.988511 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:20.045896 [PHY0   ] [I] [  329] PDCCH: cc=0, f=1A, cce= 0, L=2, riv=100, pid=0, mcs={7}, ndi={0}, tpc_pucch=0, snr=136.2 dB
+2023-04-06T19:50:20.045964 [PHY0   ] [I] [  329] PDSCH: cc=0, rnti=0xffff, nof_prb=3, nof_re=450, tbs={41}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=136.2 dB
+2023-04-06T19:50:20.045967 [MAC    ] [I] [  329] DL 0 (TB 0):  newTX tbs=41, rv=0, ack=OK, ndi=0
+2023-04-06T19:50:20.046058 [RLC    ] [I] BCCH TXSCH message received.
+    0000: 00 80 0c e1 bf 78 88 00 ca 11 e0 01 00 00 08 01
+    0010: 82 99 45 ab 9c 30 c6 a6 cc c1 c2 14 62 d8 4e a5
+2023-04-06T19:50:20.046078 [MAC    ] [I] [  329] SCHED: Searching for DL dci for SI-RNTI window_st=-1, window_len=-1
+2023-04-06T19:50:20.046093 [RRC    ] [I] BCCH-DLSCH - Rx systemInformation (41 B)
+2023-04-06T19:50:20.046093 [RRC    ] [I] Processing SIB2 (0/2)
+2023-04-06T19:50:20.046096 [RRC    ] [I] SIB2 received
+2023-04-06T19:50:20.046096 [MAC    ] [I] [  329] Setting configuration
+2023-04-06T19:50:20.046097 [MAC    ] [I] [  329] BSR:   Configured timer reTX 2560 ms
+2023-04-06T19:50:20.046099 [RRC    ] [I] Setting PHY config for cc_idx=0
+2023-04-06T19:50:20.046101 [PHY    ] [I] [  329] Setting configuration
+2023-04-06T19:50:20.046108 [RRC    ] [I] Set RACH ConfigCommon: NofPreambles=52, ResponseWindow=10, ContentionResolutionTimer=64 ms
+2023-04-06T19:50:20.046108 [RRC    ] [I] Set PUSCH ConfigCommon: P0_pusch=0.000000, DMRS cs=0, delta_ss=0, N_sb=1
+2023-04-06T19:50:20.046109 [RRC    ] [I] Set PUCCH ConfigCommon: DeltaShift=1, CyclicShift=0, N1=0, NRB=1
+2023-04-06T19:50:20.046109 [RRC    ] [I] Set PRACH ConfigCommon: SeqIdx=128, HS=no, FreqOffset=4, ZC=5, ConfigIndex=3
+2023-04-06T19:50:20.046111 [RRC    ] [I] Set Constants and Timers: N310=1, N311=1, t300=2000, t301=100, t310=200, t311=10000
+2023-04-06T19:50:20.046113 [RRC    ] [I] Proc "SI Acquire" - SIB2 acquired successfully
+2023-04-06T19:50:20.046113 [RRC    ] [I] Processing SIB3 (1/2)
+2023-04-06T19:50:20.046114 [RRC    ] [I] SIB3 received
+2023-04-06T19:50:20.046257 [PHY    ] [I] [  329] Setting new PHY configuration cc_idx=0...
+2023-04-06T19:50:20.046259 [PHY    ] [I] [  329] PRACH: cell.id=1, configIdx=3, rootSequence=128, zeroCorrelationConfig=5, freqOffset=4
+2023-04-06T19:50:20.053435 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB3
+2023-04-06T19:50:20.053437 [RRC    ] [I] Proc "Serving Cell Configuration" - Serving Cell Configuration Procedure has finished successfully
+2023-04-06T19:50:20.053440 [RRC    ] [I] Proc "Cell Selection" - Completed with success.
+2023-04-06T19:50:20.053443 [RRC    ] [I] Setting default PHY config (common and dedicated)
+2023-04-06T19:50:20.053445 [PHY    ] [I] [  330] Setting configuration
+2023-04-06T19:50:20.053447 [RRC    ] [I] Setting MAC default configuration
+2023-04-06T19:50:20.053448 [MAC    ] [I] [  330] Setting configuration
+2023-04-06T19:50:20.053449 [MAC    ] [I] [  330] BSR:   Configured timer reTX 2560 ms
+2023-04-06T19:50:20.053451 [RRC    ] [I] Set MAC main config: harq-MaxReTX=5, bsr-TimerReTX=2560, bsr-TimerPeriodic=-1, SR disabled (dsr-TransMax=0)
+2023-04-06T19:50:20.053452 [RRC    ] [I] Proc "Connection Request" - Configuring serving cell...
+2023-04-06T19:50:20.053453 [RRC    ] [I] Proc "Serving Cell Configuration" - Starting a Serving Cell Configuration Procedure
+2023-04-06T19:50:20.053453 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB1
+2023-04-06T19:50:20.053454 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB2
+2023-04-06T19:50:20.053454 [RRC    ] [I] SIB2 received
+2023-04-06T19:50:20.053455 [MAC    ] [I] [  330] Setting configuration
+2023-04-06T19:50:20.053456 [MAC    ] [I] [  330] BSR:   Configured timer reTX 2560 ms
+2023-04-06T19:50:20.053457 [RRC    ] [I] Setting PHY config for cc_idx=0
+2023-04-06T19:50:20.053458 [PHY    ] [I] [  330] Setting configuration
+2023-04-06T19:50:20.053459 [RRC    ] [I] Set RACH ConfigCommon: NofPreambles=52, ResponseWindow=10, ContentionResolutionTimer=64 ms
+2023-04-06T19:50:20.053460 [RRC    ] [I] Set PUSCH ConfigCommon: P0_pusch=0.000000, DMRS cs=0, delta_ss=0, N_sb=1
+2023-04-06T19:50:20.053460 [RRC    ] [I] Set PUCCH ConfigCommon: DeltaShift=1, CyclicShift=0, N1=0, NRB=1
+2023-04-06T19:50:20.053461 [RRC    ] [I] Set PRACH ConfigCommon: SeqIdx=128, HS=no, FreqOffset=4, ZC=5, ConfigIndex=3
+2023-04-06T19:50:20.053463 [RRC    ] [I] Set Constants and Timers: N310=1, N311=1, t300=2000, t301=100, t310=200, t311=10000
+2023-04-06T19:50:20.053463 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB3
+2023-04-06T19:50:20.053464 [RRC    ] [I] Proc "Serving Cell Configuration" - Serving Cell Configuration Procedure has finished successfully
+2023-04-06T19:50:20.053472 [RRC    ] [I] SRB0 - Tx rrcConnectionRequest (6 B)
+2023-04-06T19:50:20.053474 [RLC    ] [I] SRB0 Tx SDU, queue size=1, bytes=6
+    0000: 55 fd 36 b4 d9 08
+2023-04-06T19:50:20.053475 [RRC    ] [I] Proc "Connection Request" - Waiting for RRCConnectionSetup/Reject or expiry
+2023-04-06T19:50:20.059265 [MAC    ] [I] [  331] SR:    PUCCH not configured. Starting RA procedure
+2023-04-06T19:50:20.059267 [MAC    ] [I] [  331] RA:    INIT:   Starting PRACH by MAC order
+2023-04-06T19:50:21.305648 [PHY    ] [I] [  333] Finished setting new PRACH configuration.
+2023-04-06T19:50:21.305661 [PHY    ] [I] [  333] Setting new PHY configuration cc_idx=0...
+2023-04-06T19:50:21.305663 [PHY    ] [I] [  333] Setting new PHY configuration cc_idx=0...
+2023-04-06T19:50:21.305673 [PHY    ] [I] [  333] PHY:   Set TA base: n_ta: 0, ta_usec: 0.0
+2023-04-06T19:50:21.305687 [MAC    ] [W] [  331] proc_time: detected long duration=1246ms
+2023-04-06T19:50:21.305692 [MAC    ] [I] [  331] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:21.305695 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:21.305763 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:21.332300 [PHY    ] [I] [  337] PRACH: Transmitted preamble=30, tti_tx=341, CFO=-0.00 KHz, nof_sf=1, target_power=-104.0 dBm
+2023-04-06T19:50:21.332349 [MAC    ] [I] [  337] RA:    PDCCH:  seq=30, ra-rnti=0x2, ra-tti=341, f_id=0
+2023-04-06T19:50:21.363694 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:21.402787 [PHY0   ] [I] [  346] PDCCH: cc=0, f=1A, cce= 0, L=2, riv=100, pid=0, mcs={1}, ndi={0}, tpc_pucch=0, snr=140.4 dB
+2023-04-06T19:50:21.402832 [PHY0   ] [I] [  346] PDSCH: cc=0, rnti=0x2, nof_prb=3, nof_re=450, tbs={11}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=140.4 dB
+2023-04-06T19:50:21.402834 [PHY    ] [I] [  346] PHY:   Set TA RAR: ta_cmd: 0, n_ta: 0, ta_usec: 0.0
+2023-04-06T19:50:21.402836 [MAC    ] [I] [  346] RA:    Rx:     RAPID=30, TA=0, T-CRNTI=0x46
+2023-04-06T19:50:21.413937 [RLC    ] [I] SRB0 Tx Transparent Mode PDU, queue size=0, bytes=0
+    0000: 55 fd 36 b4 d9 08
+2023-04-06T19:50:21.413956 [MAC    ] [I] [  347] UL LCID=0 len=6
+2023-04-06T19:50:21.413957 [MAC    ] [I] [  347] UL 0:  New TX for Msg3, RV=0, TBS=7
+2023-04-06T19:50:21.414021 [MAC    ] [I] [  348] RA:    ConRes: Starting ContentionResolutionTimer=64 ms
+2023-04-06T19:50:21.414065 [PHY0   ] [I] [  348] PUSCH: cc=0, tti_tx=352, rnti=0x46, rb=(2,4), nof_re=432, tbs=7, mod=2, rv=0
+2023-04-06T19:50:21.465416 [PHY0   ] [I] [  356] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+2023-04-06T19:50:21.471291 [PHY1   ] [I] [  357] PDCCH: cc=0, f=1A, cce= 0, L=0, riv=100, pid=0, mcs={6}, ndi={1}, tpc_pucch=0, snr=141.1 dB
+2023-04-06T19:50:21.471306 [MAC    ] [I] [  357] Considering NDI in pid=0 to be toggled for first Temporal C-RNTI
+2023-04-06T19:50:21.471356 [PHY1   ] [I] [  357] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={32}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=141.1 dB
+2023-04-06T19:50:21.471361 [MAC    ] [I] [  357] DL 0 (TB 0):  newTX tbs=32, rv=0, ack=OK, ndi=1
+2023-04-06T19:50:21.471467 [PHY1   ] [I] [  357] PUCCH: cc=0, tti_tx=361, rnti=0x46, f=1a, n_pucch=12, ack=1
+2023-04-06T19:50:21.471474 [MAC    ] [I] [  357] DL CON_RES: id=0x55fd36b4d908 LCID=0 len=20 PAD: len=2
+2023-04-06T19:50:21.471508 [RRC    ] [I] SRB0 - Rx rrcConnectionSetup (20 B)
+2023-04-06T19:50:21.471542 [RRC    ] [I] Proc "Connection Setup" - Starting...
+2023-04-06T19:50:21.471543 [RRC    ] [I] Applying PHY config dedicated
+2023-04-06T19:50:21.471544 [RRC    ] [I] Set cqi-PUCCH-ResourceIndex=0, cqi-pmi-ConfigIndex=38, cqi-FormatIndicatorPeriodic=0
+2023-04-06T19:50:21.471544 [RRC    ] [I] Set PHY config ded: SR-n_pucch=0, SR-ConfigIndex=15
+2023-04-06T19:50:21.471545 [RRC    ] [I] Setting PHY config for cc_idx=0
+2023-04-06T19:50:21.471546 [PHY    ] [I] [  357] Setting configuration
+2023-04-06T19:50:21.471572 [RRC    ] [I] Applying MAC config dedicated
+2023-04-06T19:50:21.471573 [MAC    ] [I] [  357] Setting configuration
+2023-04-06T19:50:21.471574 [MAC    ] [I] [  357] BSR:   Configured timer periodic 20 ms
+2023-04-06T19:50:21.471575 [MAC    ] [I] [  357] BSR:   Configured timer reTX 320 ms
+2023-04-06T19:50:21.471576 [MAC    ] [I] [  357] PHR:   Configured timer periodic 50 ms
+2023-04-06T19:50:21.471576 [MAC    ] [I] [  357] SR:    Set dsr_transmax=0
+2023-04-06T19:50:21.471578 [RRC    ] [I] Set MAC main config: harq-MaxReTX=4, bsr-TimerReTX=320, bsr-TimerPeriodic=20, SR enabled (dsr-TransMax=64)
+2023-04-06T19:50:21.471578 [RRC    ] [I] Set MAC PHR config: periodicPHR-Timer=50, prohibitPHR-Timer=0, dl-PathlossChange=3
+2023-04-06T19:50:21.471582 [PDCP   ] [I] Init SRB1 with bearer ID: 1
+2023-04-06T19:50:21.471582 [PDCP   ] [I] SN len bits: 5, SN len bytes: 1, reordering window: 0, Maximum SN: 31, discard timer: 0 ms
+2023-04-06T19:50:21.471583 [PDCP   ] [I] Status Report Required: False
+2023-04-06T19:50:21.471584 [PDCP   ] [I] Add SRB1 (lcid=1, sn_len=5bits)
+2023-04-06T19:50:21.471664 [PHY    ] [I] [  357] Setting new PHY configuration cc_idx=0...
+2023-04-06T19:50:21.471815 [RLC    ] [I] SRB1 configured: t_poll_retx=45, poll_pdu=-1, poll_byte=-1, max_retx_thresh=4, t_reordering=35, t_status_prohibit=0
+2023-04-06T19:50:21.471817 [RLC    ] [I] Added LTE radio bearer with LCID 1 in Acknowledged Mode
+2023-04-06T19:50:21.471818 [MAC    ] [I] [  357] Logical Channel Setup: LCID=1, LCG=0, priority=1, PBR=-1, BSD=0ms, bucket_size=0
+2023-04-06T19:50:21.471824 [RRC    ] [I] Added radio bearer SRB1
+2023-04-06T19:50:21.471838 [MAC    ] [I] [  357] RA:    ConRes: Random Access Complete.     c-rnti=0x46, ta=0
+2023-04-06T19:50:21.471849 [RRC    ] [I] SRB1 - Tx rrcConnectionSetupComplete (24 B)
+2023-04-06T19:50:21.471852 [PDCP   ] [I] TX SRB1 PDU, SN=0, integrity=none, encryption=none
+    0000: 00 20 00 2a 0e 82 e2 10 12 20 20 20 64 a8 ed 30
+    0010: 05 e0 e0 00 08 04 03 a0 22 00 00 00 00
+2023-04-06T19:50:21.471854 [RLC    ] [I] SRB1 Tx SDU (29 B, tx_sdu_queue_len=1)
+    0000: 00 20 00 2a 0e 82 e2 10 12 20 20 20 64 a8 ed 30
+    0010: 05 e0 e0 00 08 04 03 a0 22 00 00 00 00
+2023-04-06T19:50:21.471856 [RRC    ] [I] Finished Connection Setup successfully
+2023-04-06T19:50:21.477536 [MAC    ] [I] [  358] SR:    Signalling PHY sr_counter=1
+2023-04-06T19:50:21.477546 [RRC    ] [I] Proc "Connection Request" - Finished connection request procedure successfully.
+2023-04-06T19:50:21.488699 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:21.525804 [PHY0   ] [I] [  366] PDCCH: cc=0, f=1A, cce= 0, L=0, riv=100, pid=0, mcs={6}, ndi={1}, tpc_pucch=0, snr=140.0 dB
+2023-04-06T19:50:21.525808 [MAC    ] [I] [  366] DL PID 0: Received duplicate TB0. Discarding and retransmitting ACK (n_retx=2, reset=no)
+2023-04-06T19:50:21.525896 [PHY0   ] [I] [  366] PUCCH: cc=0, tti_tx=370, rnti=0x46, f=1a, n_pucch=12, ack=1
+2023-04-06T19:50:21.585167 [PHY0   ] [I] [  376] PUCCH: cc=0, tti_tx=380, rnti=0x46, f=1, n_pucch=0, sr=yes
+2023-04-06T19:50:21.611479 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:21.635388 [PHY0   ] [I] [  384] PDCCH: cc=0, f=0, cce= 0, L=1, riv=347, mcs=0, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=141.9 dB
+2023-04-06T19:50:21.635413 [RLC    ] [I] SRB1 Tx PDU SN=0 (31 B)
+    0000: a0 00 00 20 00 2a 0e 82 e2 10 12 20 20 20 64 a8
+    0010: ed 30 05 e0 e0 00 08 04 03 a0 22 00 00 00 00
+2023-04-06T19:50:21.635420 [MAC    ] [I] [  384] UL PHR: ph=30.0 LCID=1 len=31 LBSR: b=0 0 0 0 
+2023-04-06T19:50:21.635421 [MAC    ] [I] [  384] UL 4:  New TX, RV=0, TBS=157
+2023-04-06T19:50:21.635773 [PHY0   ] [I] [  384] PUSCH: cc=0, tti_tx=388, rnti=0x46, rb=(2,46), nof_re=6480, tbs=157, mod=2, rv=0
+2023-04-06T19:50:21.689704 [PHY0   ] [I] [  392] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+2023-04-06T19:50:21.695320 [PHY1   ] [I] [  393] PDCCH: cc=0, f=1A, cce= 0, L=0, riv=100, pid=0, mcs={0}, ndi={0}, tpc_pucch=0, snr=142.0 dB
+2023-04-06T19:50:21.695352 [PHY1   ] [I] [  393] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={7}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=142.0 dB
+2023-04-06T19:50:21.695357 [MAC    ] [I] [  393] DL 0 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=0
+2023-04-06T19:50:21.695362 [MAC    ] [I] [  393] DL LCID=1 len=2 PAD: len=2
+2023-04-06T19:50:21.695367 [RLC    ] [I] SRB1 Rx Status PDU: ACK_SN = 1, N_nack = 0
+2023-04-06T19:50:21.695448 [PHY1   ] [I] [  393] PUCCH: cc=0, tti_tx=397, rnti=0x46, f=1a, n_pucch=12, ack=1
+2023-04-06T19:50:21.706564 [PHY1   ] [I] [  395] PDCCH: cc=0, f=1, cce= 0, L=1, rbg=0x18000, pid=1, mcs={4}, ndi={1}, tpc_pucch=1, snr=141.1 dB
+2023-04-06T19:50:21.706600 [PHY1   ] [I] [  395] PDSCH: cc=0, rnti=0x46, nof_prb=6, nof_re=900, tbs={51}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=141.1 dB
+2023-04-06T19:50:21.706605 [MAC    ] [I] [  395] DL 1 (TB 0):  newTX tbs=51, rv=0, ack=OK, ndi=1
+2023-04-06T19:50:21.706630 [MAC    ] [I] [  395] DL LCID=1 len=46 PAD: len=2
+2023-04-06T19:50:21.706633 [RLC    ] [I] SRB1 Rx data PDU SN=0 (44 B)
+    0000: 00 08 01 20 3a 90 00 f2 e4 40 6e f3 da 21 95 36
+    0010: ed 34 71 5c b7 86 38 81 f4 d1 71 12 b8 d4 80 08
+2023-04-06T19:50:21.706636 [RLC    ] [I] SRB1 Status packet requested through polling bit
+2023-04-06T19:50:21.706637 [RLC    ] [I] SRB1 Rx SDU (44 B)
+    0000: 00 08 01 20 3a 90 00 f2 e4 40 6e f3 da 21 95 36
+    0010: ed 34 71 5c b7 86 38 81 f4 d1 71 12 b8 d4 80 08
+2023-04-06T19:50:21.706640 [PDCP   ] [I] SRB1 Rx PDU SN=0 (44 B, integrity=none, encryption=none)
+    0000: 00 08 01 20 3a 90 00 f2 e4 40 6e f3 da 21 95 36
+    0010: ed 34 71 5c b7 86 38 81 f4 d1 71 12 b8 d4 80 08
+2023-04-06T19:50:21.706647 [RRC    ] [I] SRB1 - Rx dlInformationTransfer (39 B)
+2023-04-06T19:50:21.706649 [NAS    ] [I] DL SRB1 PDU
+    0000: 07 52 00 1e 5c 88 0d de 7b 44 32 a6 dd a6 8e 2b
+    0010: 96 f0 c7 10 3e 9a 2e 22 57 1a 90 01 1e 4d aa 3e
+2023-04-06T19:50:21.706649 [NAS    ] [I] DL SRB1 Decrypted PDU
+    0000: 07 52 00 1e 5c 88 0d de 7b 44 32 a6 dd a6 8e 2b
+    0010: 96 f0 c7 10 3e 9a 2e 22 57 1a 90 01 1e 4d aa 3e
+2023-04-06T19:50:21.706650 [NAS    ] [I] Received Authentication Request
+2023-04-06T19:50:21.706651 [NAS    ] [I] MCC=61441, MNC=65281
+2023-04-06T19:50:21.706658 [NAS    ] [I] Network authentication successful
+2023-04-06T19:50:21.706660 [NAS    ] [I] Sending Authentication Response
+2023-04-06T19:50:21.706666 [RRC    ] [I] SRB1 - Tx ulInformationTransfer (14 B)
+2023-04-06T19:50:21.706668 [PDCP   ] [I] TX SRB1 PDU, SN=1, integrity=none, encryption=none
+    0000: 01 48 01 60 ea 61 03 c9 b5 47 d3 45 c4 48 a0 00
+    0010: 00 00 00
+2023-04-06T19:50:21.706669 [RLC    ] [I] SRB1 Tx SDU (19 B, tx_sdu_queue_len=1)
+    0000: 01 48 01 60 ea 61 03 c9 b5 47 d3 45 c4 48 a0 00
+    0010: 00 00 00
+2023-04-06T19:50:21.706670 [NAS    ] [I] Generated k_asme:
+    0000: b0 58 8b 05 10 ac 40 44 8c 6e bd 45 4a af 50 ed
+    0010: 5b 98 33 94 21 fa 5c e4 65 ae 9a 3a c6 1e 1d e5
+2023-04-06T19:50:21.706702 [PHY1   ] [I] [  395] PUCCH: cc=0, tti_tx=399, rnti=0x46, f=1a, n_pucch=12, ack=1
+2023-04-06T19:50:21.711946 [MAC    ] [I] [  396] SR:    Signalling PHY sr_counter=1
+2023-04-06T19:50:21.712038 [PHY0   ] [I] [  396] PUCCH: cc=0, tti_tx=400, rnti=0x46, f=1, n_pucch=0, sr=yes
+2023-04-06T19:50:21.717519 [PHY1   ] [I] [  397] PUCCH: cc=0, tti_tx=401, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:21.734297 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:21.756899 [PHY0   ] [I] [  404] PDCCH: cc=0, f=0, cce= 0, L=1, riv=402, mcs=22, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=141.5 dB
+2023-04-06T19:50:21.756922 [RLC    ] [I] SRB1 Tx status PDU - ACK_SN = 1, N_nack = 0
+2023-04-06T19:50:21.756927 [RLC    ] [I] SRB1 Tx PDU SN=1 (21 B)
+    0000: a0 01 01 48 01 60 ea 61 03 c9 b5 47 d3 45 c4 48
+    0010: a0 00 00 00 00
+2023-04-06T19:50:21.756932 [MAC    ] [I] [  404] UL LCID=1 len=2 LCID=1 len=21 LBSR: b=0 0 0 0 
+2023-04-06T19:50:21.756933 [MAC    ] [I] [  404] UL 0:  New TX, RV=0, TBS=517
+2023-04-06T19:50:21.757094 [PHY0   ] [I] [  404] PUSCH: cc=0, tti_tx=408, rnti=0x46, rb=(2,10), nof_re=1296, tbs=517, mod=4, rv=0
+2023-04-06T19:50:21.805765 [PHY0   ] [I] [  412] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+2023-04-06T19:50:21.816578 [PHY1   ] [I] [  413] PDCCH: cc=0, f=1, cce= 7, L=0, rbg=0x10000, pid=0, mcs={0}, ndi={1}, tpc_pucch=1, snr=141.9 dB
+2023-04-06T19:50:21.816612 [PHY1   ] [I] [  413] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={7}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=141.9 dB
+2023-04-06T19:50:21.816617 [MAC    ] [I] [  413] DL 0 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=1
+2023-04-06T19:50:21.816681 [MAC    ] [I] [  413] DL LCID=1 len=2 PAD: len=2
+2023-04-06T19:50:21.816687 [RLC    ] [I] SRB1 Rx Status PDU: ACK_SN = 2, N_nack = 0
+2023-04-06T19:50:21.816725 [PHY1   ] [I] [  413] PUCCH: cc=0, tti_tx=417, rnti=0x46, f=1a, n_pucch=19, ack=1
+2023-04-06T19:50:21.822085 [PHY0   ] [I] [  414] PDCCH: cc=0, f=1, cce= 4, L=0, rbg=0x10000, pid=1, mcs={5}, ndi={0}, tpc_pucch=1, snr=141.7 dB
+2023-04-06T19:50:21.822122 [PHY0   ] [I] [  414] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={28}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=141.7 dB
+2023-04-06T19:50:21.822126 [MAC    ] [I] [  414] DL 1 (TB 0):  newTX tbs=28, rv=0, ack=OK, ndi=0
+2023-04-06T19:50:21.822217 [MAC    ] [I] [  414] DL LCID=1 len=23 PAD: len=2
+2023-04-06T19:50:21.822220 [RLC    ] [I] SRB1 Rx data PDU SN=1 (21 B)
+    0000: 01 08 00 69 bb cc 55 91 68 00 3a e8 08 00 17 83
+    0010: 80 00 00 00 00
+2023-04-06T19:50:21.822222 [RLC    ] [I] SRB1 Status packet requested through polling bit
+2023-04-06T19:50:21.822224 [RLC    ] [I] SRB1 Rx SDU (21 B)
+    0000: 01 08 00 69 bb cc 55 91 68 00 3a e8 08 00 17 83
+    0010: 80 00 00 00 00
+2023-04-06T19:50:21.822226 [PDCP   ] [I] SRB1 Rx PDU SN=1 (21 B, integrity=none, encryption=none)
+    0000: 01 08 00 69 bb cc 55 91 68 00 3a e8 08 00 17 83
+    0010: 80 00 00 00 00
+2023-04-06T19:50:21.822227 [PHY0   ] [I] [  414] PUCCH: cc=0, tti_tx=418, rnti=0x46, f=1a, n_pucch=16, ack=1
+2023-04-06T19:50:21.822233 [RRC    ] [I] SRB1 - Rx dlInformationTransfer (16 B)
+2023-04-06T19:50:21.822235 [NAS    ] [I] DL SRB1 PDU
+    0000: 37 79 8a b2 2d 00 07 5d 01 00 02 f0 70
+2023-04-06T19:50:21.822235 [NAS    ] [I] DL SRB1 Decrypted PDU
+    0000: 37 79 8a b2 2d 00 07 5d 01 00 02 f0 70
+2023-04-06T19:50:21.822236 [NAS    ] [I] Received Security Mode Command ksi: 0, eea: EEA0, eia: 128-EIA1
+2023-04-06T19:50:21.822246 [NAS    ] [I] NAS encryption key - k_nas_enc
+    0000: 9a e4 2e 74 5f 13 99 36 cd 17 e2 43 13 c8 72 03
+    0010: da db 60 a9 0d b0 26 b4 99 da df 8f af 7b dc df
+2023-04-06T19:50:21.822246 [NAS    ] [I] NAS integrity key - k_nas_int
+    0000: bd 1b 2a 23 b5 9d 32 25 89 5a bf 68 1b eb 23 24
+    0010: 49 e7 4e 24 10 3f 6e 36 3a ec b4 20 cf 18 20 1c
+2023-04-06T19:50:21.822394 [NAS    ] [I] Integrity check ok. Local: count=0, Received: count=0  [79 8a b2 2d]
+2023-04-06T19:50:21.822518 [NAS    ] [I] Sending Security Mode Complete ctxt_base.tx_count=0, RB=SRB1
+2023-04-06T19:50:21.822523 [RRC    ] [I] SRB1 - Tx ulInformationTransfer (11 B)
+2023-04-06T19:50:21.822525 [PDCP   ] [I] TX SRB1 PDU, SN=2, integrity=none, encryption=none
+    0000: 02 48 01 08 e6 2f df e2 60 00 eb c0 00 00 00 00
+2023-04-06T19:50:21.822527 [RLC    ] [I] SRB1 Tx SDU (16 B, tx_sdu_queue_len=1)
+    0000: 02 48 01 08 e6 2f df e2 60 00 eb c0 00 00 00 00
+2023-04-06T19:50:21.827833 [MAC    ] [I] [  415] SR:    Signalling PHY sr_counter=1
+2023-04-06T19:50:21.833415 [PHY0   ] [I] [  416] PUCCH: cc=0, tti_tx=420, rnti=0x46, f=1, n_pucch=0, sr=yes
+2023-04-06T19:50:21.855901 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:21.878212 [PHY0   ] [I] [  424] PDCCH: cc=0, f=0, cce= 4, L=0, riv=402, mcs=22, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=142.4 dB
+2023-04-06T19:50:21.878235 [RLC    ] [I] SRB1 Tx status PDU - ACK_SN = 2, N_nack = 0
+2023-04-06T19:50:21.878240 [RLC    ] [I] SRB1 Tx PDU SN=2 (18 B)
+    0000: a0 02 02 48 01 08 e6 2f df e2 60 00 eb c0 00 00
+    0010: 00 00
+2023-04-06T19:50:21.878245 [MAC    ] [I] [  424] UL LCID=1 len=2 LCID=1 len=18 LBSR: b=0 0 0 0 
+2023-04-06T19:50:21.878246 [MAC    ] [I] [  424] UL 4:  New TX, RV=0, TBS=517
+2023-04-06T19:50:21.878385 [PHY0   ] [I] [  424] PUSCH: cc=0, tti_tx=428, rnti=0x46, rb=(2,10), nof_re=1296, tbs=517, mod=4, rv=0
+2023-04-06T19:50:21.928491 [PHY0   ] [I] [  432] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+2023-04-06T19:50:21.934319 [PHY1   ] [I] [  433] PDCCH: cc=0, f=1, cce= 7, L=0, rbg=0x10000, pid=0, mcs={0}, ndi={0}, tpc_pucch=1, snr=142.0 dB
+2023-04-06T19:50:21.934360 [PHY1   ] [I] [  433] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={7}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=142.0 dB
+2023-04-06T19:50:21.934367 [MAC    ] [I] [  433] DL 0 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=0
+2023-04-06T19:50:21.934470 [PHY1   ] [I] [  433] PUCCH: cc=0, tti_tx=437, rnti=0x46, f=1a, n_pucch=19, ack=1
+2023-04-06T19:50:21.934482 [MAC    ] [I] [  433] DL LCID=1 len=2 PAD: len=2
+2023-04-06T19:50:21.934486 [RLC    ] [I] SRB1 Rx Status PDU: ACK_SN = 3, N_nack = 0
+2023-04-06T19:50:21.940074 [PHY0   ] [I] [  434] PDCCH: cc=0, f=1, cce= 4, L=0, rbg=0x10000, pid=1, mcs={2}, ndi={1}, tpc_pucch=1, snr=142.0 dB
+2023-04-06T19:50:21.940119 [PHY0   ] [I] [  434] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={18}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=142.0 dB
+2023-04-06T19:50:21.940125 [MAC    ] [I] [  434] DL 1 (TB 0):  newTX tbs=18, rv=0, ack=OK, ndi=1
+2023-04-06T19:50:21.940221 [MAC    ] [I] [  434] DL LCID=1 len=10 PAD: len=5
+2023-04-06T19:50:21.940224 [RLC    ] [I] SRB1 Rx data PDU SN=2 (8 B)
+    0000: 02 30 00 20 01 64 0d de
+2023-04-06T19:50:21.940227 [RLC    ] [I] SRB1 Status packet requested through polling bit
+2023-04-06T19:50:21.940228 [RLC    ] [I] SRB1 Rx SDU (8 B)
+    0000: 02 30 00 20 01 64 0d de
+2023-04-06T19:50:21.940231 [PDCP   ] [I] SRB1 Rx PDU SN=2 (8 B, integrity=none, encryption=none)
+    0000: 02 30 00 20 01 64 0d de
+2023-04-06T19:50:21.940238 [RRC    ] [I] SRB1 - Rx securityModeCommand (3 B)
+2023-04-06T19:50:21.940240 [RRC    ] [I] Received Security Mode Command eea: EEA0, eia: 128-EIA2
+2023-04-06T19:50:21.940242 [USIM   ] [I] Generating AS Keys. NAS UL COUNT 0
+2023-04-06T19:50:21.940255 [PHY0   ] [I] [  434] PUCCH: cc=0, tti_tx=438, rnti=0x46, f=1a, n_pucch=16, ack=1
+2023-04-06T19:50:21.940264 [RRC    ] [I] RRC encryption key - k_rrc_enc
+    0000: f1 ff 37 16 d9 ad 35 27 06 b3 a4 44 6d 7b 72 e4
+    0010: 0f 62 4f 21 03 9e 65 98 dc 65 d6 57 9a f9 04 38
+2023-04-06T19:50:21.940265 [RRC    ] [I] RRC integrity key  - k_rrc_int
+    0000: 96 1d cc 04 4e 42 b5 b6 2d 08 7f 21 a7 43 b7 a2
+    0010: c3 5c dc 5c 2e a7 f8 df 01 5b 4b fa 5c e5 d8 05
+2023-04-06T19:50:21.940265 [RRC    ] [I] UP encryption key  - k_up_enc
+    0000: e7 c7 46 cc ac f3 cd 85 50 ab 7a 34 63 a5 e7 e5
+    0010: 2b eb 67 97 37 d3 b8 9b 8b 64 8d b0 a8 70 db 55
+2023-04-06T19:50:21.940266 [PDCP   ] [I] Configuring security with 128-EIA2 and EEA0
+2023-04-06T19:50:21.940271 [RRC    ] [I] SRB1 - Tx securityModeComplete (2 B)
+2023-04-06T19:50:21.940286 [PDCP   ] [I] TX SRB1 PDU, SN=3, integrity=tx/rx, encryption=none
+    0000: 03 28 00 b8 c1 12 83
+2023-04-06T19:50:21.940288 [RLC    ] [I] SRB1 Tx SDU (7 B, tx_sdu_queue_len=1)
+    0000: 03 28 00 b8 c1 12 83
+2023-04-06T19:50:21.945952 [MAC    ] [I] [  435] SR:    Signalling PHY sr_counter=1
+2023-04-06T19:50:21.954072 [MAC    ] [I] [  435] DL retx: 0.00 %, perpkt: 1.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:21.954075 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:21.954078 [RLC    ] [I] lcid=1, rx_rate_mbps=0.01 (real=0.00), tx_rate_mbps=0.01 (real=0.00)
+2023-04-06T19:50:21.954112 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:21.956993 [PHY0   ] [I] [  436] PUCCH: cc=0, tti_tx=440, rnti=0x46, f=1, n_pucch=0, sr=yes
+2023-04-06T19:50:21.964363 [PHY2   ] [I] [  437] PUCCH: cc=0, tti_tx=441, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:21.988079 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:22.011871 [PHY0   ] [I] [  444] PDCCH: cc=0, f=0, cce= 4, L=0, riv=402, mcs=22, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=142.1 dB
+2023-04-06T19:50:22.011904 [RLC    ] [I] SRB1 Tx status PDU - ACK_SN = 3, N_nack = 0
+2023-04-06T19:50:22.011909 [RLC    ] [I] SRB1 Tx PDU SN=3 (9 B)
+    0000: a0 03 03 28 00 b8 c1 12 83
+2023-04-06T19:50:22.011915 [MAC    ] [I] [  444] UL PHR: ph=30.0 LCID=1 len=2 LCID=1 len=9 LBSR: b=0 0 0 0 
+2023-04-06T19:50:22.011917 [MAC    ] [I] [  444] UL 0:  New TX, RV=0, TBS=517
+2023-04-06T19:50:22.012054 [PHY0   ] [I] [  444] PUSCH: cc=0, tti_tx=448, rnti=0x46, rb=(2,10), nof_re=1296, tbs=517, mod=4, rv=0
+2023-04-06T19:50:22.069893 [PHY0   ] [I] [  452] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+2023-04-06T19:50:22.075881 [PHY1   ] [I] [  453] PDCCH: cc=0, f=1, cce= 7, L=0, rbg=0x10000, pid=0, mcs={3}, ndi={1}, tpc_pucch=1, snr=141.7 dB
+2023-04-06T19:50:22.075932 [PHY1   ] [I] [  453] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={22}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=141.7 dB
+2023-04-06T19:50:22.075939 [MAC    ] [I] [  453] DL 0 (TB 0):  newTX tbs=22, rv=0, ack=OK, ndi=1
+2023-04-06T19:50:22.076044 [PHY1   ] [I] [  453] PUCCH: cc=0, tti_tx=457, rnti=0x46, f=1a, n_pucch=19, ack=1
+2023-04-06T19:50:22.076146 [MAC    ] [I] [  453] DL LCID=1 len=2 LCID=1 len=3 LCID=1 len=9 PAD: len=1
+2023-04-06T19:50:22.076151 [RLC    ] [I] SRB1 Rx Status PDU: ACK_SN = 4, N_nack = 0
+2023-04-06T19:50:22.076158 [RLC    ] [I] SRB1 Rx data PDU SN=3 (1 B)
+    0000: 03
+2023-04-06T19:50:22.076160 [RLC    ] [I] SRB1 Status packet requested through polling bit
+2023-04-06T19:50:22.076162 [RLC    ] [I] SRB1 Rx data PDU SN=4 (7 B)
+    0000: 38 00 00 d5 2d 2c 3e
+2023-04-06T19:50:22.076163 [RLC    ] [I] SRB1 Status packet requested through polling bit
+2023-04-06T19:50:22.076163 [RLC    ] [I] SRB1 Rx SDU (8 B)
+    0000: 03 38 00 00 d5 2d 2c 3e
+2023-04-06T19:50:22.076165 [PDCP   ] [I] SRB1 Rx PDU SN=3 (8 B, integrity=tx/rx, encryption=tx/rx)
+    0000: 03 38 00 00 d5 2d 2c 3e
+2023-04-06T19:50:22.076176 [RRC    ] [I] SRB1 - Rx ueCapabilityEnquiry (3 B)
+2023-04-06T19:50:22.076194 [RRC    ] [I] SRB1 - Tx ueCapabilityInformation (15 B)
+2023-04-06T19:50:22.076197 [PDCP   ] [I] TX SRB1 PDU, SN=4, integrity=tx/rx, encryption=tx/rx
+    0000: 04 38 01 00 b8 18 00 00 18 00 0f 30 20 80 00 00
+    0010: 11 c6 b2 e4
+2023-04-06T19:50:22.076199 [RLC    ] [I] SRB1 Tx SDU (20 B, tx_sdu_queue_len=1)
+    0000: 04 38 01 00 b8 18 00 00 18 00 0f 30 20 80 00 00
+    0010: 11 c6 b2 e4
+2023-04-06T19:50:22.085310 [MAC    ] [I] [  454] SR:    Signalling PHY sr_counter=1
+2023-04-06T19:50:22.096665 [PHY0   ] [I] [  456] PUCCH: cc=0, tti_tx=460, rnti=0x46, f=1, n_pucch=0, sr=yes
+2023-04-06T19:50:22.122775 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:22.146295 [PHY0   ] [I] [  464] PDCCH: cc=0, f=0, cce= 4, L=0, riv=402, mcs=22, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=142.1 dB
+2023-04-06T19:50:22.146331 [RLC    ] [I] SRB1 Tx status PDU - ACK_SN = 5, N_nack = 0
+2023-04-06T19:50:22.146338 [RLC    ] [I] SRB1 Tx PDU SN=4 (22 B)
+    0000: a0 04 04 38 01 00 b8 18 00 00 18 00 0f 30 20 80
+    0010: 00 00 11 c6 b2 e4
+2023-04-06T19:50:22.146343 [MAC    ] [I] [  464] UL LCID=1 len=2 LCID=1 len=22 LBSR: b=0 0 0 0 
+2023-04-06T19:50:22.146344 [MAC    ] [I] [  464] UL 4:  New TX, RV=0, TBS=517
+2023-04-06T19:50:22.146489 [PHY0   ] [I] [  464] PUSCH: cc=0, tti_tx=468, rnti=0x46, rb=(2,10), nof_re=1296, tbs=517, mod=4, rv=0
+2023-04-06T19:50:22.192699 [PHY0   ] [I] [  472] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+2023-04-06T19:50:22.198309 [PHY1   ] [I] [  473] PDCCH: cc=0, f=1, cce= 7, L=0, rbg=0x10000, pid=0, mcs={0}, ndi={0}, tpc_pucch=1, snr=141.4 dB
+2023-04-06T19:50:22.198343 [PHY1   ] [I] [  473] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={7}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=141.4 dB
+2023-04-06T19:50:22.198348 [MAC    ] [I] [  473] DL 0 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=0
+2023-04-06T19:50:22.198462 [MAC    ] [I] [  473] DL LCID=1 len=2 PAD: len=2
+2023-04-06T19:50:22.198467 [RLC    ] [I] SRB1 Rx Status PDU: ACK_SN = 5, N_nack = 0
+2023-04-06T19:50:22.198475 [PHY1   ] [I] [  473] PUCCH: cc=0, tti_tx=477, rnti=0x46, f=1a, n_pucch=19, ack=1
+2023-04-06T19:50:22.203919 [PHY0   ] [I] [  474] PDCCH: cc=0, f=1A, cce= 4, L=0, riv=100, pid=1, mcs={18}, ndi={0}, tpc_pucch=0, snr=142.4 dB
+2023-04-06T19:50:22.203953 [PHY0   ] [I] [  474] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={121}, mod={6}, rv={0}, crc={OK}, it=1.0, snr=142.4 dB
+2023-04-06T19:50:22.203958 [MAC    ] [I] [  474] DL 1 (TB 0):  newTX tbs=121, rv=0, ack=OK, ndi=0
+2023-04-06T19:50:22.203991 [MAC    ] [I] [  474] DL LCID=1 len=114 PAD: len=4
+2023-04-06T19:50:22.203994 [RLC    ] [I] SRB1 Rx data PDU SN=5 (112 B)
+    0000: 04 20 16 10 80 00 00 06 8b 02 80 12 89 df f8 c2
+    0010: 69 80 41 d0 80 4f 81 80 00 3c 44 00 01 c0 07 54
+2023-04-06T19:50:22.203996 [RLC    ] [I] SRB1 Status packet requested through polling bit
+2023-04-06T19:50:22.203997 [RLC    ] [I] SRB1 Rx SDU (112 B)
+    0000: 04 20 16 10 80 00 00 06 8b 02 80 12 89 df f8 c2
+    0010: 69 80 41 d0 80 4f 81 80 00 3c 44 00 01 c0 07 54
+2023-04-06T19:50:22.203999 [PDCP   ] [I] SRB1 Rx PDU SN=4 (112 B, integrity=tx/rx, encryption=tx/rx)
+    0000: 04 20 16 10 80 00 00 06 8b 02 80 12 89 df f8 c2
+    0010: 69 80 41 d0 80 4f 81 80 00 3c 44 00 01 c0 07 54
+2023-04-06T19:50:22.204026 [RRC    ] [I] SRB1 - Rx rrcConnectionReconfiguration (107 B)
+2023-04-06T19:50:22.204053 [PHY0   ] [I] [  474] PUCCH: cc=0, tti_tx=478, rnti=0x46, f=1a, n_pucch=16, ack=1
+2023-04-06T19:50:22.204078 [RRC    ] [I] Proc "Connection Reconfiguration" - Starting...
+2023-04-06T19:50:22.204116 [RRC    ] [I] Applying PHY config dedicated
+2023-04-06T19:50:22.204117 [RRC    ] [I] Set cqi-PUCCH-ResourceIndex=0, cqi-pmi-ConfigIndex=38, cqi-FormatIndicatorPeriodic=0
+2023-04-06T19:50:22.204118 [RRC    ] [I] Set PHY config ded: SR-n_pucch=0, SR-ConfigIndex=15
+2023-04-06T19:50:22.204118 [RRC    ] [I] Setting PHY config for cc_idx=0
+2023-04-06T19:50:22.204119 [PHY    ] [I] [  474] Setting configuration
+2023-04-06T19:50:22.204130 [RRC    ] [I] Applying MAC config dedicated
+2023-04-06T19:50:22.204130 [MAC    ] [I] [  474] Setting configuration
+2023-04-06T19:50:22.204132 [MAC    ] [I] [  474] BSR:   Configured timer periodic 20 ms
+2023-04-06T19:50:22.204132 [MAC    ] [I] [  474] BSR:   Configured timer reTX 320 ms
+2023-04-06T19:50:22.204133 [MAC    ] [I] [  474] PHR:   Configured timer periodic 50 ms
+2023-04-06T19:50:22.204134 [MAC    ] [I] [  474] SR:    Set dsr_transmax=64
+2023-04-06T19:50:22.204135 [RRC    ] [I] Set MAC main config: harq-MaxReTX=4, bsr-TimerReTX=320, bsr-TimerPeriodic=20, SR enabled (dsr-TransMax=64)
+2023-04-06T19:50:22.204135 [RRC    ] [I] Set MAC PHR config: periodicPHR-Timer=50, prohibitPHR-Timer=0, dl-PathlossChange=3
+2023-04-06T19:50:22.204138 [PDCP   ] [I] Init SRB2 with bearer ID: 2
+2023-04-06T19:50:22.204139 [PDCP   ] [I] SN len bits: 5, SN len bytes: 1, reordering window: 0, Maximum SN: 31, discard timer: 0 ms
+2023-04-06T19:50:22.204139 [PHY    ] [I] [  474] Setting new PHY configuration cc_idx=0...
+2023-04-06T19:50:22.204140 [PDCP   ] [I] Status Report Required: False
+2023-04-06T19:50:22.204141 [PDCP   ] [I] Add SRB2 (lcid=2, sn_len=5bits)
+2023-04-06T19:50:22.204142 [PDCP   ] [I] Configuring security with 128-EIA2 and EEA0
+2023-04-06T19:50:22.204293 [RLC    ] [I] SRB2 configured: t_poll_retx=45, poll_pdu=-1, poll_byte=-1, max_retx_thresh=4, t_reordering=35, t_status_prohibit=0
+2023-04-06T19:50:22.204294 [RLC    ] [I] Added LTE radio bearer with LCID 2 in Acknowledged Mode
+2023-04-06T19:50:22.204294 [MAC    ] [I] [  474] Logical Channel Setup: LCID=2, LCG=0, priority=3, PBR=-1, BSD=0ms, bucket_size=0
+2023-04-06T19:50:22.204296 [RRC    ] [I] Added radio bearer SRB2
+2023-04-06T19:50:22.204302 [RLC    ] [I] DRB1 configured in Unacknowledged Mode: t_reordering=45 ms, rx_sn_field_length=10 bits, tx_sn_field_length=10 bits
+2023-04-06T19:50:22.204303 [RLC    ] [I] Added LTE radio bearer with LCID 3 in Unacknowledged Mode
+2023-04-06T19:50:22.204305 [PDCP   ] [I] Init DRB1 with bearer ID: 1
+2023-04-06T19:50:22.204305 [PDCP   ] [I] SN len bits: 12, SN len bytes: 2, reordering window: 2048, Maximum SN: 4095, discard timer: 0 ms
+2023-04-06T19:50:22.204306 [PDCP   ] [I] Status Report Required: False
+2023-04-06T19:50:22.204306 [PDCP   ] [I] Add DRB1 (lcid=3, sn_len=12bits)
+2023-04-06T19:50:22.204307 [PDCP   ] [I] Configuring security with 128-EIA2 and EEA0
+2023-04-06T19:50:22.204307 [MAC    ] [I] [  474] Logical Channel Setup: LCID=3, LCG=2, priority=13, PBR=-1, BSD=100ms, bucket_size=-100
+2023-04-06T19:50:22.204310 [STCK   ] [I] Bearers: Registered EPS bearer ID 5 for lcid=3 over LTE-PDCP
+2023-04-06T19:50:22.204311 [RRC    ] [I] Added DRB Id 1 (LCID=3)
+2023-04-06T19:50:22.204314 [RRC    ] [I] MEAS:  Added objectId=1, carrier_freq=3350, 0 cells, 0 black-listed cells
+2023-04-06T19:50:22.204315 [RRC    ] [I] MEAS:  Quantity configuration k_rsrp=4, k_rsrq=4
+2023-04-06T19:50:22.204320 [PHY    ] [I] [  474] INTRA-LTE-3350: Disabled neighbour cell search
+2023-04-06T19:50:22.204332 [RRC    ] [I] SRB1 - Tx rrcConnectionReconfigurationComplete (2 B)
+2023-04-06T19:50:22.204335 [PDCP   ] [I] TX SRB1 PDU, SN=5, integrity=tx/rx, encryption=tx/rx
+    0000: 05 10 00 8e 73 42 a2
+2023-04-06T19:50:22.204337 [RLC    ] [I] SRB1 Tx SDU (7 B, tx_sdu_queue_len=1)
+    0000: 05 10 00 8e 73 42 a2
+2023-04-06T19:50:22.204338 [NAS    ] [I] DL SRB1 PDU
+    0000: 27 7f e3 09 a6 01 07 42 01 3e 06 00 00 f1 10 00
+    0010: 07 00 1d 52 01 c1 01 07 07 06 73 72 73 61 70 6e
+2023-04-06T19:50:22.204495 [NAS    ] [I] Integrity check ok. Local: count=1, Received: count=1  [7f e3 09 a6]
+2023-04-06T19:50:22.204495 [NAS    ] [I] DL SRB1 Decrypted PDU
+    0000: 27 7f e3 09 a6 01 07 42 01 3e 06 00 00 f1 10 00
+    0010: 07 00 1d 52 01 c1 01 07 07 06 73 72 73 61 70 6e
+2023-04-06T19:50:22.204496 [NAS    ] [I] Received Attach Accept
+2023-04-06T19:50:22.204499 [RRC    ] [I] Set ue-Identity to 0x26:0x4185565716
+2023-04-06T19:50:22.204501 [NAS    ] [I] Network attach successful. APN: srsapn, IP: 172.16.0.2
+2023-04-06T19:50:22.204542 [GW     ] [I] [    0] TUN file descriptor = 17
+2023-04-06T19:50:22.204772 [GW     ] [E] [    0] Reach end of NETLINK message without finding IPv6 address.
+2023-04-06T19:50:22.204775 [GW     ] [W] [    0] Could not find link-local IPv6 address.
+2023-04-06T19:50:22.207080 [NAS    ] [I] DNS: 8.8.8.8
+2023-04-06T19:50:22.207163 [GW     ] [I] [    0] GW IP packet receiver thread run_enable
+2023-04-06T19:50:22.207218 [RRC    ] [I] Disabling 64QAM PUSCH
+2023-04-06T19:50:22.207219 [NAS    ] [I] Sending Attach Complete
+2023-04-06T19:50:22.207227 [RRC    ] [I] SRB2 - Tx ulInformationTransfer (16 B)
+2023-04-06T19:50:22.207232 [PDCP   ] [I] TX SRB2 PDU, SN=0, integrity=tx/rx, encryption=tx/rx
+    0000: 00 48 01 a4 e1 82 06 cf 80 20 e8 60 00 6a 40 18
+    0010: 40 20 1c 6f b5
+2023-04-06T19:50:22.207234 [RLC    ] [I] SRB2 Tx SDU (21 B, tx_sdu_queue_len=1)
+    0000: 00 48 01 a4 e1 82 06 cf 80 20 e8 60 00 6a 40 18
+    0010: 40 20 1c 6f b5
+2023-04-06T19:50:22.207237 [RRC    ] [I] Finished Connection Reconfiguration successfully
+2023-04-06T19:50:22.210458 [MAC    ] [I] [  475] SR:    Signalling PHY sr_counter=1
+2023-04-06T19:50:22.216358 [PHY0   ] [I] [  476] PUCCH: cc=0, tti_tx=480, rnti=0x46, f=1, n_pucch=0, sr=yes
+2023-04-06T19:50:22.221905 [PHY1   ] [I] [  477] PUCCH: cc=0, tti_tx=481, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:22.242332 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:22.264852 [PHY0   ] [I] [  484] PDCCH: cc=0, f=0, cce= 4, L=0, riv=402, mcs=22, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=142.4 dB
+2023-04-06T19:50:22.264894 [RLC    ] [I] SRB1 Tx status PDU - ACK_SN = 6, N_nack = 0
+2023-04-06T19:50:22.264900 [RLC    ] [I] SRB1 Tx PDU SN=5 (9 B)
+    0000: a0 05 05 10 00 8e 73 42 a2
+2023-04-06T19:50:22.264904 [RLC    ] [I] SRB2 Tx PDU SN=0 (23 B)
+    0000: a0 00 00 48 01 a4 e1 82 06 cf 80 20 e8 60 00 6a
+    0010: 40 18 40 20 1c 6f b5
+2023-04-06T19:50:22.264910 [MAC    ] [I] [  484] UL PHR: ph=30.0 LCID=1 len=2 LCID=1 len=9 LCID=2 len=23 LBSR: b=0 0 0 0 
+2023-04-06T19:50:22.264912 [MAC    ] [I] [  484] UL 0:  New TX, RV=0, TBS=517
+2023-04-06T19:50:22.265056 [PHY0   ] [I] [  484] PUSCH: cc=0, tti_tx=488, rnti=0x46, rb=(2,10), nof_re=1296, tbs=517, mod=4, rv=0
+2023-04-06T19:50:22.317371 [PHY0   ] [I] [  492] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+2023-04-06T19:50:22.323050 [PHY1   ] [I] [  493] PDCCH: cc=0, f=1A, cce= 7, L=0, riv=100, pid=0, mcs={0}, ndi={1}, tpc_pucch=0, snr=141.7 dB
+2023-04-06T19:50:22.323084 [PHY1   ] [I] [  493] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={7}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=141.7 dB
+2023-04-06T19:50:22.323088 [MAC    ] [I] [  493] DL 0 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=1
+2023-04-06T19:50:22.323197 [MAC    ] [I] [  493] DL LCID=1 len=2 PAD: len=2
+2023-04-06T19:50:22.323202 [RLC    ] [I] SRB1 Rx Status PDU: ACK_SN = 6, N_nack = 0
+2023-04-06T19:50:22.323205 [PHY1   ] [I] [  493] PUCCH: cc=0, tti_tx=497, rnti=0x46, f=1a, n_pucch=19, ack=1
+2023-04-06T19:50:22.328704 [PHY0   ] [I] [  494] PDCCH: cc=0, f=1, cce= 4, L=0, rbg=0x10000, pid=1, mcs={0}, ndi={1}, tpc_pucch=1, snr=141.7 dB
+2023-04-06T19:50:22.328758 [PHY0   ] [I] [  494] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={7}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=141.7 dB
+2023-04-06T19:50:22.328763 [MAC    ] [I] [  494] DL 1 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=1
+2023-04-06T19:50:22.328857 [MAC    ] [I] [  494] DL LCID=2 len=2 PAD: len=2
+2023-04-06T19:50:22.328861 [RLC    ] [I] SRB2 Rx Status PDU: ACK_SN = 1, N_nack = 0
+2023-04-06T19:50:22.328874 [PHY0   ] [I] [  494] PUCCH: cc=0, tti_tx=498, rnti=0x46, f=1a, n_pucch=16, ack=1
+2023-04-06T19:50:22.373606 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:22.413544 [PHY0   ] [I] [  506] PDCCH: cc=0, f=1, cce= 6, L=0, rbg=0x10000, pid=0, mcs={12}, ndi={0}, tpc_pucch=1, snr=141.6 dB
+2023-04-06T19:50:22.413593 [PHY0   ] [I] [  506] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={73}, mod={4}, rv={0}, crc={OK}, it=1.0, snr=141.6 dB
+2023-04-06T19:50:22.413614 [MAC    ] [I] [  506] DL 0 (TB 0):  newTX tbs=73, rv=0, ack=OK, ndi=0
+2023-04-06T19:50:22.413629 [MAC    ] [I] [  506] DL LCID=2 len=61 PAD: len=9
+2023-04-06T19:50:22.413631 [RLC    ] [I] SRB2 Rx data PDU SN=0 (59 B)
+    0000: 00 08 01 99 39 38 fc 4b e8 10 3b 0a 18 c4 16 9d
+    0010: bc cb f0 7e 5e 59 03 4c c4 e3 f4 1d 37 c9 cd ee
+2023-04-06T19:50:22.413633 [RLC    ] [I] SRB2 Status packet requested through polling bit
+2023-04-06T19:50:22.413635 [RLC    ] [I] SRB2 Rx SDU (59 B)
+    0000: 00 08 01 99 39 38 fc 4b e8 10 3b 0a 18 c4 16 9d
+    0010: bc cb f0 7e 5e 59 03 4c c4 e3 f4 1d 37 c9 cd ee
+2023-04-06T19:50:22.413640 [PDCP   ] [I] SRB2 Rx PDU SN=0 (59 B, integrity=tx/rx, encryption=tx/rx)
+    0000: 00 08 01 99 39 38 fc 4b e8 10 3b 0a 18 c4 16 9d
+    0010: bc cb f0 7e 5e 59 03 4c c4 e3 f4 1d 37 c9 cd ee
+2023-04-06T19:50:22.413651 [RRC    ] [I] SRB2 - Rx dlInformationTransfer (54 B)
+2023-04-06T19:50:22.413653 [NAS    ] [I] DL SRB2 PDU
+    0000: 27 27 1f 89 7d 02 07 61 43 18 82 d3 b7 99 7e 0f
+    0010: cb cb 20 69 98 9c 7e 83 a6 f9 39 bd dc 9e 83 a4
+2023-04-06T19:50:22.413720 [PHY0   ] [I] [  506] PUCCH: cc=0, tti_tx=510, rnti=0x46, f=1a, n_pucch=18, ack=1
+2023-04-06T19:50:22.413871 [NAS    ] [I] Integrity check ok. Local: count=2, Received: count=2  [27 1f 89 7d]
+2023-04-06T19:50:22.413872 [NAS    ] [I] DL SRB2 Decrypted PDU
+    0000: 27 27 1f 89 7d 02 07 61 43 18 82 d3 b7 99 7e 0f
+    0010: cb cb 20 69 98 9c 7e 83 a6 f9 39 bd dc 9e 83 a4
+2023-04-06T19:50:22.413885 [NAS    ] [I] Received EMM Information: Software Radio Systems RAN (srsRAN) 6/4/2023 19:50:22 TZ:0
+2023-04-06T19:50:22.419164 [MAC    ] [I] [  507] SR:    Signalling PHY sr_counter=1
+2023-04-06T19:50:22.477351 [PHY0   ] [I] [  516] PUCCH: cc=0, tti_tx=520, rnti=0x46, f=1, n_pucch=0, sr=yes
+2023-04-06T19:50:22.483505 [PHY1   ] [I] [  517] PUCCH: cc=0, tti_tx=521, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:22.500460 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:22.522607 [PHY1   ] [I] [  524] PDCCH: cc=0, f=0, cce= 4, L=0, riv=402, mcs=22, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=142.1 dB
+2023-04-06T19:50:22.522642 [RLC    ] [I] SRB2 Tx status PDU - ACK_SN = 1, N_nack = 0
+2023-04-06T19:50:22.522647 [MAC    ] [I] [  524] UL LCID=2 len=2 LBSR: b=0 0 0 0 
+2023-04-06T19:50:22.522648 [MAC    ] [I] [  524] UL 0:  New TX, RV=0, TBS=517
+2023-04-06T19:50:22.522793 [PHY1   ] [I] [  524] PUSCH: cc=0, tti_tx=528, rnti=0x46, rb=(2,10), nof_re=1296, tbs=517, mod=4, rv=0
+2023-04-06T19:50:22.567536 [PHY1   ] [I] [  532] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+2023-04-06T19:50:22.621199 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:22.728029 [PHY0   ] [I] [  557] PUCCH: cc=0, tti_tx=561, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:22.745066 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:22.869155 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:22.954097 [MAC    ] [I] [  594] DL retx: 0.00 %, perpkt: 1.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:22.954100 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:22.954101 [RLC    ] [I] lcid=1, rx_rate_mbps=0.01 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:22.954102 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:22.954103 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:22.954167 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:22.969772 [PHY0   ] [I] [  597] PUCCH: cc=0, tti_tx=601, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:22.987501 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:23.106451 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:23.210345 [PHY0   ] [I] [  637] PUCCH: cc=0, tti_tx=641, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:23.230825 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:23.353538 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:23.465060 [PHY0   ] [I] [  677] PUCCH: cc=0, tti_tx=681, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:23.485305 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:23.608118 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:23.713322 [PHY0   ] [I] [  717] PUCCH: cc=0, tti_tx=721, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:23.731187 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:23.872080 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:23.954061 [MAC    ] [I] [  753] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:23.954064 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:23.954066 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:23.954067 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:23.954068 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:23.954101 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:23.977617 [PHY0   ] [I] [  757] PUCCH: cc=0, tti_tx=761, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:23.995295 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:24.129841 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:24.241147 [PHY0   ] [I] [  797] PUCCH: cc=0, tti_tx=801, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:24.261743 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:24.387158 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:24.490998 [PHY0   ] [I] [  837] PUCCH: cc=0, tti_tx=841, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:24.507605 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:24.625501 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:24.731056 [PHY0   ] [I] [  877] PUCCH: cc=0, tti_tx=881, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:24.747943 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:24.860204 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:24.954041 [MAC    ] [I] [  914] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:24.954045 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:24.954047 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:24.954048 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:24.954049 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:24.954070 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:24.971192 [PHY0   ] [I] [  917] PUCCH: cc=0, tti_tx=921, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:24.991178 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.124815 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.220334 [PHY0   ] [I] [  957] PUCCH: cc=0, tti_tx=961, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:25.236924 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.348107 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.443046 [PHY0   ] [I] [  997] PUCCH: cc=0, tti_tx=1001, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:25.459654 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.498635 [MAC    ] [I] [ 1007] BSR:   triggered_bsr_type=Periodic, LCID QUEUE status: 0: 0 1: 0 2: 0 3: 0 
+2023-04-06T19:50:25.570846 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.671708 [PHY0   ] [I] [ 1037] PUCCH: cc=0, tti_tx=1041, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:25.688398 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.800736 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.897174 [PHY0   ] [I] [ 1077] PUCCH: cc=0, tti_tx=1081, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:25.913754 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:25.957967 [MAC    ] [I] [ 1087] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:25.957971 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:25.957973 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:25.957974 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:25.957975 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:25.958123 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:26.033241 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:26.094912 [STCK   ] [I] tti_tprof: {mean, max, min} = {1.24, 1246, 0} msec
+2023-04-06T19:50:26.129041 [PHY0   ] [I] [ 1117] PUCCH: cc=0, tti_tx=1121, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:26.145663 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:26.265076 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:26.359655 [PHY0   ] [I] [ 1157] PUCCH: cc=0, tti_tx=1161, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:26.376541 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:26.489382 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:26.585408 [PHY0   ] [I] [ 1197] PUCCH: cc=0, tti_tx=1201, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:26.602315 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:26.718587 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:26.843381 [PHY0   ] [I] [ 1237] PUCCH: cc=0, tti_tx=1241, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:26.867490 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:26.954074 [MAC    ] [I] [ 1252] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:26.954076 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:26.954078 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:26.954079 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:26.954080 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:26.954136 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:27.001121 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:27.101771 [PHY0   ] [I] [ 1277] PUCCH: cc=0, tti_tx=1281, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:27.120415 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:27.249429 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:27.358041 [PHY0   ] [I] [ 1317] PUCCH: cc=0, tti_tx=1321, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:27.378151 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:27.501444 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:27.609408 [PHY0   ] [I] [ 1357] PUCCH: cc=0, tti_tx=1361, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:27.626957 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:27.750027 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:27.882101 [PHY0   ] [I] [ 1397] PUCCH: cc=0, tti_tx=1401, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:27.903781 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:27.954951 [MAC    ] [I] [ 1407] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:27.954955 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:27.954958 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:27.954959 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:27.954960 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:27.955012 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:28.034611 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:28.150601 [PHY0   ] [I] [ 1437] PUCCH: cc=0, tti_tx=1441, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:28.168312 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:28.289244 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:28.396578 [PHY0   ] [I] [ 1477] PUCCH: cc=0, tti_tx=1481, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:28.421522 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:28.598226 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:28.693842 [PHY0   ] [I] [ 1517] PUCCH: cc=0, tti_tx=1521, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:28.710228 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:28.862445 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:28.954227 [MAC    ] [I] [ 1553] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:28.954231 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:28.954232 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:28.954234 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:28.954234 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:28.954251 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:28.973098 [PHY0   ] [I] [ 1557] PUCCH: cc=0, tti_tx=1561, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:28.997560 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:29.147716 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:29.272374 [PHY0   ] [I] [ 1597] PUCCH: cc=0, tti_tx=1601, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:29.289681 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:29.404846 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:29.504604 [PHY0   ] [I] [ 1637] PUCCH: cc=0, tti_tx=1641, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:29.521715 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:29.636021 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:29.738056 [PHY0   ] [I] [ 1677] PUCCH: cc=0, tti_tx=1681, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:29.754856 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:29.876829 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:29.954057 [MAC    ] [I] [ 1713] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:29.954059 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:29.954061 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:29.954062 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:29.954063 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:29.954087 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:29.976077 [PHY0   ] [I] [ 1717] PUCCH: cc=0, tti_tx=1721, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:29.993114 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:30.136108 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:30.259323 [PHY0   ] [I] [ 1757] PUCCH: cc=0, tti_tx=1761, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:30.276735 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:30.394112 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:30.494779 [PHY0   ] [I] [ 1797] PUCCH: cc=0, tti_tx=1801, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:30.512860 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:30.631870 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:30.732872 [PHY0   ] [I] [ 1837] PUCCH: cc=0, tti_tx=1841, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:30.750300 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:30.872646 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:30.954094 [MAC    ] [I] [ 1873] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:30.954097 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:30.954099 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:30.954100 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:30.954101 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:30.954115 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:30.972405 [PHY0   ] [I] [ 1877] PUCCH: cc=0, tti_tx=1881, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:30.990055 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:31.123318 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:31.237680 [PHY0   ] [I] [ 1917] PUCCH: cc=0, tti_tx=1921, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:31.255889 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:31.387541 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:31.484651 [PHY0   ] [I] [ 1957] PUCCH: cc=0, tti_tx=1961, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:31.501478 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:31.619736 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:31.716816 [PHY0   ] [I] [ 1997] PUCCH: cc=0, tti_tx=2001, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:31.733751 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:31.769588 [MAC    ] [I] [ 2006] BSR:   triggered_bsr_type=Periodic, LCID QUEUE status: 0: 0 1: 0 2: 0 3: 0 
+2023-04-06T19:50:31.852361 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:31.954206 [MAC    ] [I] [ 2036] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:31.954209 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:31.954211 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:31.954213 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:31.954214 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:31.954310 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:31.958416 [PHY0   ] [I] [ 2037] PUCCH: cc=0, tti_tx=2041, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:31.976065 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:32.105809 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:32.213732 [PHY0   ] [I] [ 2077] PUCCH: cc=0, tti_tx=2081, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:32.230947 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:32.354449 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:32.455262 [PHY0   ] [I] [ 2117] PUCCH: cc=0, tti_tx=2121, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:32.472479 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:32.561557 [STCK   ] [I] tti_tprof: {mean, max, min} = {0.02, 1, 0} msec
+2023-04-06T19:50:32.590974 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:32.691643 [PHY0   ] [I] [ 2157] PUCCH: cc=0, tti_tx=2161, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:32.715821 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:32.838530 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:32.941676 [PHY0   ] [I] [ 2197] PUCCH: cc=0, tti_tx=2201, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:32.954144 [MAC    ] [I] [ 2199] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:32.954148 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:32.954150 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:32.954152 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:32.954153 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:32.954177 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:32.959199 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:33.090668 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:33.192943 [PHY0   ] [I] [ 2237] PUCCH: cc=0, tti_tx=2241, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:33.210171 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:33.324584 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:33.423236 [PHY0   ] [I] [ 2277] PUCCH: cc=0, tti_tx=2281, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:33.439942 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:33.620162 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:33.717878 [PHY0   ] [I] [ 2317] PUCCH: cc=0, tti_tx=2321, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:33.735044 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:33.854181 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:33.954062 [MAC    ] [I] [ 2356] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:33.954065 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:33.954067 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:33.954068 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:33.954069 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:33.954081 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:33.955281 [PHY0   ] [I] [ 2357] PUCCH: cc=0, tti_tx=2361, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:33.972354 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.091912 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.193410 [PHY0   ] [I] [ 2397] PUCCH: cc=0, tti_tx=2401, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:34.210643 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.328137 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.426887 [PHY0   ] [I] [ 2437] PUCCH: cc=0, tti_tx=2441, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:34.444218 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.568566 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.668502 [PHY0   ] [I] [ 2477] PUCCH: cc=0, tti_tx=2481, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:34.686151 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.803909 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.902389 [PHY0   ] [I] [ 2517] PUCCH: cc=0, tti_tx=2521, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:34.919022 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:34.954377 [MAC    ] [I] [ 2525] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:34.954380 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:34.954382 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:34.954384 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:34.954384 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:34.954421 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:35.035609 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:35.143136 [PHY0   ] [I] [ 2557] PUCCH: cc=0, tti_tx=2561, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:35.160825 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:35.293755 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:35.409790 [PHY0   ] [I] [ 2597] PUCCH: cc=0, tti_tx=2601, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:35.427366 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:35.552289 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:35.648611 [PHY0   ] [I] [ 2637] PUCCH: cc=0, tti_tx=2641, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:35.664848 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:35.774640 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:35.870070 [PHY0   ] [I] [ 2677] PUCCH: cc=0, tti_tx=2681, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:35.886835 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:35.954199 [MAC    ] [I] [ 2691] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:35.954202 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:35.954204 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:35.954205 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:35.954206 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:35.954225 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:35.996528 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.100675 [PHY0   ] [I] [ 2717] PUCCH: cc=0, tti_tx=2721, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:36.119571 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.245740 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.354726 [PHY0   ] [I] [ 2757] PUCCH: cc=0, tti_tx=2761, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:36.372926 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.492911 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.592585 [PHY0   ] [I] [ 2797] PUCCH: cc=0, tti_tx=2801, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:36.609386 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.720961 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.816113 [PHY0   ] [I] [ 2837] PUCCH: cc=0, tti_tx=2841, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:36.832764 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.944959 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:36.954104 [MAC    ] [I] [ 2861] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:36.954107 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:36.954109 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:36.954110 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:36.954111 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:36.954139 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:37.043583 [PHY0   ] [I] [ 2877] PUCCH: cc=0, tti_tx=2881, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:37.060212 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:37.190698 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:37.293952 [PHY0   ] [I] [ 2917] PUCCH: cc=0, tti_tx=2921, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:37.311325 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:37.428347 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:37.527271 [PHY0   ] [I] [ 2957] PUCCH: cc=0, tti_tx=2961, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:37.544688 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:37.666621 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:37.770483 [PHY0   ] [I] [ 2997] PUCCH: cc=0, tti_tx=3001, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:37.788475 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:37.822226 [MAC    ] [I] [ 3005] BSR:   triggered_bsr_type=Periodic, LCID QUEUE status: 0: 0 1: 0 2: 0 3: 0 
+2023-04-06T19:50:37.914734 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:37.954053 [MAC    ] [I] [ 3026] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:37.954057 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:37.954059 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:37.954060 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:37.954061 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:37.954092 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:38.017132 [PHY0   ] [I] [ 3037] PUCCH: cc=0, tti_tx=3041, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:38.034793 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:38.159482 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:38.263029 [PHY0   ] [I] [ 3077] PUCCH: cc=0, tti_tx=3081, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:38.281577 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:38.397073 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:38.503747 [PHY0   ] [I] [ 3117] PUCCH: cc=0, tti_tx=3121, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:38.521734 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:38.637716 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:38.736699 [PHY0   ] [I] [ 3157] PUCCH: cc=0, tti_tx=3161, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:38.748349 [STCK   ] [I] tti_tprof: {mean, max, min} = {0.02, 0, 0} msec
+2023-04-06T19:50:38.754221 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:38.871103 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:38.954110 [MAC    ] [I] [ 3193] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:38.954113 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:38.954115 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:38.954117 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:38.954117 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:38.954136 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:38.972599 [PHY0   ] [I] [ 3197] PUCCH: cc=0, tti_tx=3201, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:38.990079 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:39.121004 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:39.294128 [PHY0   ] [I] [ 3237] PUCCH: cc=0, tti_tx=3241, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:39.316087 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:39.430659 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:39.527793 [PHY0   ] [I] [ 3277] PUCCH: cc=0, tti_tx=3281, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:39.544414 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:39.660381 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:39.758258 [PHY0   ] [I] [ 3317] PUCCH: cc=0, tti_tx=3321, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:39.776665 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:39.893030 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:39.954133 [MAC    ] [I] [ 3350] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:39.954142 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:39.954145 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:39.954146 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:39.954149 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:39.954192 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:39.993796 [PHY0   ] [I] [ 3357] PUCCH: cc=0, tti_tx=3361, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:40.010567 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.132310 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.228433 [PHY0   ] [I] [ 3397] PUCCH: cc=0, tti_tx=3401, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:40.245257 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.361567 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.456001 [PHY0   ] [I] [ 3437] PUCCH: cc=0, tti_tx=3441, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:40.472717 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.583961 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.678623 [PHY0   ] [I] [ 3477] PUCCH: cc=0, tti_tx=3481, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:40.695172 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.808184 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.916905 [PHY0   ] [I] [ 3517] PUCCH: cc=0, tti_tx=3521, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:40.938256 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:40.954092 [MAC    ] [I] [ 3522] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:40.954096 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:40.954098 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:40.954099 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:40.954100 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:40.954111 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:41.055585 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:41.163502 [PHY0   ] [I] [ 3557] PUCCH: cc=0, tti_tx=3561, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:41.181573 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:41.308700 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:41.408526 [PHY0   ] [I] [ 3597] PUCCH: cc=0, tti_tx=3601, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:41.425971 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:41.545214 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:41.678435 [PHY0   ] [I] [ 3637] PUCCH: cc=0, tti_tx=3641, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:41.690521 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:41.887070 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:41.954347 [MAC    ] [I] [ 3662] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:41.954358 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:41.954363 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:41.954368 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:41.954371 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:41.954802 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:42.101738 [PHY0   ] [I] [ 3677] PUCCH: cc=0, tti_tx=3681, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:42.120568 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:42.242808 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:42.351451 [PHY0   ] [I] [ 3717] PUCCH: cc=0, tti_tx=3721, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:42.369942 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:42.492008 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:42.597159 [PHY0   ] [I] [ 3757] PUCCH: cc=0, tti_tx=3761, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:42.614267 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:42.728165 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:42.831418 [PHY0   ] [I] [ 3797] PUCCH: cc=0, tti_tx=3801, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:42.848394 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:42.954094 [MAC    ] [I] [ 3818] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:42.954097 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:42.954098 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:42.954114 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:42.954115 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:42.954140 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:42.962232 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:43.072308 [PHY0   ] [I] [ 3837] PUCCH: cc=0, tti_tx=3841, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:43.090011 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:43.208659 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:43.309640 [PHY0   ] [I] [ 3877] PUCCH: cc=0, tti_tx=3881, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:43.350695 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:43.491150 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:43.591434 [PHY0   ] [I] [ 3917] PUCCH: cc=0, tti_tx=3921, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:43.611112 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:43.727602 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:43.825786 [PHY0   ] [I] [ 3957] PUCCH: cc=0, tti_tx=3961, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:43.842793 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:43.954163 [MAC    ] [I] [ 3979] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:43.954166 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:43.954168 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:43.954169 [RLC    ] [I] lcid=2, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:43.954170 [RLC    ] [I] lcid=3, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:43.954300 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:43.959370 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:44.058790 [PHY0   ] [I] [ 3997] PUCCH: cc=0, tti_tx=4001, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:44.077527 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:44.101093 [MAC    ] [I] [ 4004] BSR:   triggered_bsr_type=Periodic, LCID QUEUE status: 0: 0 1: 0 2: 0 3: 0 
+2023-04-06T19:50:44.200391 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:44.298824 [PHY1   ] [I] [ 4037] PUCCH: cc=0, tti_tx=4041, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:44.317393 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:44.431975 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:44.528880 [PHY1   ] [I] [ 4077] PUCCH: cc=0, tti_tx=4081, rnti=0x46, f=2, n_pucch=0, cqi=15 (cc=0)
+2023-04-06T19:50:44.545476 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-11.28 dBm, cfo=-0.0 Hz
+2023-04-06T19:50:44.961077 [MAC    ] [I] [ 4096] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-06T19:50:44.961080 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-06T19:50:44.961082 [RLC    ] [I] lcid=1, rx_rate_mbps=0.00 (real=0.00)

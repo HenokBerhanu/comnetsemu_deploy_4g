@@ -15,6 +15,7 @@ from mininet.node import Controller, OVSBridge
 from mininet.topo import Topo
 
 from util import dict_union, get_root_dir
+root_directory="/home/vagrant/comnetsemu_deploy_4g"
 
 IPS: Dict[str, str] = {
     "epc": "10.80.95.10",
@@ -36,8 +37,8 @@ def run() -> None:
 
     default_args = {
         "volumes": [
-            get_root_dir() + "/config:/etc/srsran:ro",
-            get_root_dir() + "/logs:/tmp/srsran_logs",
+            root_directory + "/config:/etc/srsran:ro",
+            root_directory + "/logs:/tmp/srsran_logs",
             "/etc/timezone:/etc/timezone:ro",
             "/etc/localtime:/etc/localtime:ro",
         ]
@@ -57,7 +58,7 @@ def run() -> None:
     epc = net.addDockerHost(
         "srsepc",
         ip=IPS["epc"],
-        dimage="srsran1",
+        dimage="srsran3",
         docker_args=dict_union(
             default_args,
             {"devices": ["/dev/net/tun"], "cap_add": ["SYS_NICE", "NET_ADMIN"]},
@@ -91,7 +92,7 @@ def run() -> None:
     enb = net.addDockerHost(
         "srsenb",
         ip=IPS["enb"],
-        dimage="srsran1",
+        dimage="srsran3",
         docker_args=dict_union(
             default_args,
             {"cap_add": ["SYS_NICE"]},
@@ -115,7 +116,7 @@ def run() -> None:
     ue = net.addDockerHost(
         "srsue",
         ip=IPS["ue"],
-        dimage="srsran1",
+        dimage="srsran3",
         docker_args=dict_union(
             default_args,
             {"devices": ["/dev/net/tun"], "cap_add": ["SYS_NICE", "NET_ADMIN"]},

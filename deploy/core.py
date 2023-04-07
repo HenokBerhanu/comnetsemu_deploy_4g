@@ -1,6 +1,3 @@
-#! /usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import atexit
 import os
 import shlex
@@ -8,7 +5,6 @@ import signal
 import subprocess
 import time
 from typing import Dict, List
-#import os
 
 from comnetsemu.cli import CLI, spawnXtermDocker
 from comnetsemu.net import Containernet, VNFManager
@@ -18,13 +14,16 @@ from mininet import log
 from mininet.log import info, setLogLevel
 from mininet.node import Controller, OVSBridge
 from mininet.topo import Topo
-#from util import dict_union, get_root_dir
+from util import dict_union, get_root_dir
 
-# IPS: Dict[str, str] = {
-#     "epc": "10.80.95.0",
-#     "enb": "10.80.95.1",
-#     "ue": "192.168.56.100",
-# }
+root_directory="/home/vagrant/comnetsemu_deploy_4g"
+mongodb_folder="/home/vagrant/mongodbdata"
+
+IPS: Dict[str, str] = {
+    "epc": "10.80.95.10",
+    "enb": "10.80.95.11",
+    "ue": "10.80.97.12",
+}
 
 if __name__ == "__main__":
 
@@ -32,9 +31,6 @@ if __name__ == "__main__":
 
     setLogLevel("info")
     
-    #prj_folder_srs = "/home/vagrant/comnetsemu_deploy_4g"
-    prj_folder="/home/vagrant/comnetsemu_deploy_4g"
-    mongodb_folder="/home/vagrant/mongodbdata"
 
     env = dict()
     
@@ -53,7 +49,7 @@ if __name__ == "__main__":
         docker_args={
             "ports" : { "3000/tcp": 3000 },
             "volumes": {
-                prj_folder + "/epclog": {
+                root_directory + "/epclog": {
                     "bind": "/open5gs/install/var/log/open5gs",
                     "mode": "rw",
                 },
@@ -61,7 +57,7 @@ if __name__ == "__main__":
                     "bind": "/var/lib/mongodb",
                     "mode": "rw",
                 },
-                prj_folder + "/open5gs/config": {
+                root_directory + "/open5gs/config": {
                     "bind": "/open5gs/install/etc/open5gs",
                     "mode": "rw",
                 },
@@ -88,11 +84,11 @@ if __name__ == "__main__":
         # dcmd="",
         docker_args={
             "volumes": {
-                prj_folder + "/config": {
+                root_directory + "/config": {
                     "bind": "/config/srsran",
                     "mode": "ro",
                 },
-                prj_folder + "/logs": {
+                root_directory + "/logs": {
                     "bind": "/tmp/srsran_logs",
                     "mode": "ro",
                 },
@@ -121,11 +117,11 @@ if __name__ == "__main__":
         #exec_run= ('/etc/srsran/ue.sh'),
         docker_args={
             "volumes": {
-                prj_folder + "/config": {
+                root_directory + "/config": {
                     "bind": "/config/srsran",
                     "mode": "ro",
                 },
-                prj_folder + "/logs": {
+                root_directory + "/logs": {
                     "bind": "/tmp/srsran_logs",
                     "mode": "ro",
                 },
@@ -144,18 +140,6 @@ if __name__ == "__main__":
         #dcmd="bash /etc/srsran/ue.sh",
     )
 
-
-# #def run() -> None:
-
-#     # default_args = {
-#     #     "volumes": [
-#     #         prj_folder_srs + "/srsran/config:/etc/srsran:ro",
-#     #         prj_folder_srs + "/srslogs:/tmp/srsran_logs",
-#     #         "/etc/timezone:/etc/timezone:ro",
-#     #         "/etc/localtime:/etc/localtime:ro",
-#     #     ]
-#     # }
-
     enbcmd = [
         "srsenb",
         f"--enb.mme_addr=192.168.56.109",
@@ -172,18 +156,7 @@ if __name__ == "__main__":
         "&",
     ]
     cmds[enb] = " ".join(enbcmd)
-# #     # enb = net.addDockerHost(
-# #     #     "srsenb",
-# #     #     ip=IPS["enb"],
-# #     #     dimage="srsran",
-# #     #     docker_args=dict_union(
-# #     #         default_args,
-# #     #         {"cap_add": ["SYS_NICE"]},
-# #     #     ),
-# #     # )
-# #     # cmds[enb] = " ".join(_enb_cmd)
 
-# #     # TO DO: configure authentication/user from user_db.csv
     uecmd = [
         "srsue",
         "--rf.device_name=zmq",
@@ -196,16 +169,7 @@ if __name__ == "__main__":
         "&",
     ]
     cmds[ue] = " ".join(uecmd)
-#     # ue = net.addDockerHost(
-#     #     "srsue",
-#     #     ip=IPS["ue"],
-#     #     dimage="srsran",
-#     #     docker_args=dict_union(
-#     #         #default_args,
-#     #         {"devices": ["/dev/net/tun"], "cap_add": ["SYS_NICE", "NET_ADMIN"]},
-#     #     ),
-#     # )
-#     # cmds[ue] = " ".join(_ue_cmd)
+
     for host in cmds:
         log.debug(f"::: Running cmd in container ({host.name}): {cmds[host]}\n")
         host.cmd(cmds[host])
@@ -246,11 +210,9 @@ if __name__ == "__main__":
     net.addLink(enb, s2, bw=1000, delay="1ms", intfName1="enb-s2", intfName2="s2-enb")
     net.addLink(epc, s3, bw=1000, delay="1ms", intfName1="epc-s3", intfName2="s3-epc")
     
-
     info("\n*** Starting network\n")
     net.start()
 
-    if not AUTOTEST_MODE:
-        CLI(net)
-
+if not AUTOTEST_MODE:
+    CLI(net)
     net.stop()

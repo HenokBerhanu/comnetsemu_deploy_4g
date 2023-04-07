@@ -1,0 +1,480 @@
+2023-04-07T14:13:11.061510 [UE     ] [I] Using binary srsue with arguments: --rf.device_name=zmq --rf.device_args=id=ue,fail_on_disconnect=true,tx_port=tcp://*:2001,rx_port=tcp://192.168.56.2:2000,base_srate=23.04e6 --log.all_level=info --log.filename=/tmp/srsran_logs/ue.log 
+2023-04-07T14:13:11.131750 [UE     ] [I] Built in Release mode using 21.10.0.
+2023-04-07T14:13:11.211234 [RF     ] [I] Configuring physical DL channel 0 with band-pass filter (0.0, 0.0)
+2023-04-07T14:13:11.211235 [RF     ] [I] Configuring physical UL channel 0 with band-pass filter (0.0, 0.0)
+2023-04-07T14:13:11.306754 [MAC    ] [I] [    0] Resetting MAC
+2023-04-07T14:13:11.306760 [MAC    ] [I] [    0] Logical Channel Setup: LCID=0, LCG=0, priority=0, PBR=-1, BSD=50ms, bucket_size=0
+2023-04-07T14:13:11.306763 [MAC    ] [I] [    0] Logical Channel Setup: LCID=1, LCG=0, priority=1, PBR=-1, BSD=50ms, bucket_size=0
+2023-04-07T14:13:11.306774 [MAC    ] [I] [    0] Setting configuration
+2023-04-07T14:13:11.306775 [MAC    ] [I] [    0] BSR:   Configured timer reTX 2560 ms
+2023-04-07T14:13:11.312388 [RLC    ] [I] Added LTE radio bearer with LCID 0 in Transparent Mode
+2023-04-07T14:13:11.312407 [USIM   ] [I] Read Home PLMN Id=00101
+2023-04-07T14:13:11.319954 [RLC-NR ] [I] Added LTE radio bearer with LCID 0 in Transparent Mode
+2023-04-07T14:13:11.319961 [RRC    ] [I] using srand seed of 319961
+2023-04-07T14:13:38.410879 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:38.410882 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:38.414629 [STCK   ] [I] Triggering NAS switch on
+
+2023-04-07T14:13:38.414708 [NAS    ] [I] Switching on
+2023-04-07T14:13:38.415749 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:39.410609 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:39.410613 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:39.410632 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:40.411136 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:40.411140 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:40.411173 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:41.410547 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:41.410551 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:41.410573 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:42.410595 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:42.410599 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:42.410656 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:43.411000 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:43.411005 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:43.411085 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:44.410587 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:44.410591 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:44.410704 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:45.410818 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:45.410824 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:45.410967 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:46.411063 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:46.411069 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:46.411176 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:47.410646 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:47.410652 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:47.410829 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:48.410639 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:48.410643 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:48.410729 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:49.410701 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:49.410707 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:49.410850 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:50.410574 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:50.410577 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:50.410654 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:51.410668 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:51.410673 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:51.410699 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:52.410784 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:52.410787 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:52.410807 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:53.410730 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:53.410735 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:53.410759 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:54.410717 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:54.410721 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:54.410736 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:55.411008 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:55.411013 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:55.411085 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:56.410657 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:56.410660 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:56.410699 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:57.410621 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:57.410626 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:57.410666 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:58.410657 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:58.410660 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:58.410731 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:59.410744 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:13:59.410748 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:13:59.410809 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:00.410535 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:00.410539 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:00.410589 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:01.410765 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:01.410769 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:01.410856 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:02.410716 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:02.410721 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:02.410837 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:03.410607 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:03.410610 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:03.410634 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:04.410622 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:04.410626 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:04.410688 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:05.410548 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:05.410551 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:05.410588 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:06.410621 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:06.410625 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:06.410658 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:07.410694 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:07.410698 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:07.410780 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:08.410582 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:08.410585 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:08.410605 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:09.410623 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:09.410628 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:09.410694 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:10.410572 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:10.410576 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:10.410628 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:11.410625 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:11.410628 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:11.410661 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:12.413766 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:12.413770 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:12.413806 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:13.410851 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:13.410864 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:13.410912 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:14.410763 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:14.410769 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:14.410806 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:15.410603 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:15.410606 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:15.410625 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:16.410545 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:16.410549 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:16.410563 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:17.410559 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:17.410563 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:17.410583 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:18.410596 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:18.410602 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:18.410640 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:19.410547 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:19.410551 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:19.410570 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:20.410601 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:20.410606 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:20.410629 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:21.410553 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:21.410557 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:21.410571 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:22.410575 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:22.410579 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:22.410601 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:23.410586 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:23.410589 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:23.410599 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:24.410539 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:24.410543 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:24.410559 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:25.410528 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:25.410534 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:25.410558 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:26.410692 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:26.410698 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:26.410728 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:27.410601 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:27.410606 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:27.410621 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:28.410595 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:28.410599 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:28.410617 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:29.410615 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:29.410621 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:29.410642 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:30.413617 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:30.413620 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:30.413631 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:31.410522 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:31.410526 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:31.410541 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:32.410624 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:32.410629 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:32.410657 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:33.410573 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:33.410578 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:33.410606 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:34.410593 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:34.410599 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:34.410632 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:35.410574 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:35.410578 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:35.410602 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:36.410613 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:36.410617 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:36.410640 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:37.410639 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:37.410641 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:37.410655 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:38.410764 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:38.410768 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:38.410785 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:39.410637 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:39.410642 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:39.410749 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:40.410566 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:40.410569 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:40.410590 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:41.410945 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:41.410950 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:41.411018 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:42.410858 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:42.410864 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:42.410924 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:43.410684 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:43.410687 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:43.410753 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:44.410754 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:44.410760 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:44.410860 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:45.410950 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:45.410954 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:45.411017 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:46.410637 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:46.410640 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:46.410674 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:47.410539 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:47.410543 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:47.410566 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:48.410618 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:48.410621 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:48.410673 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:49.410596 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:49.410599 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:49.410625 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:50.410637 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:50.410643 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:50.410705 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:51.410660 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:51.410664 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:51.410689 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:52.410606 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:52.410610 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:52.410625 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:53.410781 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:53.410786 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:53.410872 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:54.410860 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:54.410864 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:54.410960 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:55.410697 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:55.410704 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:55.410789 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:56.410675 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:56.410681 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:56.410742 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:57.410686 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:57.410691 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:57.410755 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:58.410683 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:58.410688 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:58.410804 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:59.410537 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:14:59.410540 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:14:59.410565 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:00.410655 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:00.410660 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:00.410795 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:01.410855 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:01.410859 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:01.410954 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:02.410656 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:02.410661 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:02.410929 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:03.410665 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:03.410668 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:03.410695 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:04.411213 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:04.411220 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:04.411290 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:05.410634 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:05.410636 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:05.410680 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:06.410613 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:06.410617 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:06.410674 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:07.410542 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:07.410546 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:07.410577 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:08.410668 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:08.410672 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:08.410706 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:09.410660 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:09.410664 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:09.410685 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:10.410757 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:10.410762 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:10.410852 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:11.410585 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:11.410588 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:11.410615 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:12.410597 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:12.410603 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:12.410669 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:13.410580 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:13.410584 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:13.410644 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:14.410587 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:14.410591 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:14.410620 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:15.410626 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:15.410630 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:15.410710 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:16.410560 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:16.410563 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:16.410613 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:17.410609 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:17.410613 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:17.410652 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:18.410673 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:18.410677 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:18.410719 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:19.410592 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:19.410595 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:19.410625 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:20.410624 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:20.410628 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:20.410655 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:21.410589 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:21.410594 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:21.410613 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:22.410618 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:22.410622 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:22.410641 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:23.410523 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:23.410526 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:23.410541 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:24.413207 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:24.413211 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:24.413231 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:25.411007 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:25.411013 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:25.411109 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:26.410710 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:26.410713 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:26.410769 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:27.410600 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:27.410604 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:27.410674 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:28.410880 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:28.410886 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:28.410997 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:29.410727 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:29.410733 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:29.410820 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:30.410771 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:30.410775 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:30.410892 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:31.410695 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:31.410700 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:31.410775 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:32.410712 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:32.410717 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:32.410784 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:33.410596 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:33.410600 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:33.410638 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:34.410693 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:34.410699 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:34.410782 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:35.410609 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:35.410613 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:35.410639 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:36.410551 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:36.410554 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:36.410605 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:37.410687 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:37.410693 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:37.410735 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:38.410628 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:38.410631 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:38.410663 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:39.410650 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:39.410654 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:39.410690 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:40.410617 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:40.410620 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:40.410656 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:41.410598 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:41.410601 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:41.410630 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:42.410600 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:42.410604 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:42.410635 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:43.410607 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:43.410611 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:43.410640 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:44.410620 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:44.410623 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:44.410650 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:45.410643 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:45.410647 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:45.410676 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:46.410611 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:46.410615 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:46.410682 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:47.410703 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:47.410707 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:47.410788 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:48.410726 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:48.410729 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:48.410817 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:49.410549 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:49.410553 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:49.410592 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:50.410580 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:50.410583 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:50.410636 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:51.410689 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:51.410693 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:51.410711 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:52.410664 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:52.410669 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:52.410792 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:53.410720 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:53.410725 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:53.410851 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:54.410811 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:54.410817 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:54.410987 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:55.410843 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:55.410851 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:55.410973 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:56.410715 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:56.410720 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:56.410772 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:57.411028 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:57.411033 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:57.411131 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:58.410753 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:58.410758 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:58.410818 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:59.410765 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:15:59.410771 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:15:59.410947 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:00.410913 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:00.410919 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:00.410989 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:01.410951 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:01.410958 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:01.411155 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:02.410608 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:02.410612 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:02.410686 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:03.410679 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:03.410684 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:03.410735 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:04.410673 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:04.410679 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:04.410785 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:05.410916 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:05.410920 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:05.411031 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:06.410536 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:06.410540 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:06.410597 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:07.410642 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:07.410646 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:07.410688 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:08.412601 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:08.412604 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:08.412642 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:09.410889 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:09.410894 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:09.410955 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:10.413574 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:10.413578 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:10.413662 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:11.410623 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:11.410627 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:11.410683 [GW     ] [I] [    0] gw_rx_rate_mbps=0.00 (real=0.00), gw_tx_rate_mbps=0.00 (real=0.00)
+2023-04-07T14:16:12.412715 [MAC    ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+2023-04-07T14:16:12.412719 [RLC    ] [I] lcid=0, r

@@ -1,0 +1,6 @@
+Open5GS daemon v2.4.4
+
+04/07 14:13:08.733: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:129)
+04/07 14:13:08.733: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:132)
+04/07 14:13:08.734: [dbi] WARNING: Failed to connect to server [mongodb://localhost/open5gs] (../lib/dbi/ogs-mongoc.c:122)
+04/07 14:13:08.734: [app] WARNING: Failed to intialize PCRF (../src/pcrf/app-init.c:28)

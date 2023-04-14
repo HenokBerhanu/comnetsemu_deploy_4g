@@ -14,19 +14,10 @@ from mininet import log
 from mininet.log import info, setLogLevel
 from mininet.node import Controller, OVSBridge
 from mininet.topo import Topo
-from util import dict_union, get_root_dir
 
 root_directory="/home/vagrant/comnetsemu_deploy_4g"
 mongodb_directory="/home/vagrant/mongodbdata"
 
-# IPS: Dict[str, str] = {
-#     #"epc": "10.80.95.10",
-#     "epc": "192.168.56.1",
-#     #"enb": "10.80.95.11",
-#     "enb": "192.168.56.2",
-#     #"ue": "10.80.97.12",
-#     "ue": "192.168.56.3",
-# }
 
 if __name__ == "__main__":
 

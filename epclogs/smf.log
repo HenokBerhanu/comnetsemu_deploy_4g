@@ -168,3 +168,23 @@ Open5GS daemon v2.4.4
 04/14 09:02:55.969: [sock] ERROR: udp_server() [192.168.0.10]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
 04/14 09:02:55.969: [app] ERROR: Failed to intialize SMF (../src/smf/app.c:28)
 04/14 09:02:55.969: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+04/14 09:31:20.392: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/smf.yaml' (../lib/app/ogs-init.c:129)
+04/14 09:31:20.392: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/smf.log' (../lib/app/ogs-init.c:132)
+04/14 09:31:20.585: [gtp] INFO: gtp_server() [127.0.0.4]:2123 (../lib/gtp/path.c:30)
+04/14 09:31:20.590: [gtp] INFO: gtp_server() [127.0.0.4]:2152 (../lib/gtp/path.c:30)
+04/14 09:31:20.590: [sock] ERROR: socket bind(2) [192.168.0.10]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+04/14 09:31:20.590: [sock] ERROR: udp_server() [192.168.0.10]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+04/14 09:31:20.590: [app] ERROR: Failed to intialize SMF (../src/smf/app.c:28)
+04/14 09:31:20.590: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+04/14 09:35:14.344: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/smf.yaml' (../lib/app/ogs-init.c:129)
+04/14 09:35:14.344: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/smf.log' (../lib/app/ogs-init.c:132)
+04/14 09:35:14.708: [gtp] INFO: gtp_server() [127.0.0.4]:2123 (../lib/gtp/path.c:30)
+04/14 09:35:14.708: [gtp] INFO: gtp_server() [127.0.0.4]:2152 (../lib/gtp/path.c:30)
+04/14 09:35:14.708: [sock] ERROR: socket bind(2) [192.168.0.10]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+04/14 09:35:14.708: [sock] ERROR: udp_server() [192.168.0.10]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+04/14 09:35:14.708: [app] ERROR: Failed to intialize SMF (../src/smf/app.c:28)
+04/14 09:35:14.708: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)

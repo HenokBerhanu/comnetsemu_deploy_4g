@@ -288,9 +288,9 @@ logger:
 mme:
     freeDiameter: /open5gs/install/etc/freeDiameter/mme.conf
     s1ap:
-      - addr: 127.0.0.2
+      - addr: 127.0.0.2 #192.168.0.10 #127.0.1.100 127.0.0.2
     gtpc:
-      - addr: 127.0.0.2
+      - addr: 127.0.0.2 #192.168.0.10 #127.0.0.2
     gummei:
       plmn_id:
         mcc: 901
@@ -372,7 +372,6 @@ mme:
 sgwc:
     gtpc:
       - addr: 127.0.0.3
-
 #
 # smf:
 #
@@ -424,7 +423,6 @@ smf:
     gtpc:
       - addr:
         - 127.0.0.4
-        - ::1
 
 #
 #  o Disable use of IPv4 addresses (only IPv6)
@@ -456,14 +454,14 @@ max:
 # usrsctp:
 #    udp_port : 9899
 #
+#usrsctp:
+#pool:
 
-pool:
-
-#
-# sockopt:
-#    no_delay : true
 #
 sockopt:
+#    no_delay : true
+#
+#sockopt:
 
 #
 #  o Message Wait Duration (Default : 10,000 ms = 10 seconds)

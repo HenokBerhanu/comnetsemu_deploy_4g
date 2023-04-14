@@ -1,11 +1,161 @@
 Open5GS daemon v2.4.4
 
-04/07 14:13:13.661: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
-04/07 14:13:13.661: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
-04/07 14:13:13.692: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
-04/07 14:13:13.694: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
-04/07 14:13:13.694: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
-04/07 14:13:13.695: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
-04/07 14:13:21.200: [pfcp] WARNING: [1] LOCAL  No Reponse. Give up! for step 1 type 5 peer [127.0.0.6]:8805 (../lib/pfcp/xact.c:618)
-04/07 14:13:24.696: [sgwc] WARNING: Retry to association with peer [127.0.0.6]:8805 failed (../src/sgwc/pfcp-sm.c:105)
-04/07 14:13:29.698: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/13 18:57:22.764: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/13 18:57:22.765: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/13 18:57:22.895: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/13 18:57:22.897: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/13 18:57:22.898: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/13 18:57:22.906: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/13 18:57:22.910: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+Open5GS daemon v2.4.4
+
+04/13 19:49:34.020: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/13 19:49:34.020: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/13 19:49:34.125: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/13 19:49:34.126: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/13 19:49:34.126: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/13 19:49:34.132: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/13 19:49:34.132: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/13 19:51:04.660: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+04/13 21:21:28.707: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/13 21:21:28.713: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/13 21:21:28.748: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/13 21:21:28.768: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/13 21:21:28.768: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/13 21:21:28.773: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/13 21:21:31.275: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+Open5GS daemon v2.4.4
+
+04/13 21:23:47.621: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/13 21:23:47.622: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/13 21:23:47.701: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/13 21:23:47.702: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/13 21:23:47.702: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/13 21:23:47.729: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/13 21:23:47.729: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+Open5GS daemon v2.4.4
+
+04/13 21:25:45.634: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/13 21:25:45.639: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/13 21:25:45.712: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/13 21:25:45.712: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/13 21:25:45.712: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/13 21:25:45.712: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/13 21:25:48.220: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+Open5GS daemon v2.4.4
+
+04/13 21:27:56.355: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/13 21:27:56.355: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/13 21:27:56.440: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/13 21:27:56.441: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/13 21:27:56.442: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/13 21:27:56.462: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/13 21:27:56.468: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/13 21:28:58.098: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+04/13 21:39:14.850: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/13 21:39:14.850: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/13 21:39:14.949: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/13 21:39:14.949: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/13 21:39:14.950: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/13 21:39:14.978: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/13 21:39:14.978: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+Open5GS daemon v2.4.4
+
+04/14 08:15:16.596: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:15:16.597: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:15:16.744: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:15:16.744: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:15:16.744: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:15:16.750: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:15:19.249: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+Open5GS daemon v2.4.4
+
+04/14 08:18:17.708: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:18:17.708: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:18:17.896: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:18:17.897: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:18:17.897: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:18:17.906: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:18:17.906: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/14 08:19:30.924: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+04/14 08:20:45.972: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:20:45.972: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:20:46.035: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:20:46.037: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:20:46.037: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:20:46.037: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:20:48.541: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+Open5GS daemon v2.4.4
+
+04/14 08:32:22.569: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:32:22.569: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:32:22.667: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:32:22.668: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:32:22.668: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:32:22.672: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:32:22.672: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+Open5GS daemon v2.4.4
+
+04/14 08:37:08.774: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:37:08.774: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:37:08.815: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:37:08.815: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:37:08.816: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:37:08.816: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:37:08.817: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/14 08:37:48.012: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+04/14 08:38:33.953: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:38:33.953: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:38:33.976: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:38:33.991: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:38:33.992: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:38:33.992: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:38:36.495: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/14 08:39:24.798: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+04/14 08:50:42.007: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:50:42.007: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:50:42.095: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:50:42.095: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:50:42.095: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:50:42.097: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:50:42.097: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/14 08:52:36.848: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+04/14 08:54:39.232: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:54:39.232: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:54:39.356: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:54:39.356: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:54:39.357: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:54:39.362: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:54:39.362: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+Open5GS daemon v2.4.4
+
+04/14 08:58:00.811: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 08:58:00.811: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 08:58:00.888: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 08:58:00.888: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 08:58:00.889: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 08:58:00.895: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 08:58:00.895: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/14 09:00:14.631: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+04/14 09:02:55.764: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/14 09:02:55.765: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/14 09:02:55.811: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/14 09:02:55.815: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/14 09:02:55.815: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/14 09:02:55.827: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/14 09:02:58.332: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/14 09:06:20.361: [app] INFO: SIGHUP received (../src/main.c:58)

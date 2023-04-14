@@ -103,8 +103,7 @@ sgwc:
 #
 sgwu:
     pfcp:
-      - addr: 127.0.0.6
-
+      - addr: 127.0.0.6 #192.168.0.10 #127.0.0.6
 #
 #  o Disable use of IPv4 addresses (only IPv6)
 #  parameter:

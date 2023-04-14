@@ -37,7 +37,8 @@ if __name__ == "__main__":
 
     env = dict()
     
-    net = Containernet(controller=Controller, ipBase="192.168.56.0/24", link=TCLink, waitConnected=True)
+    net = Containernet(controller=Controller, link=TCLink, waitConnected=True)
+    #net = Containernet(controller=Controller, ipBase="192.168.56.0/24", link=TCLink, waitConnected=True)
 
     cmds: Dict[DockerHost, str] = {}
     hardcoded_ips: List[Dict[str, str]] = []
@@ -46,7 +47,7 @@ if __name__ == "__main__":
     epc = net.addDockerHost(
         "epc",
         dimage="o5gs_epc",
-        ip="192.168.56.1",
+        ip="192.168.0.10/24",
         # dcmd="",
         dcmd="bash /open5gs/install/etc/open5gs/epc.sh",
         docker_args={
@@ -83,17 +84,17 @@ if __name__ == "__main__":
         "srsenb",
         #ip=IPS["enb"],
         dimage="srsran3",
-        ip="192.168.56.2",
+        ip="192.168.0.20/24",
         # dcmd="",
         docker_args={
             "volumes": {
                 root_directory + "/srsran/config": {
                     "bind": "/etc/srsran",
-                    "mode": "ro",
+                    "mode": "rw",
                 },
                 root_directory + "/srslogs": {
                     "bind": "/tmp/srsran_logs",
-                    #"mode": "ro",
+                    "mode": "rw",
                 },
                 "/etc/timezone": {
                     "bind": "/etc/timezone",
@@ -115,18 +116,18 @@ if __name__ == "__main__":
         "srsue",
         #ip=IPS["enb"],
         dimage="srsran3",
-        ip="192.168.56.3",
+        ip="192.168.0.21/24",
         # dcmd="",
         #exec_run= ('/etc/srsran/ue.sh'),
         docker_args={
             "volumes": {
                 root_directory + "/srsran/config": {
                     "bind": "/etc/srsran",
-                    "mode": "ro",
+                    "mode": "rw",
                 },
                 root_directory + "/srslogs": {
                     "bind": "/tmp/srsran_logs",
-                    #"mode": "ro",
+                    "mode": "rw",
                 },
                 "/etc/timezone": {
                     "bind": "/etc/timezone",
@@ -145,11 +146,11 @@ if __name__ == "__main__":
 
     enbcmd = [
         "srsenb",
-        f"--enb.mme_addr=192.168.56.1",
-        f"--enb.gtp_bind_addr=192.168.56.2",
-        f"--enb.s1c_bind_addr=192.168.56.2",
+        f"--enb.mme_addr=127.0.0.2",
+        f"--enb.gtp_bind_addr=127.0.0.2",
+        f"--enb.s1c_bind_addr=127.0.0.2",
         "--rf.device_name=zmq",
-        f"--rf.device_args='id=enb,fail_on_disconnect=true,tx_port=tcp://*:2000,rx_port=tcp://192.168.56.3:2001,base_srate=23.04e6'",
+        f"--rf.device_args='id=enb,fail_on_disconnect=true,tx_port=tcp://*:2000,rx_port=tcp://192.168.0.21:2001,base_srate=23.04e6'",
         "--enb_files.sib_config=/etc/srsran/sib.conf",
         "--log.all_level=info",
         "--log.filename=/tmp/srsran_logs/enb.log",
@@ -163,7 +164,7 @@ if __name__ == "__main__":
     uecmd = [
         "srsue",
         "--rf.device_name=zmq",
-        f"--rf.device_args='id=ue,fail_on_disconnect=true,tx_port=tcp://*:2001,rx_port=tcp://192.168.56.2:2000,base_srate=23.04e6'",
+        f"--rf.device_args='id=ue,fail_on_disconnect=true,tx_port=tcp://*:2001,rx_port=tcp://192.168.0.20:2000,base_srate=23.04e6'",
         "--log.all_level=info",
         "--log.filename=/tmp/srsran_logs/ue.log",
         ">",

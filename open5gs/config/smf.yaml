@@ -597,14 +597,17 @@ smf:
       - addr: 127.0.0.4
         port: 7777
     pfcp:
-      - addr: 127.0.0.4
-      - addr: ::1
+      - addr: 192.168.0.10 #127.0.0.4
+      #- addr: ::1
     gtpc:
       - addr: 127.0.0.4
-      - addr: ::1
+      #- addr: ::1
     gtpu:
       - addr: 127.0.0.4
-      - addr: ::1
+      #- addr: ::1
+    # metrics:
+    #   - addr: 127.0.0.4
+    #     port: 9090
     subnet:
       - addr: 10.45.0.1/16
       - addr: 2001:230:cafe::1/48

@@ -2,7 +2,8 @@
 
 sudo mn -c
 
-docker stop $(docker ps -aq)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 
 docker container prune -f
 

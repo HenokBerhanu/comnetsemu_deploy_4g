@@ -196,15 +196,17 @@ upf:
       - addr: 10.45.0.1/16
       - addr: 2001:db8:cafe::1/48
 
-#
+
 #  <PFCP Client>>
 #
 #  o PFCP Client(127.0.0.4:8805)
-#  smf:
-#    pfcp:
-#      addr: 127.0.0.4
-#
+
 smf:
+
+#  pfcp:
+#    - addr: 127.0.0.4
+#
+#smf:
 
 #
 #  o Number of output streams per SCTP associations.

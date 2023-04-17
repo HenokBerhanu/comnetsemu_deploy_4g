@@ -45,7 +45,5 @@ def topology():
     net.stop()
 
 if __name__ == '__main__':
-
     setLogLevel( 'info' )
-
     topology()

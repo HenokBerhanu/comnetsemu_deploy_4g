@@ -6,7 +6,7 @@ O-RAN alliance introduces a new srsgnb in srsRAN and the RAN part is taken from 
 for the core part, i take open5gs epc core 
 The network is deployed on one single VM
 
-## Core part
+## EPC core
 Emulate a 5G network deployment in comnetsemu.
 Demonstrate distributed UPF deployment and slice-base UPF selection.
 

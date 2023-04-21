@@ -1019,3 +1019,12 @@ Open5GS daemon v2.4.4
 04/21 14:15:40.722: [app] INFO: SGW-U initialize...done (../src/sgwu/app.c:31)
 04/21 14:15:40.725: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.3]:8805 (../lib/pfcp/path.c:59)
 04/21 14:15:40.726: [sgwu] INFO: PFCP associated (../src/sgwu/pfcp-sm.c:168)
+Open5GS daemon v2.4.4
+
+04/21 15:48:25.362: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwu.yaml' (../lib/app/ogs-init.c:129)
+04/21 15:48:25.362: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwu.log' (../lib/app/ogs-init.c:132)
+04/21 15:48:25.420: [pfcp] INFO: pfcp_server() [127.0.0.6]:8805 (../lib/pfcp/path.c:30)
+04/21 15:48:25.420: [gtp] INFO: gtp_server() [127.0.0.6]:2152 (../lib/gtp/path.c:30)
+04/21 15:48:25.427: [app] INFO: SGW-U initialize...done (../src/sgwu/app.c:31)
+04/21 15:48:25.483: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.3]:8805 (../lib/pfcp/path.c:59)
+04/21 15:48:25.483: [sgwu] INFO: PFCP associated (../src/sgwu/pfcp-sm.c:168)

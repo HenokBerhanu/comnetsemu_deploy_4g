@@ -1,200 +1,43 @@
-2023-04-17T13:40:26.748623 [ENB    ] [I] Using binary srsenb with arguments: --log.all_level=info --log.filename=/tmp/srsran_logs/enb.log 
-2023-04-17T13:40:26.776858 [ENB    ] [I] Built in Release mode using 21.10.0.
-2023-04-17T13:40:26.778440 [ENB    ] [I] Using sync queue size of one for ZMQ based radio.
-2023-04-17T13:40:26.831035 [RRC    ] [I] Tx Broadcast PDU - systemInformationBlockType1, cc=0, idx=0 (15 B)
+2023-04-21T09:59:47.249668 [ENB    ] [I] Using binary srsenb with arguments: --log.all_level=info --log.filename=/tmp/srsran_logs/enb.log 
+2023-04-21T09:59:47.291588 [ENB    ] [I] Built in Release mode using 21.10.0.
+2023-04-21T09:59:47.293886 [ENB    ] [I] Using sync queue size of one for ZMQ based radio.
+2023-04-21T09:59:47.379590 [RRC    ] [I] Tx Broadcast PDU - systemInformationBlockType1, cc=0, idx=0 (15 B)
     0000: 40 64 04 e1 00 07 00 19 b0 18 14 60 10 82 80
-2023-04-17T13:40:26.831043 [RRC    ] [I] Tx Broadcast PDU - systemInformation-r8, cc=0, idx=1 (33 B)
+2023-04-21T09:59:47.379602 [RRC    ] [I] Tx Broadcast PDU - systemInformation-r8, cc=0, idx=1 (33 B)
     0000: 00 80 0c e1 bf 78 88 00 ca 11 e0 01 00 00 08 01
     0010: 82 99 45 ab 9c 30 c6 a6 cc c1 c2 14 62 d8 4e a5
-2023-04-17T13:40:26.831046 [RRC    ] [I] Allocating 1 PRBs for PUCCH
-2023-04-17T13:40:26.831199 [MAC    ] [I] [    0] Using time-domain PF scheduling policy for cc=0
-2023-04-17T13:40:26.831234 [RRC    ] [I] T310 200, T311 10000, N310 1
-2023-04-17T13:40:26.831234 [RRC    ] [I] Inactivity timeout: 30000 ms
-2023-04-17T13:40:26.831234 [RRC    ] [I] Max consecutive MAC KOs: 100
-2023-04-17T13:40:26.831241 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
-2023-04-17T13:40:26.831242 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
-2023-04-17T13:40:26.832089 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
-2023-04-17T13:40:26.832093 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
-2023-04-17T13:40:26.832162 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:0
-2023-04-17T13:40:26.832163 [S1AP   ] [I] SCTP socket opened. fd=6
-2023-04-17T13:40:26.832215 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.0.2
-2023-04-17T13:40:26.832243 [S1AP   ] [I] Proc "MME Connection" - Could not connect to MME
-2023-04-17T13:40:26.832244 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
-2023-04-17T13:40:26.832257 [COMN   ] [W] [    0] RxSockets: The socket fd=6 to be removed does not exist
-2023-04-17T13:40:26.832264 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
-2023-04-17T13:40:26.832265 [S1AP   ] [E] Failed to initiate S1Setup procedure.
-2023-04-17T13:40:26.832276 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:2152
-2023-04-17T13:40:26.832285 [COMN   ] [D] [    0] RxSockets: socket fd=6 has been registered.
-2023-04-17T13:40:26.833971 [RF     ] [I] Configuring physical DL channel 0 with band-pass filter (0.0, 0.0)
-2023-04-17T13:40:26.833972 [RF     ] [I] Configuring physical UL channel 0 with band-pass filter (0.0, 0.0)
-2023-04-17T13:40:29.345871 [PHY0   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
-2023-04-17T13:40:29.345912 [PHY0   ] [I] [    0] Worker 0 configured cell 50 PRB
-2023-04-17T13:40:29.691611 [PHY1   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
-2023-04-17T13:40:29.691668 [PHY1   ] [I] [    0] Worker 0 configured cell 50 PRB
-2023-04-17T13:40:29.914513 [PHY2   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
-2023-04-17T13:40:29.914554 [PHY2   ] [I] [    0] Worker 0 configured cell 50 PRB
-2023-04-17T13:40:31.958313 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_tx=2680.0 MHz
-2023-04-17T13:40:31.958316 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_rx=2560.0 MHz
-2023-04-17T13:40:31.958317 [PHY    ] [I] [    0] Starting RX/TX thread nof_prb=50, sf_len=11520
-2023-04-17T13:41:08.785216 [PHY    ] [I] [  342] PRACH: cc=0, 0/1, preamble=51, offset=0.0 us, peak2avg=839.0, max_offset=30.0 us
-2023-04-17T13:41:08.785565 [MAC    ] [I] [  341] SCHED: Added user rnti=0x46
-2023-04-17T13:41:08.785568 [MAC    ] [I] [  341] SCHED: rnti=0x46, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
-2023-04-17T13:41:08.785569 [MAC    ] [I] [  341] SCHED: Resetting rnti=0x46, cc=0 HARQs and feedback state
-2023-04-17T13:41:08.785570 [MAC    ] [I] [  341] SCHED: rnti=0x46 PCell is now enb_cc_idx=0
-2023-04-17T13:41:08.785604 [RRC    ] [I] Setting RLF timer for rnti=0x46 to 4000ms
-2023-04-17T13:41:08.785610 [RLC    ] [I] Added LTE radio bearer with LCID 0 in Transparent Mode
-2023-04-17T13:41:08.785613 [RRC    ] [I] Added new user rnti=0x46
-2023-04-17T13:41:08.785613 [MAC    ] [I] [  341] SCHED: New PRACH tti=341, preamble=51, temp_crnti=0x46, ta_cmd=0, msg3_size=7
-2023-04-17T13:41:08.785614 [MAC    ] [I] [  341] RACH:  tti=341, cc=0, preamble=51, offset=0, temp_crnti=0x46
-2023-04-17T13:41:08.785624 [MAC    ] [I] [  341] rach_tprof: {mean, max, min}={375.5, 375, 375} usec, nof_samples=1
-2023-04-17T13:41:08.793428 [MAC    ] [I] [  342] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x46, rba=102, mcs=0}]
-2023-04-17T13:41:08.793459 [PHY0   ] [I] [  342] PDCCH: cc=0, rnti=0x2, f=1A, cce= 0, L=2, riv=100, pid=0, mcs={1}, ndi={0}, tpc_pucch=0, tti_tx_dl=346
-2023-04-17T13:41:08.793481 [PHY0   ] [I] [  342] PDSCH: cc=0, rnti=0x2, nof_prb=3, nof_re=450, tbs={11}, mod={2}, rv={0}, tti_tx_dl=346
-2023-04-17T13:41:08.809007 [MAC    ] [I] [  344] SCHED: Msg3 tx rnti=0x46, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7)
-2023-04-17T13:41:08.871674 [MAC    ] [I] [  352] SCHED: UL adaptive link: rnti=0x46, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
-2023-04-17T13:41:08.871675 [MAC    ] [I] [  352] Pushing PDU rnti=0x46, tti_rx=352, nof_bytes=7
-2023-04-17T13:41:08.871683 [PHY0   ] [I] [  352] PUSCH: cc=0, rnti=0x46, rb=(2,4), nof_re=432, tbs=7, mod=2, rv=0, crc=OK, avg_iter=2.0, snr=97.9 dB, epre=73.6 dBfs, ta=0.0 us, cfo=0.2 hz, t=29 us
-2023-04-17T13:41:08.871710 [PHY0   ] [I] [  352] PHICH: rnti=0x46, hi=1, I_lowest=2, n_dmrs=0, tti_tx_dl=356
-2023-04-17T13:41:08.871843 [MAC    ] [I] [  352] 0x46 UL LCID=0 len=6
-2023-04-17T13:41:08.880792 [RRC    ] [I] Rx SRB0 PDU, rnti=0x46 - rrcConnectionRequest (6 B)
-    0000: 58 a9 98 c9 df 78
-2023-04-17T13:41:08.880819 [RRC    ] [E] MME isn't connected. Sending Connection Reject
-2023-04-17T13:41:08.880821 [MAC    ] [I] [  353] SCHED: UE Contention Resolution Identity for rnti=0x46 needs to be scheduled
-2023-04-17T13:41:08.880830 [RRC    ] [I] Tx SRB0 PDU, rnti=0x46 - rrcConnectionReject (2 B)
-    0000: 41 20
-2023-04-17T13:41:08.880835 [RLC    ] [I] SRB0 Tx SDU, queue size=1, bytes=2
-    0000: 41 20
-2023-04-17T13:41:08.880836 [MAC    ] [I] [  353] SCHED: rnti=0x46 DL lcid=0 buffer_state=2,0
-2023-04-17T13:41:08.888848 [MAC    ] [I] [  354] SCHED: DL tx rnti=0x46, cc=0, pid=0, mask=0x10000, dci=(3, 0), n_rtx=0, cfi=1, tbs=11, buffer=11/0, tti_tx_dl=358
-2023-04-17T13:41:08.888850 [MAC    ] [I] [  354] SCHED: DL MAC CEs cc=0: rnti=0x46: [CE "ConResId"]
-2023-04-17T13:41:08.888857 [RLC    ] [I] SRB0 Tx Transparent Mode PDU, queue size=0, bytes=0
-    0000: 41 20
-2023-04-17T13:41:08.888861 [MAC    ] [I] [  354] 0x46 DL CON_RES: id=0x58a998c9df78 LCID=0 len=2
-2023-04-17T13:41:08.888892 [PHY0   ] [I] [  354] PDCCH: cc=0, rnti=0x46, f=1A, cce= 0, L=3, riv=100, pid=0, mcs={1}, ndi={1}, tpc_pucch=1, tti_tx_dl=358
-2023-04-17T13:41:08.888939 [PHY0   ] [I] [  354] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=450, tbs={11}, mod={2}, rv={0}, tti_tx_dl=358
-2023-04-17T13:41:08.961929 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
-2023-04-17T13:41:08.968194 [MAC    ] [I] [  362] SCHED: DL adaptive link: rnti=0x46, cqi=5, last_mcs=1, cqi_offset=0.001000
-2023-04-17T13:41:08.968200 [PHY0   ] [I] [  362] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=12, dmrs_corr=1.000, snr=90.7 dB, corr=1.000, ack=1, ta=0.0 us
-2023-04-17T13:41:09.446533 [RRC    ] [I] Activity timer for rnti=0x46 expired after 80 ms
-2023-04-17T13:41:09.446541 [GTPU   ] [I] Removing user - rnti=0x46 not found.
-2023-04-17T13:41:09.446542 [STCK   ] [E] Bearers: No EPS bearer registered for rnti=0x46
-2023-04-17T13:41:09.446573 [RRC    ] [I] Removed user rnti=0x46
-2023-04-17T13:41:09.539689 [MAC    ] [I] [  431] User rnti=0x46 removed from MAC/PHY
-2023-04-17T13:42:28.638160 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
-2023-04-17T13:42:28.638161 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
-2023-04-17T13:42:28.638194 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
-2023-04-17T13:42:28.638196 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
-2023-04-17T13:42:28.638209 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:0
-2023-04-17T13:42:28.638210 [S1AP   ] [I] SCTP socket opened. fd=19
-2023-04-17T13:42:28.638304 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.0.2
-2023-04-17T13:42:28.638360 [S1AP   ] [I] Proc "MME Connection" - Could not connect to MME
-2023-04-17T13:42:28.638361 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
-2023-04-17T13:42:28.638383 [COMN   ] [W] [    0] RxSockets: The socket fd=19 to be removed does not exist
-2023-04-17T13:42:28.638395 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
-2023-04-17T13:43:49.304416 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
-2023-04-17T13:43:49.304417 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
-2023-04-17T13:43:49.304446 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
-2023-04-17T13:43:49.304449 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
-2023-04-17T13:43:49.304461 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:0
-2023-04-17T13:43:49.304461 [S1AP   ] [I] SCTP socket opened. fd=19
-2023-04-17T13:43:49.304521 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.0.2
-2023-04-17T13:43:49.304539 [S1AP   ] [I] Proc "MME Connection" - Could not connect to MME
-2023-04-17T13:43:49.304540 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
-2023-04-17T13:43:49.304546 [COMN   ] [W] [    0] RxSockets: The socket fd=19 to be removed does not exist
-2023-04-17T13:43:49.304556 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
-2023-04-17T13:44:33.716041 [PHY    ] [I] [ 5142] PRACH: cc=0, 0/1, preamble=46, offset=0.0 us, peak2avg=839.0, max_offset=30.0 us
-2023-04-17T13:44:33.716359 [MAC    ] [I] [ 5141] SCHED: Added user rnti=0x47
-2023-04-17T13:44:33.716363 [MAC    ] [I] [ 5141] SCHED: rnti=0x47, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
-2023-04-17T13:44:33.716364 [MAC    ] [I] [ 5141] SCHED: Resetting rnti=0x47, cc=0 HARQs and feedback state
-2023-04-17T13:44:33.716364 [MAC    ] [I] [ 5141] SCHED: rnti=0x47 PCell is now enb_cc_idx=0
-2023-04-17T13:44:33.716382 [RRC    ] [I] Setting RLF timer for rnti=0x47 to 4000ms
-2023-04-17T13:44:33.716388 [RLC    ] [I] Added LTE radio bearer with LCID 0 in Transparent Mode
-2023-04-17T13:44:33.716391 [RRC    ] [I] Added new user rnti=0x47
-2023-04-17T13:44:33.716391 [MAC    ] [I] [ 5141] SCHED: New PRACH tti=5141, preamble=46, temp_crnti=0x47, ta_cmd=0, msg3_size=7
-2023-04-17T13:44:33.716392 [MAC    ] [I] [ 5141] RACH:  tti=5141, cc=0, preamble=46, offset=0, temp_crnti=0x47
-2023-04-17T13:44:33.716409 [MAC    ] [I] [ 5141] rach_tprof: {mean, max, min}={370.6, 375, 365} usec, nof_samples=2
-2023-04-17T13:44:33.723576 [MAC    ] [I] [ 5142] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x47, rba=102, mcs=0}]
-2023-04-17T13:44:33.723603 [PHY1   ] [I] [ 5142] PDCCH: cc=0, rnti=0x2, f=1A, cce= 0, L=2, riv=100, pid=0, mcs={1}, ndi={0}, tpc_pucch=0, tti_tx_dl=5146
-2023-04-17T13:44:33.723631 [PHY1   ] [I] [ 5142] PDSCH: cc=0, rnti=0x2, nof_prb=3, nof_re=450, tbs={11}, mod={2}, rv={0}, tti_tx_dl=5146
-2023-04-17T13:44:33.738689 [MAC    ] [I] [ 5144] SCHED: Msg3 tx rnti=0x47, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7)
-2023-04-17T13:44:33.800548 [MAC    ] [I] [ 5152] SCHED: UL adaptive link: rnti=0x47, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
-2023-04-17T13:44:33.800550 [MAC    ] [I] [ 5152] Pushing PDU rnti=0x47, tti_rx=5152, nof_bytes=7
-2023-04-17T13:44:33.800560 [PHY1   ] [I] [ 5152] PUSCH: cc=0, rnti=0x47, rb=(2,4), nof_re=432, tbs=7, mod=2, rv=0, crc=OK, avg_iter=2.0, snr=117.9 dB, epre=73.6 dBfs, ta=0.0 us, cfo=0.0 hz, t=37 us
-2023-04-17T13:44:33.800586 [PHY1   ] [I] [ 5152] PHICH: rnti=0x47, hi=1, I_lowest=2, n_dmrs=0, tti_tx_dl=5156
-2023-04-17T13:44:33.800698 [MAC    ] [I] [ 5152] 0x47 UL LCID=0 len=6
-2023-04-17T13:44:33.808185 [RRC    ] [I] Rx SRB0 PDU, rnti=0x47 - rrcConnectionRequest (6 B)
-    0000: 5b f1 2a 7b ee 58
-2023-04-17T13:44:33.808202 [RRC    ] [E] MME isn't connected. Sending Connection Reject
-2023-04-17T13:44:33.808205 [MAC    ] [I] [ 5152] SCHED: UE Contention Resolution Identity for rnti=0x47 needs to be scheduled
-2023-04-17T13:44:33.808212 [RRC    ] [I] Tx SRB0 PDU, rnti=0x47 - rrcConnectionReject (2 B)
-    0000: 41 20
-2023-04-17T13:44:33.808216 [RLC    ] [I] SRB0 Tx SDU, queue size=1, bytes=2
-    0000: 41 20
-2023-04-17T13:44:33.808218 [MAC    ] [I] [ 5152] SCHED: rnti=0x47 DL lcid=0 buffer_state=2,0
-2023-04-17T13:44:33.808267 [MAC    ] [I] [ 5153] SCHED: DL tx rnti=0x47, cc=0, pid=0, mask=0x10000, dci=(3, 0), n_rtx=0, cfi=1, tbs=11, buffer=11/0, tti_tx_dl=5157
-2023-04-17T13:44:33.808269 [MAC    ] [I] [ 5153] SCHED: DL MAC CEs cc=0: rnti=0x47: [CE "ConResId"]
-2023-04-17T13:44:33.808285 [RLC    ] [I] SRB0 Tx Transparent Mode PDU, queue size=0, bytes=0
-    0000: 41 20
-2023-04-17T13:44:33.808290 [MAC    ] [I] [ 5153] 0x47 DL CON_RES: id=0x5bf12a7bee58 LCID=0 len=2
-2023-04-17T13:44:33.808323 [PHY0   ] [I] [ 5153] PDCCH: cc=0, rnti=0x47, f=1A, cce= 0, L=3, riv=100, pid=0, mcs={1}, ndi={1}, tpc_pucch=1, tti_tx_dl=5157
-2023-04-17T13:44:33.808368 [PHY0   ] [I] [ 5153] PDSCH: cc=0, rnti=0x47, nof_prb=3, nof_re=450, tbs={11}, mod={2}, rv={0}, tti_tx_dl=5157
-2023-04-17T13:44:33.870633 [MAC    ] [I] [ 5161] SCHED: DL adaptive link: rnti=0x47, cqi=5, last_mcs=1, cqi_offset=0.001000
-2023-04-17T13:44:33.870641 [PHY0   ] [I] [ 5161] PUCCH: cc=0; rnti=0x47, f=1a, n_pucch=12, dmrs_corr=1.000, snr=111.8 dB, corr=1.000, ack=1, ta=0.0 us
-2023-04-17T13:44:33.961862 [RLC    ] [I] lcid=0, rx_rate_mbps=0.00 (real=0.00), tx_rate_mbps=0.00 (real=0.00)
-2023-04-17T13:44:34.339287 [RRC    ] [I] Activity timer for rnti=0x47 expired after 80 ms
-2023-04-17T13:44:34.339294 [GTPU   ] [I] Removing user - rnti=0x47 not found.
-2023-04-17T13:44:34.339294 [STCK   ] [E] Bearers: No EPS bearer registered for rnti=0x47
-2023-04-17T13:44:34.339320 [RRC    ] [I] Removed user rnti=0x47
-2023-04-17T13:44:34.425293 [MAC    ] [I] [ 5230] User rnti=0x47 removed from MAC/PHY
-2023-04-17T13:45:08.270083 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
-2023-04-17T13:45:08.270084 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
-2023-04-17T13:45:08.270104 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
-2023-04-17T13:45:08.270106 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
-2023-04-17T13:45:08.270116 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:0
-2023-04-17T13:45:08.270117 [S1AP   ] [I] SCTP socket opened. fd=19
-2023-04-17T13:45:08.270166 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.0.2
-2023-04-17T13:45:08.270183 [S1AP   ] [I] Proc "MME Connection" - Could not connect to MME
-2023-04-17T13:45:08.270183 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
-2023-04-17T13:45:08.270188 [COMN   ] [W] [    0] RxSockets: The socket fd=19 to be removed does not exist
-2023-04-17T13:45:08.270215 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
-2023-04-17T13:46:27.037712 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
-2023-04-17T13:46:27.037712 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
-2023-04-17T13:46:27.037735 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
-2023-04-17T13:46:27.037738 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
-2023-04-17T13:46:27.037751 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:0
-2023-04-17T13:46:27.037752 [S1AP   ] [I] SCTP socket opened. fd=19
-2023-04-17T13:46:27.037830 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.0.2
-2023-04-17T13:46:27.037843 [S1AP   ] [I] Proc "MME Connection" - Could not connect to MME
-2023-04-17T13:46:27.037844 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
-2023-04-17T13:46:27.037849 [COMN   ] [W] [    0] RxSockets: The socket fd=19 to be removed does not exist
-2023-04-17T13:46:27.037860 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
-2023-04-17T13:47:45.972726 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
-2023-04-17T13:47:45.972727 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
-2023-04-17T13:47:45.972750 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
-2023-04-17T13:47:45.972752 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
-2023-04-17T13:47:45.972764 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:0
-2023-04-17T13:47:45.972765 [S1AP   ] [I] SCTP socket opened. fd=19
-2023-04-17T13:47:45.972850 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.0.2
-2023-04-17T13:47:45.972863 [S1AP   ] [I] Proc "MME Connection" - Could not connect to MME
-2023-04-17T13:47:45.972864 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
-2023-04-17T13:47:45.972869 [COMN   ] [W] [    0] RxSockets: The socket fd=19 to be removed does not exist
-2023-04-17T13:47:45.972879 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
-2023-04-17T13:47:52.058455 [PHY    ] [I] [ 9782] PRACH: cc=0, 0/1, preamble=0, offset=0.0 us, peak2avg=839.0, max_offset=30.0 us
-2023-04-17T13:47:52.058746 [MAC    ] [I] [ 9781] SCHED: Added user rnti=0x48
-2023-04-17T13:47:52.058749 [MAC    ] [I] [ 9781] SCHED: rnti=0x48, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
-2023-04-17T13:47:52.058750 [MAC    ] [I] [ 9781] SCHED: Resetting rnti=0x48, cc=0 HARQs and feedback state
-2023-04-17T13:47:52.058750 [MAC    ] [I] [ 9781] SCHED: rnti=0x48 PCell is now enb_cc_idx=0
-2023-04-17T13:47:52.058767 [RRC    ] [I] Setting RLF timer for rnti=0x48 to 4000ms
-2023-04-17T13:47:52.058773 [RLC    ] [I] Added LTE radio bearer with LCID 0 in Transparent Mode
-2023-04-17T13:47:52.058776 [RRC    ] [I] Added new user rnti=0x48
-2023-04-17T13:47:52.058777 [MAC    ] [I] [ 9781] SCHED: New PRACH tti=9781, preamble=0, temp_crnti=0x48, ta_cmd=0, msg3_size=7
-2023-04-17T13:47:52.058777 [MAC    ] [I] [ 9781] RACH:  tti=9781, cc=0, preamble=0, offset=0, temp_crnti=0x48
-2023-04-17T13:47:52.058818 [MAC    ] [I] [ 9781] rach_tprof: {mean, max, min}={367.4, 375, 361} usec, nof_samples=3
-2023-04-17T13:47:52.065866 [MAC    ] [I] [ 9782] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x48, rba=102, mcs=0}]
-2023-04-17T13:47:52.065894 [PHY0   ] [I] [ 9782] PDCCH: cc=0, rnti=0x2, f=1A, cce= 0, L=2, riv=100, pid=0, mcs={1}, ndi={0}, tpc_pucch=0, tti_tx_dl=9786
-2023-04-17T13:47:52.065917 [PHY0   ] [I] [ 9782] PDSCH: cc=0, rnti=0x2, nof_prb=3, nof_re=450, tbs={11}, mod={2}, rv={0}, tti_tx_dl=9786
-2023-04-17T13:47:52.081159 [MAC    ] [I] [ 9784] SCHED: Msg3 tx rnti=0x48, cc=0, pid=0, dci=(0,0), prb=[2, 5), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7)
-2023-04-17T13:47:52.142185 [MAC    ] [I] [ 9792] SCHED: UL adaptive link: rnti=0x48, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
-2023-04-17T13:47:52.142186 [MAC    ] [I] [ 9792] Pushing PDU rnti=0x48, tti_rx=9792, nof_bytes=7
-2023-04-17T13:47:52.142195 [PHY0   ] [I] [ 9792] PUSCH: cc=0, rnti=0x48, rb=(2,4), nof_re=432, tbs=7, mod=2, rv=0, crc=OK, avg_iter=2.0, snr=117.9 dB, epre=73.6 dBfs, ta=0.0 us, cfo=0.0 hz, t=45 us
-2023-04-17T13:47:52.142220 [PHY0   ] [I] [ 9792] PHICH: rnti
+2023-04-21T09:59:47.379607 [RRC    ] [I] Allocating 1 PRBs for PUCCH
+2023-04-21T09:59:47.379840 [MAC    ] [I] [    0] Using time-domain PF scheduling policy for cc=0
+2023-04-21T09:59:47.379891 [RRC    ] [I] T310 200, T311 10000, N310 1
+2023-04-21T09:59:47.379892 [RRC    ] [I] Inactivity timeout: 30000 ms
+2023-04-21T09:59:47.379893 [RRC    ] [I] Max consecutive MAC KOs: 100
+2023-04-21T09:59:47.379903 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
+2023-04-21T09:59:47.379904 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
+2023-04-21T09:59:47.380010 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2023-04-21T09:59:47.380013 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2023-04-21T09:59:47.380028 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:0
+2023-04-21T09:59:47.380029 [S1AP   ] [I] SCTP socket opened. fd=6
+2023-04-21T09:59:47.380109 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.0.2
+2023-04-21T09:59:47.380149 [S1AP   ] [I] Proc "MME Connection" - Could not connect to MME
+2023-04-21T09:59:47.380149 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
+2023-04-21T09:59:47.380162 [COMN   ] [W] [    0] RxSockets: The socket fd=6 to be removed does not exist
+2023-04-21T09:59:47.380172 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
+2023-04-21T09:59:47.380174 [S1AP   ] [E] Failed to initiate S1Setup procedure.
+2023-04-21T09:59:47.380192 [COMN   ] [D] [    0] Successfully bound to address 127.0.0.2:2152
+2023-04-21T09:59:47.380204 [COMN   ] [D] [    0] RxSockets: socket fd=6 has been registered.
+2023-04-21T09:59:47.382608 [RF     ] [I] Configuring physical DL channel 0 with band-pass filter (0.0, 0.0)
+2023-04-21T09:59:47.382609 [RF     ] [I] Configuring physical UL channel 0 with band-pass filter (0.0, 0.0)
+2023-04-21T09:59:52.593427 [PHY0   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
+2023-04-21T09:59:52.593492 [PHY0   ] [I] [    0] Worker 0 configured cell 50 PRB
+2023-04-21T09:59:52.885829 [PHY1   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
+2023-04-21T09:59:52.885908 [PHY1   ] [I] [    0] Worker 0 configured cell 50 PRB
+2023-04-21T09:59:53.157732 [PHY2   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
+2023-04-21T09:59:53.157814 [PHY2   ] [I] [    0] Worker 0 configured cell 50 PRB
+2023-04-21T09:59:56.678485 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_tx=2680.0 MHz
+2023-04-21T09:59:56.678489 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_rx=2560.0 MHz
+2023-04-21T09:59:56.678491 [PHY    ] [I] [    0] Starting RX/TX thread nof_prb=50, sf_len=11520
+2023-04-21T10:00:48.401706 [PHY    ] [I] [  402] PRACH: cc=0, 0/1, preamble=16, offset=0.0 us, peak2avg=815.7, max_offset=30.0 us
+2023-04-21T10:00:48.402327 [MAC    ] [I] [  401] SCHED: Added user rnti=0x46
+2023-04-21T10:00:48.402347 [MAC    ] [I] [  401] SCHED: rnti=0x46, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2023-04-21T10:00:48.402348 [MAC    ] [I] [  401] SCHED: Resetting rnti=0x46, cc=0 HARQs and feedback state
+2023-04-21T10:00:48.402349 [MAC    ] [I] [  401] SCHED: rnti=0x46 PCell is now e

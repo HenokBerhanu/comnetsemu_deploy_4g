@@ -3713,3 +3713,163 @@
 2023-04-21T10:00:05.091+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59420 #3 (3 connections now open)
 2023-04-21T10:00:55.324+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59430 #4 (4 connections now open)
 2023-04-21T10:01:18.225+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59432 #5 (5 connections now open)
+2023-04-21T12:48:48.759+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/var/lib/mongodb 64-bit host=e3e80a1c6d32
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten] db version v3.6.8
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten] modules: none
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten] build environment:
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2023-04-21T12:48:48.783+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, storage: { dbPath: "/var/lib/mongodb", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/open5gs/install/var/log/open5gs/mongodb.log" } }
+2023-04-21T12:48:48.784+0000 I STORAGE  [initandlisten] 
+2023-04-21T12:48:48.784+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2023-04-21T12:48:48.784+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2023-04-21T12:48:48.784+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1456M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2023-04-21T12:48:49.437+0000 I STORAGE  [initandlisten] WiredTiger message [1682081329:437337][8:0x7f5c475bcac0], txn-recover: Set global recovery timestamp: 0
+2023-04-21T12:48:49.452+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2023-04-21T12:48:49.452+0000 I CONTROL  [initandlisten] 
+2023-04-21T12:48:49.452+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-04-21T12:48:49.452+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-04-21T12:48:49.452+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2023-04-21T12:48:49.452+0000 I CONTROL  [initandlisten] 
+2023-04-21T12:48:49.453+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 43bd616b-dca8-4af1-8934-c82b0fa87025
+2023-04-21T12:48:49.460+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2023-04-21T12:48:49.470+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 19e1cf80-e4ca-4205-9119-7d6d95bd146a
+2023-04-21T12:48:49.478+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2023-04-21T12:48:49.479+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2023-04-21T12:48:49.479+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 087f7736-608a-403e-b3fa-308570432fe9
+2023-04-21T12:48:49.492+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2023-04-21T12:48:49.492+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2023-04-21T12:48:49.494+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2023-04-21T12:49:03.297+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57282 #1 (1 connection now open)
+2023-04-21T12:49:03.334+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:57282 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-91-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.18" }
+2023-04-21T12:49:03.364+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57284 #2 (2 connections now open)
+2023-04-21T12:49:03.368+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57286 #3 (3 connections now open)
+2023-04-21T12:49:03.379+0000 I STORAGE  [conn3] createCollection: open5gs.sessions with generated UUID: 9b612690-15ff-459a-890c-8e9808bb3b2f
+2023-04-21T12:49:03.382+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57288 #4 (4 connections now open)
+2023-04-21T12:49:03.403+0000 I INDEX    [conn3] build index on: open5gs.sessions properties: { v: 2, key: { expires: 1 }, name: "expires_1", ns: "open5gs.sessions", expireAfterSeconds: 0 }
+2023-04-21T12:49:03.403+0000 I INDEX    [conn3] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2023-04-21T12:49:03.404+0000 I INDEX    [conn3] build index done.  scanned 0 total records. 0 secs
+2023-04-21T12:49:03.406+0000 I STORAGE  [conn2] createCollection: open5gs.subscribers with generated UUID: cc045e94-7665-4af4-8f91-9ac65fb5e347
+2023-04-21T12:49:03.419+0000 I INDEX    [conn2] build index on: open5gs.subscribers properties: { v: 2, unique: true, key: { imsi: 1 }, name: "imsi_1", ns: "open5gs.subscribers", background: true }
+2023-04-21T12:49:03.419+0000 I STORAGE  [conn4] createCollection: open5gs.accounts with generated UUID: bcec9739-6807-44c2-9124-248a7b9d3391
+2023-04-21T12:49:03.432+0000 I INDEX    [conn4] build index on: open5gs.accounts properties: { v: 2, unique: true, key: { username: 1 }, name: "username_1", ns: "open5gs.accounts", background: true }
+2023-04-21T12:49:03.432+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2023-04-21T12:49:03.433+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2023-04-21T12:51:09.686+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+2023-04-21T12:51:09.713+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/var/lib/mongodb 64-bit host=ecf6baa6e3f4
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten] db version v3.6.8
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten] modules: none
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten] build environment:
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2023-04-21T12:51:09.714+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, storage: { dbPath: "/var/lib/mongodb", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/open5gs/install/var/log/open5gs/mongodb.log" } }
+2023-04-21T12:51:09.714+0000 W -        [initandlisten] Detected unclean shutdown - /var/lib/mongodb/mongod.lock is not empty.
+2023-04-21T12:51:09.715+0000 I -        [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2023-04-21T12:51:09.715+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2023-04-21T12:51:09.715+0000 I STORAGE  [initandlisten] 
+2023-04-21T12:51:09.715+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2023-04-21T12:51:09.715+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2023-04-21T12:51:09.715+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1456M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2023-04-21T12:51:10.525+0000 I STORAGE  [initandlisten] WiredTiger message [1682081470:525292][8:0x7f15d5041ac0], txn-recover: Main recovery loop: starting at 1/0
+2023-04-21T12:51:10.526+0000 I STORAGE  [initandlisten] WiredTiger message [1682081470:526039][8:0x7f15d5041ac0], txn-recover: Recovering log 1 through 2
+2023-04-21T12:51:10.571+0000 I STORAGE  [initandlisten] WiredTiger message [1682081470:571843][8:0x7f15d5041ac0], file:index-15-5888541991155384362.wt, txn-recover: Recovering log 2 through 2
+2023-04-21T12:51:10.600+0000 I STORAGE  [initandlisten] WiredTiger message [1682081470:600447][8:0x7f15d5041ac0], file:index-15-5888541991155384362.wt, txn-recover: Set global recovery timestamp: 0
+2023-04-21T12:51:10.630+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2023-04-21T12:51:10.630+0000 I CONTROL  [initandlisten] 
+2023-04-21T12:51:10.630+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-04-21T12:51:10.630+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-04-21T12:51:10.630+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2023-04-21T12:51:10.630+0000 I CONTROL  [initandlisten] 
+2023-04-21T12:51:10.680+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2023-04-21T12:51:10.681+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2023-04-21T12:51:11.048+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2023-04-21T12:51:24.064+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57316 #1 (1 connection now open)
+2023-04-21T12:51:24.099+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:57316 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-91-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.18" }
+2023-04-21T12:51:24.128+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57318 #2 (2 connections now open)
+2023-04-21T12:51:24.142+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57320 #3 (3 connections now open)
+2023-04-21T12:51:24.157+0000 I NETWORK  [conn2] end connection 127.0.0.1:57318 (2 connections now open)
+2023-04-21T12:51:24.157+0000 I NETWORK  [conn3] end connection 127.0.0.1:57320 (1 connection now open)
+2023-04-21T12:51:24.157+0000 I NETWORK  [conn1] end connection 127.0.0.1:57316 (0 connections now open)
+2023-04-21T13:46:32.574+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/var/lib/mongodb 64-bit host=254d05148b3d
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten] db version v3.6.8
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten] modules: none
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten] build environment:
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2023-04-21T13:46:32.603+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, storage: { dbPath: "/var/lib/mongodb", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/open5gs/install/var/log/open5gs/mongodb.log" } }
+2023-04-21T13:46:32.603+0000 W -        [initandlisten] Detected unclean shutdown - /var/lib/mongodb/mongod.lock is not empty.
+2023-04-21T13:46:32.603+0000 I -        [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2023-04-21T13:46:32.603+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2023-04-21T13:46:32.603+0000 I STORAGE  [initandlisten] 
+2023-04-21T13:46:32.603+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2023-04-21T13:46:32.603+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2023-04-21T13:46:32.603+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1456M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2023-04-21T13:46:33.369+0000 I STORAGE  [initandlisten] WiredTiger message [1682084793:369201][8:0x7f6bf57ceac0], txn-recover: Main recovery loop: starting at 2/4992
+2023-04-21T13:46:33.369+0000 I STORAGE  [initandlisten] WiredTiger message [1682084793:369600][8:0x7f6bf57ceac0], txn-recover: Recovering log 2 through 3
+2023-04-21T13:46:33.408+0000 I STORAGE  [initandlisten] WiredTiger message [1682084793:408296][8:0x7f6bf57ceac0], txn-recover: Recovering log 3 through 3
+2023-04-21T13:46:33.447+0000 I STORAGE  [initandlisten] WiredTiger message [1682084793:447876][8:0x7f6bf57ceac0], txn-recover: Set global recovery timestamp: 0
+2023-04-21T13:46:33.467+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2023-04-21T13:46:33.467+0000 I CONTROL  [initandlisten] 
+2023-04-21T13:46:33.467+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-04-21T13:46:33.467+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-04-21T13:46:33.467+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2023-04-21T13:46:33.467+0000 I CONTROL  [initandlisten] 
+2023-04-21T13:46:33.518+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2023-04-21T13:46:33.518+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2023-04-21T13:46:34.035+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2023-04-21T13:46:47.958+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58218 #1 (1 connection now open)
+2023-04-21T13:46:48.014+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:58218 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-91-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.18" }
+2023-04-21T13:46:48.054+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58220 #2 (2 connections now open)
+2023-04-21T13:46:48.069+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58222 #3 (3 connections now open)
+2023-04-21T13:46:48.095+0000 I NETWORK  [conn2] end connection 127.0.0.1:58220 (2 connections now open)
+2023-04-21T13:46:48.095+0000 I NETWORK  [conn3] end connection 127.0.0.1:58222 (1 connection now open)
+2023-04-21T13:46:48.095+0000 I NETWORK  [conn1] end connection 127.0.0.1:58218 (0 connections now open)
+2023-04-21T13:56:58.442+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/var/lib/mongodb 64-bit host=8b1d87aa4e03
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten] db version v3.6.8
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten] modules: none
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten] build environment:
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2023-04-21T13:56:58.469+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, storage: { dbPath: "/var/lib/mongodb", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/open5gs/install/var/log/open5gs/mongodb.log" } }
+2023-04-21T13:56:58.470+0000 W -        [initandlisten] Detected unclean shutdown - /var/lib/mongodb/mongod.lock is not empty.
+2023-04-21T13:56:58.470+0000 I -        [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2023-04-21T13:56:58.470+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2023-04-21T13:56:58.470+0000 I STORAGE  [initandlisten] 
+2023-04-21T13:56:58.470+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2023-04-21T13:56:58.470+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2023-04-21T13:56:58.470+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1456M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2023-04-21T13:56:59.133+0000 I STORAGE  [initandlisten] WiredTiger message [1682085419:133539][8:0x7ff93eb2aac0], txn-recover: Main recovery loop: starting at 3/4736
+2023-04-21T13:56:59.134+0000 I STORAGE  [initandlisten] WiredTiger message [1682085419:134021][8:0x7ff93eb2aac0], txn-recover: Recovering log 3 through 4
+2023-04-21T13:56:59.172+0000 I STORAGE  [initandlisten] WiredTiger message [1682085419:172286][8:0x7ff93eb2aac0], txn-recover: Recovering log 4 through 4
+2023-04-21T13:56:59.200+0000 I STORAGE  [initandlisten] WiredTiger message [1682085419:200952][8:0x7ff93eb2aac0], txn-recover: Set global recovery timestamp: 0
+2023-04-21T13:56:59.223+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2023-04-21T13:56:59.223+0000 I CONTROL  [initandlisten] 
+2023-04-21T13:56:59.223+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-04-21T13:56:59.223+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-04-21T13:56:59.223+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2023-04-21T13:56:59.223+0000 I CONTROL  [initandlisten] 
+2023-04-21T13:56:59.274+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2023-04-21T13:56:59.275+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2023-04-21T13:57:00.013+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2023-04-21T13:57:14.467+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58280 #1 (1 connection now open)
+2023-04-21T13:57:14.519+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:58280 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-91-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.18" }
+2023-04-21T13:57:14.555+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58282 #2 (2 connections now open)
+2023-04-21T13:57:14.559+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58284 #3 (3 connections now open)
+2023-04-21T13:57:14.590+0000 I NETWORK  [conn2] end connection 127.0.0.1:58282 (2 connections now open)
+2023-04-21T13:57:14.590+0000 I NETWORK  [conn3] end connection 127.0.0.1:58284 (1 connection now open)
+2023-04-21T13:57:14.591+0000 I NETWORK  [conn1] end connection 127.0.0.1:58280 (0 connections now open)

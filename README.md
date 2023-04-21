@@ -59,6 +59,8 @@ Starting the controller:
 ```
 sudo controller -v ptcp:6633
 ```
+#### Remark
+At this stage the ran components of the srsRAN vm should ping the EPC core in the open5gs vm and vise versa. Beside, log files of both tolology can be seen and tcpdump can also be started to observe the connection.
 
 Contact
 Henok Berhanu - henokberhanu.tsegaye@unitn.it

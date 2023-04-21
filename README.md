@@ -7,33 +7,26 @@ It is done using srsRAN and open5GS deployed on two different VMs. The two netwo
 ## VM1
 # EPC core
 Emulate a 4G network by building open5gs docker image in comnetsemu.
-Demonstrate distributed UPF deployment and slice-base UPF selection.
 
-Tested Versions:
-- Comnetsemu: v0.3.0 (Installed following either "Option 1" or "Option 3" from [here](https://git.comnets.net/public-repo/comnetsemu) )
-- UERANSIM: v3.2.6
-- Open5gs: v2.4.2
+## VM2
+# srsRAN 
+Build docker image for srsENB and srsUE in comnetsemu.
 
-Python packages:
-- pymongo
-- json
-
-## Build Instructions
+## Instructions
 
 Clone repository in the comnetsemu VM.
 
-Build the necessary docker images:
+Build the docker images:
 
 ```
+For EPC core
 cd build
-./build.sh
+./buildo5gs.sh
 ```
-
-Or alternatively download them from DockerHub
-
 ```
-cd ../open5gs
-./dockerhub_pull.sh
+For srsRAN
+cd build
+./srsbuild3.sh
 ```
 
 

@@ -37,6 +37,14 @@ sudo python3 core_o5gs4g.py
 ```
 Wait for the remote controller to start
 
+Before running the ran network, the 4g core subscriber information should be updated in the WEBUI using localhost. 
+```
+http://<open5gs VM IP>:3000/
+```
+Where open5gs VM IP is set to 192.168.56.102 in this scenario.
+
+Note: Subsriber informations in the core network should be the same as ue informations set in the ue.conf file of the srsue.
+
 ## srsRAN VM
 
 Run the ran network topology:
@@ -51,3 +59,6 @@ Starting the controller:
 ```
 sudo controller -v ptcp:6633
 ```
+
+Contact
+Henok Berhanu - henokberhanu.tsegaye@unitn.it

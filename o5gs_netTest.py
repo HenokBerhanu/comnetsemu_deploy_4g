@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+# https://www.google.com/search?q=linux+gre+tunnels+with+mininet&oq=linux+gre+tunnels+with+mininet&aqs=chrome.0.69i59j0i546l2.10984j0j7&sourceid=chrome&ie=UTF-8
+# https://csie1.nqu.edu.tw/smallko/sdn/vm2vm_gre.htm
+# https://techandtrains.com/2014/01/25/using-linux-gre-tunnels-to-connect-two-mininet-networks/
+
 from mininet.net import Mininet
 from mininet.node import  Controller, RemoteController, OVSKernelSwitch
 from mininet.cli import CLI

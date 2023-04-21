@@ -3,11 +3,8 @@
 # https://www.google.com/search?q=linux+gre+tunnels+with+mininet&oq=linux+gre+tunnels+with+mininet&aqs=chrome.0.69i59j0i546l2.10984j0j7&sourceid=chrome&ie=UTF-8
 # https://csie1.nqu.edu.tw/smallko/sdn/vm2vm_gre.htm
 # https://techandtrains.com/2014/01/25/using-linux-gre-tunnels-to-connect-two-mininet-networks/
-<<<<<<< HEAD:o5gs_netTest.py
-=======
 # https://techandtrains.com/2014/01/20/connecting-two-mininet-networks-with-gre-tunnel-part-2/
 # sudo controller -v ptcp:6633
->>>>>>> fa69c2530523f26ea9416087da2f4c1367c2d10a:Test_net/vm2_Test_greTunnel/TestGre(corevm).py
 
 from mininet.net import Mininet
 from mininet.node import  Controller, RemoteController, OVSKernelSwitch

@@ -69,31 +69,22 @@ if __name__ == "__main__":
     c0 = net.addController('c0', controller=RemoteController, ip='192.168.56.101', port=6633 )
 
     info("*** Adding switch\n")
-    s1 = net.addSwitch("s1")
-    s2 = net.addSwitch("s2")
+    s3 = net.addSwitch("s3")
 
     info("*** Adding links\n")
-    net.addLink(s1,  s2, bw=1000, delay="1ms", intfName1="s1-s2",  intfName2="s2-s1")
-    net.addLink(srsue,  s1, bw=1000, delay="1ms", intfName1="srsue-s1",  intfName2="s1-srsue")
-    net.addLink(srsenb, s2, bw=1000, delay="1ms", intfName1="srsenb-s2", intfName2="s2-srsenb")
+    net.addLink(epc, s3, bw=1000, delay="1ms", intfName1="epc-s3", intfName2="s3-epc")
     
     info("\n*** Starting network\n")
     c0.start()
-    s1.start([c0])
-    s2.start([c0])
-    s1.cmd("ip link add s1-gre1 type gretap local 192.168.56.101 remote 192.168.56.102 ttl 64")
-    s1.cmd("ip link set s1-gre1 up")
-    Intf("s1-gre1", node=s1)
-
-    s2.cmd("ip link add s2-gre1 type gretap local 192.168.56.101 remote 192.168.56.102 ttl 64")
-    s2.cmd("ip link set s2-gre1 up")
-    Intf("s2-gre1", node=s2)
+    s3.start([c0])
+    s3.cmd("ip link add s3-gre1 type gretap local 192.168.56.102 remote 192.168.56.101 ttl 64")
+    s3.cmd("ip link set s3-gre1 up")
+    Intf("s3-gre1", node=s3)
 
     info("\n*** Running CLI\n")
     net.start()
 
 if not AUTOTEST_MODE:
     CLI(net)
-    s1.cmd("ip link del dev s1-gre1")
-    s2.cmd("ip link del dev s2-gre1")
+    s3.cmd("ip link del dev s3-gre1")
     net.stop()

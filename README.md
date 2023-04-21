@@ -1,13 +1,12 @@
 # comnetsemu_deploy_4g
 
 This project is intended for deploying a 4G network on comnetsemu emulator. 
-It is done using srsRAN and open5GS
-O-RAN alliance introduces a new srsgnb in srsRAN and the RAN part is taken from srsRAN
-for the core part, i take open5gs epc core 
-The network is deployed on one single VM
 
-## EPC core
-Emulate a 5G network deployment in comnetsemu.
+It is done using srsRAN and open5GS deployed on two different VMs. The two networks are connected using linux GRE tunnel.
+
+## VM1
+# EPC core
+Emulate a 4G network by building open5gs docker image in comnetsemu.
 Demonstrate distributed UPF deployment and slice-base UPF selection.
 
 Tested Versions:

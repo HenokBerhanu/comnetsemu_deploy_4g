@@ -45,6 +45,7 @@ Where open5gs VM IP is set to 192.168.56.102 in this scenario.
 
 Note: Subsriber informations in the core network should be the same as ue informations set in the ue.conf file of the srsue.
 
+
 ## srsRAN VM
 
 Run the ran network topology:

@@ -26,6 +26,9 @@ For srsRAN
 cd build
 ./srsbuild3.sh
 ```
+The network topology looks like below:
+
+<img src="./figs/topology.png" title="./figs/topology.png" width=800px></img>
 
 ## Run experiments
 
@@ -45,7 +48,8 @@ Where open5gs VM IP is set to 192.168.56.102 in this scenario.
 
 Note: Subsriber informations in the core network should be the same as ue informations set in the ue.conf file of the srsue.
 
-<img src="./images/WebUI_config.JPG" title="./figs/webui.png" width=800px></img>
+<img src="./figs/webui.png" title="./figs/webui.png" width=800px></img>
+
 
 ## srsRAN VM
 
@@ -61,5 +65,8 @@ Starting the controller:
 ```
 sudo controller -v ptcp:6633
 ```
-#### Remark
 At this stage the ran components of the srsRAN vm should ping the EPC core in the open5gs vm and vise versa. Beside, log files of both tolology can be seen and tcpdump can also be started to observe the connection.
+
+#### Remark
+The project is initially planned to perform S1 handover having two srsENBs and one UE, which is not complete and still needs improvement.
+

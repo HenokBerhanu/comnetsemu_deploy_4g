@@ -26,6 +26,9 @@ For srsRAN
 cd build
 ./srsbuild3.sh
 ```
+The network topology looks like below:
+
+<img src="./figs/topology.png" title="./figs/topology.png" width=800px></img>
 
 ## Run experiments
 

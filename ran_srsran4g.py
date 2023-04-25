@@ -36,10 +36,8 @@ if __name__ == "__main__":
     env["COMPONENT_NAME"]="srsenb"
     srsenb = net.addDockerHost(
         "srsenb",
-        #ip=IPS["enb"],
         dimage="srsran3",
         ip="192.168.0.20/24",
-        # dcmd="",
         exec_run = "/etc/srsran/enb.conf",
         #dcmd="bash /etc/srsran/enb.sh",
         docker_args={
@@ -73,7 +71,7 @@ if __name__ == "__main__":
     srsue = net.addDockerHost(
         "srsue",
         dimage="srsran3",
-        ip="192.168.0.21/24",
+        ip="192.168.0.30/24",
         exec_run = "/etc/srsran/ue.conf",
         docker_args={
             "environment": env,

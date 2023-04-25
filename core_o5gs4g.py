@@ -36,7 +36,6 @@ if __name__ == "__main__":
         "epc",
         dimage="o5gs_epc",
         ip="192.168.0.10/24",
-        # dcmd="",
         dcmd = "bash /open5gs/install/etc/open5gs/epc.sh",
         docker_args={
             "ports" : { "3000/tcp": 3000 },

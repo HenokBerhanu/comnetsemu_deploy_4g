@@ -45,7 +45,8 @@ Where open5gs VM IP is set to 192.168.56.102 in this scenario.
 
 Note: Subsriber informations in the core network should be the same as ue informations set in the ue.conf file of the srsue.
 
-<img src="./images/WebUI_config.JPG" title="./figs/webui.png" width=800px></img>
+<img src="./figs/webui.png" title="./figs/webui.png" width=800px></img>
+
 
 ## srsRAN VM
 

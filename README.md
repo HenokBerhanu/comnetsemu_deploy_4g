@@ -44,7 +44,6 @@ Before running the ran network, the 4g core subscriber information should be upd
 ```
 http://<open5gs VM IP>:3000/
 ```
-Where open5gs VM IP is set to 192.168.56.102 in this scenario.
 
 Note: Subsriber informations in the core network should be the same as ue informations set in the ue.conf file of the srsue.
 

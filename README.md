@@ -64,7 +64,7 @@ Starting the controller:
 ```
 sudo controller -v ptcp:6633
 ```
-At this stage the ran components of the srsRAN vm should ping the EPC core in the open5gs vm and vise versa. Beside, log files of both tolology can be seen and tcpdump can also be started to observe the connection.
+At this stage the ran components of the srsRAN vm should ping the EPC core in the open5gs vm and vise versa. Beside, log files of both tolology can be seen and tcpdump can also be started to observe the connection. Traffic needs to be sent from the srsRAN first because the remote controller IP is similar to the private IP of srsRAN VM. SO that either the ue or enb should ping the epc core of the open5gs VM.
 
 #### Remark
 The project is initially planned to perform S1 handover having two srsENBs and one UE, which is not complete and still needs improvement.

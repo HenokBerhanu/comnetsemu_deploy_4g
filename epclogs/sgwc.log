@@ -1018,6 +1018,7 @@ Open5GS daemon v2.4.4
 04/21 14:15:40.736: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
 Open5GS daemon v2.4.4
 
+<<<<<<< HEAD
 04/21 15:48:25.398: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
 04/21 15:48:25.398: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
 04/21 15:48:25.445: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
@@ -1079,3 +1080,22 @@ Open5GS daemon v2.4.4
 05/03 11:41:38.462: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
 05/03 11:41:38.469: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
 05/03 11:41:38.473: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+=======
+04/22 10:51:19.938: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/22 10:51:19.938: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/22 10:51:20.060: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/22 10:51:20.061: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/22 10:51:20.061: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/22 10:51:20.063: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/22 10:51:20.063: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+04/22 10:54:38.297: [app] INFO: SIGHUP received (../src/main.c:58)
+Open5GS daemon v2.4.4
+
+04/25 14:41:59.749: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/sgwc.yaml' (../lib/app/ogs-init.c:129)
+04/25 14:41:59.749: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/sgwc.log' (../lib/app/ogs-init.c:132)
+04/25 14:41:59.861: [gtp] INFO: gtp_server() [127.0.0.3]:2123 (../lib/gtp/path.c:30)
+04/25 14:41:59.861: [pfcp] INFO: pfcp_server() [127.0.0.3]:8805 (../lib/pfcp/path.c:30)
+04/25 14:41:59.862: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.6]:8805 (../lib/pfcp/path.c:59)
+04/25 14:41:59.872: [app] INFO: SGW-C initialize...done (../src/sgwc/app.c:31)
+04/25 14:41:59.873: [sgwc] INFO: PFCP associated (../src/sgwc/pfcp-sm.c:172)
+>>>>>>> 5e38d5699ee2785b0f711d76af7b1d7c16890024

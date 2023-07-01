@@ -2,10 +2,6 @@
 
 export DB_URI="mongodb://localhost/open5gs"
 
-#NODE_ENV=production node server/index.js
-
-#export DB_URI="mongodb://mongodb/open5gs"
-
 mongod --smallfiles --dbpath /var/lib/mongodb --logpath /open5gs/install/var/log/open5gs/mongodb.log --logRotate reopen --logappend --bind_ip_all &
 
 
